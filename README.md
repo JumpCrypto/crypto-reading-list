@@ -128,6 +128,7 @@ _In-depth page: [DAO](DAO.md)_
 * [Beginner's guide to DAOs](https://linda.mirror.xyz/Vh8K4leCGEO06_qSGx-vS5lvgUqhqkCz9ut81WwCP2o) (Mar 2021) 
   * examples of what DAOs can do (e.g. shared ownership of a valuable asset, governance)
 * [The DAO of DAOs](https://www.notboring.co/p/the-dao-of-daos-5b9) (Mar 2021)
+* [Running List of DAOs](https://deepdao.io/#/deepdao/dashboard)
 
 
 Byzantine Fault Tolerance & Proof-of-Stake algos
