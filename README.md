@@ -164,6 +164,7 @@ See in-depth pages below:
 * [Avalanche](L1/Avalanche.md)
 * [BSC](L1/BSC.md)
 * [Cosmos](L1/Cosmos.md)
+* [NEAR](L1/NEAR.md)
 * [Polkadot](L1/Polkadot.md)
 * [Polygon](L1/Polygon.md)
 * [Solana](L1/Solana.md)
