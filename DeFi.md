@@ -17,8 +17,11 @@ DeFi
 * [Tools](#tools)
 
 ## Overview
-* [Finematics guide to DeFi](https://finematics.com/guide-to-decentralized-finance/) - a skill tree of DeFi concepts
+* [Finematics guide to DeFi](https://finematics.com/guide-to-decentralized-finance/)
+  * a skill tree of DeFi concepts
 * [Where does yield come from, anyway?](https://juliankoh.medium.com/where-does-yield-come-from-anyway-fc818c114bd5)
+* [A theory of DeFi?](https://www.youtube.com/watch?v=esekWF3SyB8)
+  * A keynote at ACM CCS by Professor Tim Roughgarden, presenting a DeFi overview and why it's important to have "theory". Includes a deep-dive into AMMs (CFMMs).
 
 ## Lending protocols
 * [Lending and borrowing in DeFi](https://finematics.com/lending-and-borrowing-in-defi-explained/) (Finematics, Nov 2020)

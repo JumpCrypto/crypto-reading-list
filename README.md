@@ -221,3 +221,4 @@ _In-depth page: [Researchers](Researchers.md)_
 
 ### Online courses
 * [Berkeley DeFi](https://berkeley-defi.github.io/f21)
+* [Foundations of Blockchain (Columbia)](https://www.youtube.com/watch?v=KNJGPI0fuFA&list=PLEGCF-WLh2RLOHv_xUGLqRts_9JxrckiA)
