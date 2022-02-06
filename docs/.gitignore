@@ -1,0 +1,7 @@
+.idea/
+*.sw[po]
+/.cargo
+/dist
+/node_modules
+.env
+*.ipynb
