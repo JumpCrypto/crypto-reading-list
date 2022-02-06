@@ -1,0 +1,17 @@
+[book]
+title = "Crypto Reading List"
+authors = ["Jump Crypto"]
+description = "A curated list for getting up to speed on crypto and decentralized networks."
+src = "."
+language = "en"
+
+[rust]
+edition = "2021"
+
+[build]
+build-dir = "docs"
+create-missing = false
+
+[output.html]
+git-repository-url = "https://github.com/jumpcrypto/crypto-reading-list"
+site-url = "/crypto-reading-list/"

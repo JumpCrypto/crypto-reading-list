@@ -1,7 +1,5 @@
-crypto reading list
+Crypto Reading List
 ====================
-
-_For a more friendly reading experience, we recommend navigating [here](https://jumpcrypto.github.io/crypto-reading-list)._
 
 A curated list for getting up to speed on crypto and decentralized networks.
 

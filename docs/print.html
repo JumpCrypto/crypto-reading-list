@@ -1,0 +1,2092 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Crypto Reading List</title>
+        <meta name="robots" content="noindex" />
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="A curated list for getting up to speed on crypto and decentralized networks.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded "><a href="Why.html"><strong aria-hidden="true">1.</strong> Why</a></li><li class="chapter-item expanded "><a href="DeFi.html"><strong aria-hidden="true">2.</strong> DeFi</a></li><li class="chapter-item expanded "><a href="NFT.html"><strong aria-hidden="true">3.</strong> NFT</a></li><li class="chapter-item expanded "><a href="DAO.html"><strong aria-hidden="true">4.</strong> DAO</a></li><li class="chapter-item expanded "><a href="L1/index.html"><strong aria-hidden="true">5.</strong> L1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="L1/Bitcoin.html"><strong aria-hidden="true">5.1.</strong> Bitcoin</a></li><li class="chapter-item expanded "><a href="L1/Ethereum.html"><strong aria-hidden="true">5.2.</strong> Ethereum</a></li><li class="chapter-item expanded "><a href="L1/Avalanche.html"><strong aria-hidden="true">5.3.</strong> Avalanche</a></li><li class="chapter-item expanded "><a href="L1/BSC.html"><strong aria-hidden="true">5.4.</strong> BSC</a></li><li class="chapter-item expanded "><a href="L1/Cosmos.html"><strong aria-hidden="true">5.5.</strong> Cosmos</a></li><li class="chapter-item expanded "><a href="L1/NEAR.html"><strong aria-hidden="true">5.6.</strong> NEAR</a></li><li class="chapter-item expanded "><a href="L1/Polkadot.html"><strong aria-hidden="true">5.7.</strong> Polkadot</a></li><li class="chapter-item expanded "><a href="L1/Polygon.html"><strong aria-hidden="true">5.8.</strong> Polygon</a></li><li class="chapter-item expanded "><a href="L1/Solana.html"><strong aria-hidden="true">5.9.</strong> Solana</a></li><li class="chapter-item expanded "><a href="L1/Terra.html"><strong aria-hidden="true">5.10.</strong> Terra</a></li></ol></li><li class="chapter-item expanded "><a href="L2.html"><strong aria-hidden="true">6.</strong> L2</a></li><li class="chapter-item expanded "><a href="TradingDynamics.html"><strong aria-hidden="true">7.</strong> TradingDynamics</a></li><li class="chapter-item expanded "><a href="MEV.html"><strong aria-hidden="true">8.</strong> MEV</a></li><li class="chapter-item expanded "><a href="Dev/index.html"><strong aria-hidden="true">9.</strong> Dev</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Dev/Solidity.html"><strong aria-hidden="true">9.1.</strong> Solidity</a></li><li class="chapter-item expanded "><a href="Dev/SolanaProgramming.html"><strong aria-hidden="true">9.2.</strong> Solana</a></li><li class="chapter-item expanded "><a href="Dev/Security.html"><strong aria-hidden="true">9.3.</strong> Security</a></li></ol></li><li class="chapter-item expanded "><a href="Tools.html"><strong aria-hidden="true">10.</strong> Tools</a></li><li class="chapter-item expanded "><a href="Exercises.html"><strong aria-hidden="true">11.</strong> Exercises</a></li><li class="chapter-item expanded "><a href="OtherLists.html"><strong aria-hidden="true">12.</strong> Other lists</a></li><li class="chapter-item expanded "><a href="Researchers.html"><strong aria-hidden="true">13.</strong> Researchers</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Crypto Reading List</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/jumpcrypto/crypto-reading-list" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="crypto-reading-list"><a class="header" href="#crypto-reading-list">Crypto Reading List</a></h1>
+<p>A curated list for getting up to speed on crypto and decentralized networks.</p>
+<p>The content on the toplevel page contains what we consider essential reading.
+Child pages contain deeper, topic-specific information to review afterward.</p>
+<p>The lists here are a <strong>work in progress</strong>.  We welcome any feedback or criticism!
+Please open a PR/issue here or reach out to <a href="mailto:crypto-research@jumptrading.com">crypto-research@jumptrading.com</a>
+with any suggestions, or to report any errors.</p>
+<p><em>Nothing in this repo constitutes financial or legal advice.</em></p>
+<h1 id="contents"><a class="header" href="#contents">Contents</a></h1>
+<ul>
+<li><a href="index.html#why-is-crypto-important">Why is crypto important?</a></li>
+<li><a href="index.html#blockchain-mechanics--innovations">Blockchain mechanics &amp; innovations</a></li>
+<li><a href="index.html#defi-primitives">DeFi primitives</a></li>
+<li><a href="index.html#nfts--digital-identity">NFTs &amp; digital identity</a></li>
+<li><a href="index.html#daos--governance">DAOs &amp; Governance</a></li>
+<li><a href="index.html#byzantine-fault-tolerance--proof-of-stake-algos">Byzantine Fault Tolerance &amp; Proof-of-Stake algos</a></li>
+<li><a href="index.html#l1s">L1s</a></li>
+<li><a href="index.html#l2s">L2s</a></li>
+<li><a href="index.html#trading-mechanics">Trading mechanics</a></li>
+<li><a href="index.html#smart-contract-programming">Smart contract programming</a></li>
+<li><a href="index.html#economic-design">Economic design</a></li>
+<li><a href="index.html#tools-&amp;-analytics">Tools &amp; Analytics</a></li>
+<li><a href="index.html#exercises">Exercises</a></li>
+<li><a href="index.html#other-references">Other references</a></li>
+</ul>
+<h1 id="why-is-crypto-important"><a class="header" href="#why-is-crypto-important">Why is crypto important?</a></h1>
+<p>We'd recommend starting your exploration by trying to understand what problems crypto is trying to solve.</p>
+<p>In a few words, we'd say it is:</p>
+<ul>
+<li>enabling a decentralized ledger-based currency system
+<ul>
+<li>decentralized means, extremely difficult for bad actors to forge transactions taking your holdings</li>
+</ul>
+</li>
+<li>enabling a decentralized network of computation / decentralized state transition machine
+<ul>
+<li>decentralized means, extremely difficult for bad actors for enact state changes not defined in sourcecode</li>
+</ul>
+</li>
+<li>enabling an open network of APIs that can be leveraged to build increasingly advanced apps</li>
+<li>enabling an incentive model for these open networks to grow via crypto tokens</li>
+</ul>
+<p>Here's the list:</p>
+<ul>
+<li><a href="https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design">Crypto tokens: a breakthrough in open design</a> (2017)
+<ul>
+<li>tokens as an enabler for alignment between networks and their participants</li>
+</ul>
+</li>
+<li><a href="https://cdixon.org/2018/02/18/why-decentralization-matters">Why decentralization matters</a> (2018)
+<ul>
+<li>discusses the pattern of new technology progressing from innovation to extraction (from cooperation with their 
+ecosystem to eventual competition). For example consider Apple's transition from early days of encouraging 
+developers to build on iOS, to now charging 30% on all in-store purchases.
+Discusses how crypto solves this by aligning the network with its participants.</li>
+</ul>
+</li>
+<li><a href="https://medium.com/coinmonks/the-true-power-of-defi-composability-14fe8355e0d0">The true power of DeFi composability</a> (Apr 2021)</li>
+<li><a href="https://insights.deribit.com/market-research/why-i-have-changed-my-mind-on-tokens/">Why I have changed my mind on tokens</a> (Dec 2020)
+<ul>
+<li>noted researcher Hasu weighs in on the merits of protocol tokens, during a time when many cynics questioned the need for each project to have its own token</li>
+</ul>
+</li>
+<li>Optional: pieces discussing arguments for <em>Bitcoin</em>, generally as a decentralized store of value:
+<ul>
+<li><a href="https://www.matthuang.com/bitcoin_for_the_open_minded_skeptic">Bitcoin for the open-minded skeptic</a> (2020)</li>
+<li><a href="https://www.paradigm.xyz/2020/05/7-things-to-read-about-bitcoin-for-institutional-investors/">7 things to read about bitcoin</a> (2020)</li>
+</ul>
+</li>
+</ul>
+<p><em>More: see in-depth page: <a href="Why.html">Why</a></em></p>
+<h1 id="blockchain-mechanics--innovations"><a class="header" href="#blockchain-mechanics--innovations">Blockchain mechanics &amp; innovations</a></h1>
+<p>We think it's essential reading to understand how bitcoin works,
+and how smart contracts (pioneered by Ethereum) work.</p>
+<ul>
+<li>Bitcoin:
+<ul>
+<li><a href="https://michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/">How the Bitcoin protocol actually works</a> (2013)
+<ul>
+<li>describing Bitcoin's mechanics, building it up from first principles</li>
+</ul>
+</li>
+<li>OR for fundamentalists, see the <a href="https://bitcoin.org/bitcoin.pdf">Bitcoin whitepaper</a> (2009)</li>
+</ul>
+</li>
+<li>Ethereum:
+<ul>
+<li><a href="https://ethereum.org/en/whitepaper/">Ethereum whitepaper</a>
+<ul>
+<li>Vitalik Buterin's original whitepaper building on bitcoin to get smartcontracts; easier to read than the
+Bitcoin whitepaper; also happens to be good explanation of <em>Bitcoin</em></li>
+</ul>
+</li>
+<li>OR for another clear description, see <a href="https://vas3k.com/blog/ethereum/">How Ethereum and Smart Contracts work</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="defi-primitives"><a class="header" href="#defi-primitives">DeFi primitives</a></h1>
+<p><em>In-depth page: <a href="DeFi.html">DeFi</a></em></p>
+<p>Next, let's try to understand the major kinds of financial dApps on the blockchain. 
+Although there are many types, we'd say the two most common are:</p>
+<ol>
+<li><strong>Lending protocol</strong> (a decentralized bank, i.e. a smart contract where you can loan your assets for yield, or
+do borrow while paying interest).  Example: Aave</li>
+<li><strong>Decentralized exchange</strong> (most commonly an Automated Market Maker (AMM), a smart contract with two pools of 
+assets that allows swapping from one asset to the other).  Example: Uniswap</li>
+</ol>
+<p>A third, which can be thought of as a competitor to (1) of sorts, is:</p>
+<ol start="3">
+<li><strong>Decentralized stablecoin issuer</strong> (a protocol allowing you to deposit assets (e.g. Eth)
+and borrow a decentralized stablecoin (minted by the protocol) against it).  We say that it is a
+competitor of sorts to (1) where the lender is the protocol.  Example: MakerDAO</li>
+</ol>
+<p>Initial reading material on these categories:</p>
+<ul>
+<li>Lending protocols
+<ul>
+<li><a href="https://finematics.com/lending-and-borrowing-in-defi-explained/">Lending and borrowing in DeFi</a> (Nov 2020)</li>
+</ul>
+</li>
+<li>AMMs
+<ul>
+<li><a href="https://medium.com/dragonfly-research/what-explains-the-rise-of-amms-7d008af1c399">AMMs</a> (Jul 2020)
+<ul>
+<li>explaining the mechanics of the constant-product AMM popularized by Uniswap V2</li>
+</ul>
+</li>
+<li><a href="https://curve.fi/files/stableswap-paper.pdf">StableSwap AMMs</a> (2019)
+<ul>
+<li>explaining another AMM formulation for stable pairs of assets, pioneered by Curve.fi</li>
+</ul>
+</li>
+<li><a href="https://uniswap.org/whitepaper-v3.pdf">Uniswap V3 whitepaper</a>
+<ul>
+<li>explaining the 'concentrated liquidity' innovation in UniswapV3</li>
+<li>see also <a href="https://www.paradigm.xyz/2021/06/uniswap-v3-the-universal-amm/">Uniswap v3: The Universal AMM</a>
+for illustrations of UniV3 emulating specific other functions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Decentralized stablecoin issuance
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Dai_(cryptocurrency)">Wikipedia article on Dai</a> provides a good, terse 
+description of MakerDAO and Dai, the stablecoin it issues</li>
+</ul>
+</li>
+<li>Other essential reading:
+<ul>
+<li><a href="https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/">Bridges</a></li>
+</ul>
+</li>
+</ul>
+<p>For much more, see our in-depth page on <a href="DeFi.html">DeFi</a></p>
+<h1 id="nfts--digital-identity"><a class="header" href="#nfts--digital-identity">NFTs &amp; digital identity</a></h1>
+<p><em>In-depth page: <a href="NFT.html">NFT</a></em></p>
+<ul>
+<li><a href="https://future.a16z.com/nfts-thousand-true-fans/">NFTs and a Thousand True Fans</a> (Feb 2021) -
+an argument for NFTs as enabling a better creator economy</li>
+</ul>
+<h1 id="daos--governance"><a class="header" href="#daos--governance">DAOs &amp; Governance</a></h1>
+<p><em>In-depth page: <a href="DAO.html">DAO</a></em></p>
+<ul>
+<li><a href="https://linda.mirror.xyz/Vh8K4leCGEO06_qSGx-vS5lvgUqhqkCz9ut81WwCP2o">Beginner's guide to DAOs</a> (Mar 2021) 
+<ul>
+<li>examples of what DAOs can do (e.g. shared ownership of a valuable asset, governance)</li>
+</ul>
+</li>
+<li><a href="https://www.notboring.co/p/the-dao-of-daos-5b9">The DAO of DAOs</a> (Mar 2021)</li>
+<li><a href="https://deepdao.io/#/deepdao/dashboard">Running List of DAOs</a></li>
+</ul>
+<h1 id="byzantine-fault-tolerance--proof-of-stake-algos"><a class="header" href="#byzantine-fault-tolerance--proof-of-stake-algos">Byzantine Fault Tolerance &amp; Proof-of-Stake algos</a></h1>
+<p>At this point, we'd recommend learning about alternative smart contract blockchains.</p>
+<p>A fundamental design decision in blockchains is the mechanism by which block producers (miners
+in Bitcoin and Eth 1.0) come to consensus on the next block.  This problem of doing so in a
+distributed system with a variety of actors--some of whom may be sending intentionally confusing
+or destabilizing messages to their peers--is the key to establishing consensus and progressing the
+blockchain.</p>
+<p>Bitcoin and Eth 1.0 accomplish this by proof of work (&quot;Nakamoto consensus&quot;),
+but most other blockchains use variants of a different family of algorithms referred to as 
+<strong>Byzantine Fault Tolerant (BFT)</strong> algorithms.</p>
+<ul>
+<li><a href="https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419">Understanding Blockchain Fundamentals: Byzantine Fault Tolerance</a></li>
+<li><a href="https://medium.com/@yaoshiang/the-interplay-of-nakamoto-consensus-and-byzantine-fault-tolerance-9aeed9d102f5">Nakamoto Consensus vs BFT</a></li>
+<li><a href="https://knowen-production.s3.amazonaws.com/uploads/attachment/file/1814/Buchman_Ethan_201606_Msater%2Bthesis.pdf">Tendermint: Byzantine Fault Tolerance</a>
+<ul>
+<li>Overview of BFT algorithms and how proof of stake chains can work, in the form of a masters thesis from the co-founder of Cosmos.</li>
+</ul>
+</li>
+</ul>
+<h1 id="l1s"><a class="header" href="#l1s">L1s</a></h1>
+<p><em>In-depth page: <a href="L1">L1</a></em></p>
+<p>At this point you might want to dig into different L1 blockchains--both their protocol designs and their ecosystems.
+See in-depth pages below:</p>
+<ul>
+<li><a href="L1/README.html">Historical/academic background</a></li>
+<li><a href="L1/Bitcoin.html">Bitcoin</a></li>
+<li><a href="L1/Ethereum.html">Ethereum</a></li>
+<li><a href="L1/Avalanche.html">Avalanche</a></li>
+<li><a href="L1/BSC.html">BSC</a></li>
+<li><a href="L1/Cosmos.html">Cosmos</a></li>
+<li><a href="L1/NEAR.html">NEAR</a></li>
+<li><a href="L1/Polkadot.html">Polkadot</a></li>
+<li><a href="L1/Polygon.html">Polygon</a></li>
+<li><a href="L1/Solana.html">Solana</a></li>
+<li><a href="L1/Terra.html">Terra</a></li>
+</ul>
+<h1 id="l2s"><a class="header" href="#l2s">L2s</a></h1>
+<p><em>In-depth page: <a href="L2.html">L2</a></em></p>
+<ul>
+<li><a href="https://gourmetcrypto.substack.com/p/layer-2-for-beginners">L2 for Beginners</a> (Mar 2021)
+<ul>
+<li>describing a mental model of an L2 as a chain which writes enough state back to Ethereum that
+no one (including the L2's miners/validators) can send back a fraudulent state</li>
+</ul>
+</li>
+<li><a href="https://www.paradigm.xyz/2021/01/almost-everything-you-need-to-know-about-optimistic-rollup/">Almost everything you need to know about optimistic rollups</a> (Jan 2021)
+<ul>
+<li>builds up the design for optimistic rollups from first principles, addressing various perceived issues as they arise</li>
+</ul>
+</li>
+<li><a href="https://insights.deribit.com/market-research/making-sense-of-rollups-part-2-dispute-resolution-on-arbitrum-and-optimism/">Optimistic rollups: Arbitrum vs Optimism</a> (Jul 2021)</li>
+<li><a href="https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/">Optimistic rollups vs ZK-rollups</a> (Aug 2021)
+<ul>
+<li>a recent assessment of the state of various rollup projects</li>
+</ul>
+</li>
+</ul>
+<h1 id="trading-mechanics"><a class="header" href="#trading-mechanics">Trading mechanics</a></h1>
+<p><em>In-depth page: <a href="TradingDynamics.html">TradingDynamics</a></em></p>
+<p><em>In-depth page: <a href="MEV.html">MEV/Arbitrage</a></em></p>
+<h1 id="smart-contract-programming"><a class="header" href="#smart-contract-programming">Smart contract programming</a></h1>
+<p><em>In-depth page: <a href="Dev">Development</a></em></p>
+<h1 id="economic-design"><a class="header" href="#economic-design">Economic design</a></h1>
+<p><em>In-depth page: <a href="EconDesign.html">EconDesign</a></em></p>
+<h1 id="tools--analytics"><a class="header" href="#tools--analytics">Tools &amp; Analytics</a></h1>
+<p><em>In-depth page: <a href="Tools.html">Tools</a></em></p>
+<h1 id="exercises"><a class="header" href="#exercises">Exercises</a></h1>
+<p>Check your understanding with <em><a href="Exercises.html">these thought questions and exercises</a>.</em></p>
+<h1 id="other-references"><a class="header" href="#other-references">Other references</a></h1>
+<h3 id="other-listsdirectories"><a class="header" href="#other-listsdirectories">Other lists/directories</a></h3>
+<p><em>In-depth page: <a href="OtherLists.html">Other Lists</a></em></p>
+<h3 id="original-research"><a class="header" href="#original-research">Original research</a></h3>
+<p><em>In-depth page: <a href="Researchers.html">Researchers</a></em></p>
+<h3 id="online-courses"><a class="header" href="#online-courses">Online courses</a></h3>
+<ul>
+<li><a href="https://berkeley-defi.github.io/f21">Berkeley DeFi</a></li>
+<li><a href="https://www.youtube.com/watch?v=KNJGPI0fuFA&amp;list=PLEGCF-WLh2RLOHv_xUGLqRts_9JxrckiA">Foundations of Blockchain (Columbia)</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="why-crypto"><a class="header" href="#why-crypto">Why crypto?</a></h1>
+<p>In addition to the list on the main page, we recommend:</p>
+<ul>
+<li><a href="https://www.usv.com/writing/2016/08/fat-protocols/">Fat Protocol thesis</a>
+<ul>
+<li>oft-cited piece arguing for the value of network effects in blockchain infrastructure</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="defi"><a class="header" href="#defi">DeFi</a></h1>
+<h2 id="contents-1"><a class="header" href="#contents-1">Contents</a></h2>
+<ul>
+<li><a href="DeFi.html#overview">Overview</a></li>
+<li><a href="DeFi.html#lending-protocols">Lending Protocols</a></li>
+<li><a href="DeFi.html#dex-trading">Dex trading</a>
+<ul>
+<li><a href="DeFi.html#amm-swap-according-to-a-formula-dexes">AMMs</a></li>
+<li><a href="DeFi.html#serum---full-order-book">Serum</a></li>
+<li><a href="DeFi.html#derivatives">Derivatives</a></li>
+</ul>
+</li>
+<li><a href="DeFi.html#stablecoins">Stablecoins</a></li>
+<li><a href="DeFi.html#bridges">Bridges</a></li>
+<li><a href="DeFi.html#oracles">Oracles</a></li>
+<li><a href="DeFi.html#indexing">Indexing</a></li>
+<li><a href="DeFi.html#insurance">Insurance</a></li>
+<li><a href="DeFi.html#governance-wars-and-defi">Governance</a></li>
+<li><a href="DeFi.html#tools">Tools</a></li>
+</ul>
+<h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
+<ul>
+<li><a href="https://finematics.com/guide-to-decentralized-finance/">Finematics guide to DeFi</a>
+<ul>
+<li>a skill tree of DeFi concepts</li>
+</ul>
+</li>
+<li><a href="https://juliankoh.medium.com/where-does-yield-come-from-anyway-fc818c114bd5">Where does yield come from, anyway?</a></li>
+<li><a href="https://www.youtube.com/watch?v=esekWF3SyB8">A theory of DeFi?</a>
+<ul>
+<li>an overview of DeFi and why it's important develop &quot;theory&quot;. Deep-dives into the AMM primitive</li>
+</ul>
+</li>
+</ul>
+<h2 id="lending-protocols"><a class="header" href="#lending-protocols">Lending protocols</a></h2>
+<ul>
+<li><a href="https://finematics.com/lending-and-borrowing-in-defi-explained/">Lending and borrowing in DeFi</a> (Finematics, Nov 2020)</li>
+<li><a href="https://hackingdistributed.com/2020/03/11/flash-loans/">Flash loans</a>
+<ul>
+<li>explaining the flash loan concept pioneered by Aave, as well as how it's used in various arbitrage scenarios</li>
+</ul>
+</li>
+<li>Optional source material:
+<ul>
+<li><a href="https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf">Aave whitepaper</a> (Dec 2020)</li>
+<li><a href="https://compound.finance/documents/Compound.Whitepaper.pdf">Compound whitepaper</a> (Feb 2019)</li>
+</ul>
+</li>
+</ul>
+<h2 id="dex-trading"><a class="header" href="#dex-trading">DEX trading</a></h2>
+<h3 id="amm-swap-according-to-a-formula-dexes"><a class="header" href="#amm-swap-according-to-a-formula-dexes">AMM (swap according to a formula) DEXes</a></h3>
+<ul>
+<li><a href="https://arxiv.org/pdf/2003.10001.pdf">Constant Function Market-Makers</a> (June 2020)
+<ul>
+<li>a theoretical assessment of the more general version of constant-product market-makers</li>
+</ul>
+</li>
+<li><a href="https://insights.deribit.com/market-research/the-quest-for-perp-amms/">Perp AMMs</a>
+<ul>
+<li>explaining the vAMM method introduced by Perpetual Protocol and its current pitfalls</li>
+</ul>
+</li>
+<li><a href="https://medium.com/balancer-simulations/understanding-balancer-pools-c2b877dcc082">Explaining balancer pools</a></li>
+<li><a href="https://defi-lab.xyz/uniswapv3simulator">UniV3 Simulator</a></li>
+</ul>
+<h3 id="serum-full-order-book"><a class="header" href="#serum-full-order-book">Serum (full order book)</a></h3>
+<ul>
+<li><a href="https://assets.website-files.com/61382d4555f82a75dc677b6f/61384a6d5c937269dbed185c_serum_white_paper.88d98f84.pdf">Serum whitepaper</a></li>
+<li><a href="https://docs.google.com/document/d/1isGJES4jzQutI0GtQGuqtrBUqeHxl_xJNXdtOv4SdII/edit">A technical introduction to the Serum DEX</a>
+<ul>
+<li>describes the orderbook interactions and data structures, as well as how they're implemented. Note the section on the request queue is outdated</li>
+</ul>
+</li>
+<li><a href="https://docs.projectserum.com/appendix/serum-core">Serum core</a>
+<ul>
+<li>a next-gen orderbook that decouples the matching engine from SPL tokens. Also known as the agnostic orderbook (AOB)</li>
+<li><a href="https://github.com/Bonfida/dex-v4">DEX v4</a> is a new version of Serum DEX that builds on top of the AOB</li>
+</ul>
+</li>
+</ul>
+<h3 id="derivatives"><a class="header" href="#derivatives">Derivatives</a></h3>
+<ul>
+<li><a href="https://github.com/0xperp/defi-derivatives">DeFi Derivative Landscape</a></li>
+</ul>
+<h2 id="stablecoins"><a class="header" href="#stablecoins">Stablecoins</a></h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=0XB_2O6FsIk">Stablecoin Overview</a>
+<ul>
+<li>a general overview of the stablecoin landscape and key differentiators for categorization</li>
+</ul>
+</li>
+<li><a href="https://makerdao.com/en/whitepaper/#abstract">MakerDao Whitepaper</a>
+<ul>
+<li>the original crypto-collateralized stablecoin</li>
+</ul>
+</li>
+<li><a href="https://assets.website-files.com/611153e7af981472d8da199c/618b02d13e938ae1f8ad1e45_Terra_White_paper.pdf">Terra Whitepaper</a></li>
+<li><a href="https://medium.com/@whiterabbit_hq/black-thursday-for-makerdao-8-32-million-was-liquidated-for-0-dai-36b83cac56b6">Black Thursday for MakerDao, An Explainer</a>
+<ul>
+<li>a general overview of MakerDao's Black Thursday event</li>
+</ul>
+</li>
+<li><a href="https://arxiv.org/pdf/1906.02152.pdf">Deleverging Spirals and Stablecoins Attacks</a>
+<ul>
+<li>a deep dive into deleveraging spirals, mempool attacks and an empirical investigation of MakerDao's Black Thursday event</li>
+</ul>
+</li>
+<li><a href="https://thedefiant.io/not-just-a-bank-run-new-evidence-shows-iron-finance-crashed-due-to-code-exploit/">The Iron Finance Exploit Explained</a></li>
+</ul>
+<h2 id="bridges"><a class="header" href="#bridges">Bridges</a></h2>
+<ul>
+<li><a href="https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8">Bridge survey</a></li>
+</ul>
+<h2 id="oracles"><a class="header" href="#oracles">Oracles</a></h2>
+<ul>
+<li><a href="https://members.delphidigital.io/reports/the-oracle-report-of-delphi/">The Oracle Report of Delphi</a> (June 2021)
+<ul>
+<li>overview of the oracle landscape</li>
+</ul>
+</li>
+</ul>
+<h2 id="indexing"><a class="header" href="#indexing">Indexing</a></h2>
+<ul>
+<li><a href="https://thegraph.com/docs/about/introduction">Intro to The Graph</a>
+<ul>
+<li>The Graph is a decentralized protocol for indexing and querying blockchain data
+<ul>
+<li>It's like a search engine framework, and each 'subgraph' is a domain-specific search engine implementation</li>
+</ul>
+</li>
+<li><a href="https://thegraph.com/docs/developer/graphql-api">GraphQL API</a>
+<ul>
+<li>tutorial on how to query a subgraph using GraphQL</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="insurance"><a class="header" href="#insurance">Insurance</a></h2>
+<ul>
+<li><a href="https://nexusmutual.io/assets/docs/nmx_white_paperv2_3.pdf">Nexus Mutual (NXM) whitepaper</a></li>
+</ul>
+<h2 id="governance-wars-and-defi"><a class="header" href="#governance-wars-and-defi">Governance wars and DeFi</a></h2>
+<ul>
+<li><a href="https://tokenbrice.xyz/defi-flywheel/">CRV/CVX part 1</a> (June 2021)
+<ul>
+<li>describing the innovation of Convex (CVX) as a method for controlling valuable CRV governance votes,
+as well as the more general question of protocol design with respect to 'meta-protocols' like CVX</li>
+</ul>
+</li>
+<li><a href="https://tokenbrice.xyz/crv-wars/">CRV/CVX part 2</a> (Sep 2021)
+<ul>
+<li>an in-depth look at the CRV governance war which TokenBrice correctly predicted in part 1</li>
+</ul>
+</li>
+<li><a href="https://www.coindesk.com/business/2021/11/11/curve-wars-heat-up-emergency-dao-invoked-after-clear-governance-attack/">Mochi scam and the Curve Wars</a> (Nov 2021)</li>
+</ul>
+<h2 id="tools"><a class="header" href="#tools">Tools</a></h2>
+<h3 id="high-level-tvlusage-stats"><a class="header" href="#high-level-tvlusage-stats">High-level TVL/usage stats</a></h3>
+<ul>
+<li><a href="https://defillama.com/">Defi Llama</a> - TVL metrics for various DeFi protocols</li>
+<li><a href="https://defipulse.com/">Defi pulse</a> - similar, TVL metrics</li>
+<li><a href="https://dappradar.com/">DappRadar</a></li>
+<li><a href="https://cryptofees.info/">Crypto fees</a> - fees earned by protocol</li>
+</ul>
+<h3 id="portfolio"><a class="header" href="#portfolio">Portfolio</a></h3>
+<p>Use these to track your (or anyone else's) balances/activity across various DeFi protocols.</p>
+<ul>
+<li><a href="http://zapper.fi">Zapper.fi</a> - Eth</li>
+<li><a href="https://debank.com/">DeBank</a> - Eth</li>
+<li><a href="http://sonar.watch">Sonar.watch</a> - Solana</li>
+<li><a href="http://step.finance">Step.finance</a> - Solana</li>
+<li><a href="https://apy.vision/">APY.vision</a> - portfolio tracking / IL analysis / pool analytics</li>
+</ul>
+<h3 id="yield-farming-analytics"><a class="header" href="#yield-farming-analytics">Yield Farming Analytics</a></h3>
+<ul>
+<li><a href="https://alpha.multifarm.fi/farms">Multifarm.fi</a> - overview of farms on various chains</li>
+<li><a href="https://www.liquidityfolio.com/">LiquidityFolio</a> - farm finder</li>
+<li><a href="https://defirate.com/">DeFi Rate</a> - comparison of lending/borrowing rates across lending protocols</li>
+</ul>
+<h3 id="smart-contract-security"><a class="header" href="#smart-contract-security">Smart Contract Security</a></h3>
+<ul>
+<li><a href="http://apesafe.io">apesafe.io</a> - contract comparison</li>
+<li><a href="http://app.unrekt.net">app.unrekt.net</a> - allowance checker</li>
+<li><a href="http://rugdoc.io">RugDoc</a> - AMM emergency withdrawal tool, honeypot checker, LP breaker, etc</li>
+<li><a href="https://defiyield.info/">defiyield.info</a> - tools for reviewing where you approved ERC20 tokens, timelocks, etc</li>
+</ul>
+<h3 id="airdrops"><a class="header" href="#airdrops">Airdrops</a></h3>
+<ul>
+<li><a href="https://twitter.com/defi_airdrops">twitter.com/defi_airdrops</a></li>
+<li><a href="https://etherscan.io/airdrops">etherscan.io/airdrops</a></li>
+</ul>
+<h3 id="fun"><a class="header" href="#fun">Fun</a></h3>
+<ul>
+<li><a href="http://fees.wtf">fees.wtf</a> - check how much you have spent on ETH fees</li>
+<li><a href="https://il.wtf">il.wtf</a> - check your cumulative IL</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="nft-reading"><a class="header" href="#nft-reading">NFT Reading</a></h1>
+<h2 id="background"><a class="header" href="#background">Background</a></h2>
+<ul>
+<li><a href="https://linda.mirror.xyz/df649d61efb92c910464a4e74ae213c4cab150b9cbcc4b7fb6090fc77881a95d">Beginner's guide to NFTs</a> (Jan 2021)</li>
+<li><a href="https://www.notboring.co/p/the-value-chain-of-the-open-metaverse">The Value Chain of the Open Metaverse</a> (Jan 2021) - 
+a bull case for the growth of the metaverse</li>
+</ul>
+<h2 id="fractionalization"><a class="header" href="#fractionalization">Fractionalization</a></h2>
+<ul>
+<li><a href="https://www.argent.xyz/learn/fractionalized-nfts/">What are fractionalized NFTs</a> (Sep 2021)</li>
+</ul>
+<h2 id="social-tokens"><a class="header" href="#social-tokens">Social Tokens</a></h2>
+<ul>
+<li><a href="https://linda.mirror.xyz/4PDBWBMpFFPVEsP5EGgg5to2AyEpEHEXasq_K0b-yYk">Beginner's guide to social tokens</a> (Nov 2021)</li>
+</ul>
+<h2 id="minting"><a class="header" href="#minting">Minting</a></h2>
+<ul>
+<li><a href="https://www.paradigm.xyz/2021/10/a-guide-to-designing-effective-nft-launches/">Guide to designing effective NFT launches</a> (Oct 2021) -
+discussing botting and mint-sniping and ways to combat them</li>
+</ul>
+<h1 id="other-lists"><a class="header" href="#other-lists">Other Lists</a></h1>
+<ul>
+<li><a href="https://future.a16z.com/nft-canon/">NFT Canon</a> - a16z's list of NFT resources</li>
+<li><a href="https://www.argent.xyz/learn/the-nft-reading-list/">Argent - The NFT Reading List</a></li>
+</ul>
+<h1 id="nft-tools"><a class="header" href="#nft-tools">NFT Tools</a></h1>
+<h3 id="ethereum"><a class="header" href="#ethereum">Ethereum</a></h3>
+<p>Marketplaces/Trading:</p>
+<ul>
+<li><a href="http://opensea.io">OpenSea</a></li>
+<li><a href="http://genie.xyz">genie.xyz</a> - multi-market NFT aggregator; batch listing tool</li>
+</ul>
+<p>Analytics:</p>
+<ul>
+<li><a href="https://pro.nansen.ai/nft-paradise">Nansen NFT Paradise</a></li>
+<li><a href="https://wgmi.io/">wgmi.io</a></li>
+<li><a href="https://cryptoslam.io/">cryptoslam.io</a></li>
+</ul>
+<p>Rarity:</p>
+<ul>
+<li><a href="http://rarity.tools">rarity.tools</a> - NFT rarity analysis</li>
+<li><a href="https://nftbank.ai/landing">nftbank.ai</a> - NFT portfolio tracking</li>
+</ul>
+<h3 id="solana"><a class="header" href="#solana">Solana</a></h3>
+<p>See <a href="https://github.com/ilmoi/awesome-solana-nfts">Awesome Solana NFTs</a> (curated list of resources on Solana NFTs)</p>
+<p>Marketplaces:</p>
+<ul>
+<li><a href="http://magiceden.io">MagicEden</a></li>
+<li><a href="http://alpha.art">Alpha.art</a></li>
+<li><a href="http://solanart.io">Solanart</a></li>
+</ul>
+<p>Analytics:</p>
+<ul>
+<li><a href="http://solanalysis.com">solanalysis.com</a></li>
+<li><a href="http://solanafloor.com">solanafloor.com</a></li>
+</ul>
+<p>Rarity:</p>
+<ul>
+<li><a href="http://howrare.is">howrare.is</a> - rarity for select Solana collections</li>
+<li><a href="http://moonrank.app">moonrank.app</a> - rarity for select Solana collections</li>
+</ul>
+<h3 id="tezos"><a class="header" href="#tezos">Tezos</a></h3>
+<ul>
+<li><a href="http://tezos.art">tezos.art</a></li>
+<li><a href="http://tezosprojects.com">tezosprojects.com</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="daos--decentralized-governance"><a class="header" href="#daos--decentralized-governance">DAOs / Decentralized Governance</a></h1>
+<h2 id="why"><a class="header" href="#why">Why</a></h2>
+<ul>
+<li><a href="https://medium.com/@VitalikButerin/the-meaning-of-decentralization-a0c92b76a274">The meaning of decentralization</a> (Feb 2017, Vitalik)</li>
+</ul>
+<h2 id="challenges"><a class="header" href="#challenges">Challenges</a></h2>
+<ul>
+<li><a href="https://vitalik.ca/general/2021/08/16/voting3.html">Moving beyond coin voting governance</a> (Aug 2021, Vitalik) -
+discussing challenges in existing simple coin-weighted voting schemes, as well as some high-profile governance attacks
+like the hostile takeover of Steem</li>
+</ul>
+<h2 id="how"><a class="header" href="#how">How</a></h2>
+<ul>
+<li><a href="https://aragon.org/dao">Aragon DAO knowledgebase</a> - Aragon (a platform for DAO infrastructure) has a good list of explainers</li>
+<li><a href="https://0xgestalt.notion.site/1a71a977e8f64dcfa3c57878bfc0f54b?v=1d5206d7d72244b0893fa9b7982871e4">Web3 Community Reading List</a> -
+a list of articles about communities and community management</li>
+<li><a href="https://coopahtroopa.mirror.xyz/_EDyn4cs9tDoOxNGZLfKL7JjLo5rGkkEfRa_a-6VEWw">DAO Landscape</a> (June 2021)
+<ul>
+<li>a survey of some significant DAOs, as well as links to other DAO-related articles</li>
+</ul>
+</li>
+</ul>
+<h2 id="lists-of-daos"><a class="header" href="#lists-of-daos">Lists of DAOs</a></h2>
+<ul>
+<li><a href="https://daolist.fyi/">Daolist</a></li>
+<li><a href="https://deepdao.io/">DeepDAO</a></li>
+</ul>
+<h2 id="tools-1"><a class="header" href="#tools-1">Tools</a></h2>
+<ul>
+<li><a href="https://app.boardroom.info/">Boardroom.info</a> - dashboard of ETH gov proposals</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="l1-details"><a class="header" href="#l1-details">L1 Details</a></h1>
+<h2 id="child-pages"><a class="header" href="#child-pages">Child pages</a></h2>
+<ul>
+<li><a href="L1/Bitcoin.html">Bitcoin</a></li>
+<li><a href="L1/Ethereum.html">Ethereum</a></li>
+<li><a href="L1/Avalanche.html">Avalanche</a></li>
+<li><a href="L1/BSC.html">BSC</a></li>
+<li><a href="L1/Cosmos.html">Cosmos</a></li>
+<li><a href="L1/NEAR.html">NEAR</a></li>
+<li><a href="L1/Polkadot.html">Polkadot</a></li>
+<li><a href="L1/Polygon.html">Polygon</a></li>
+<li><a href="L1/Solana.html">Solana</a></li>
+<li><a href="L1/Terra.html">Terra</a></li>
+</ul>
+<h2 id="overviews"><a class="header" href="#overviews">Overviews</a></h2>
+<ul>
+<li><a href="https://twitter.com/ahboyash/status/1485939275065868289">Blockchain onboarding matrix</a> - some notable bridges, wallets, apps, etc for each blockchain</li>
+</ul>
+<h2 id="historical--academic-background"><a class="header" href="#historical--academic-background">Historical / academic background</a></h2>
+<h3 id="cryptography"><a class="header" href="#cryptography">Cryptography</a></h3>
+<ul>
+<li><a href="https://github.com/pFarb/awesome-crypto-papers">Awesome cryptography papers</a>
+<ul>
+<li>a curated list of papers on various cryptographic techniques</li>
+</ul>
+</li>
+<li><a href="https://en.bitcoinwiki.org/wiki/Cryptographic_hash_function">Cryptographic hash function</a>
+<ul>
+<li>the mechanism behind generating a hash</li>
+</ul>
+</li>
+<li><a href="https://en.bitcoinwiki.org/wiki/Digital_signature">Digital signature</a>
+<ul>
+<li>how signing works. key ideas: asymmetric (public key) cryptography, hard to compute but easy to verify.</li>
+</ul>
+</li>
+<li><a href="https://en.bitcoinwiki.org/wiki/Merkle_tree">Merkle tree</a>
+<ul>
+<li>important data structure optimizing the storage of hashes in a blockchain</li>
+</ul>
+</li>
+</ul>
+<h3 id="distributed-consensus"><a class="header" href="#distributed-consensus">Distributed consensus</a></h3>
+<ul>
+<li><a href="https://pmg.csail.mit.edu/papers/osdi99.pdf">Practical Byzantine Fault Tolerance</a> (Castro and Liskov, 1999)
+<ul>
+<li>a seminal algorithm for state machine replication / transaction ordering in a distributed system with up to 1/3 malicious nodes</li>
+</ul>
+</li>
+<li><a href="https://www.cl.cam.ac.uk/teaching/2021/ConcDisSys/dist-sys-notes.pdf">Distributed Systems</a>
+<ul>
+<li>excellent 101-level lecture notes. presumes some comfort with math notation, particularly predicate logic.
+distributed systems concepts can help answer questions like &quot;why is Solana's &quot;Proof of History&quot; an innovation?&quot;</li>
+</ul>
+</li>
+<li><a href="https://en.wikipedia.org/wiki/CAP_theorem">CAP Theorem</a>
+<ul>
+<li>fundamental trade-off between staying consistent vs. staying available when there's a network partition, i.e. nodes can't communicate</li>
+</ul>
+</li>
+<li><a href="https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf">FLP Result</a>
+<ul>
+<li>why distributed consensus is not guaranteed when a node goes down. in practice, this is solved by relaxing the constraints of their model</li>
+</ul>
+</li>
+<li><a href="https://primecoin.io/about.php">Proof of useful work</a>
+<ul>
+<li>using collective computing power to search for prime number chains. an academic application but interesting concept</li>
+</ul>
+</li>
+<li><a href="https://arxiv.org/pdf/1803.05069.pdf">HotStuff BFT</a>
+<ul>
+<li>an iteration on PBFT attempting to optimize for variable network delays</li>
+</ul>
+</li>
+</ul>
+<h3 id="bonus"><a class="header" href="#bonus">Bonus</a></h3>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/P_versus_NP_problem">P vs. NP</a> -
+deep theoretical question on the very nature of computation: whether easy to verify implies (<code>=&gt;</code>) easy to solve</li>
+<li><a href="https://hackernoon.com/what-is-the-math-behind-elliptic-curve-cryptography-f61b25253da3">Elliptic curve cryptography</a> -
+in-depth blog post with plenty of diagrams on how elliptic curve cryptography works</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="bitcoin"><a class="header" href="#bitcoin">Bitcoin</a></h1>
+<ul>
+<li><a href="https://insights.deribit.com/market-research/was-there-a-bitcoin-double-spend-on-jan-20-2021/">On bitcoin and simultaneous block discovery</a></li>
+<li><a href="https://github.com/bitcoinbook/bitcoinbook">Mastering Bitcoin</a> (Andreas Antonopoulos, 2018) -
+a book on the technicals of bitcoin, published by O'Reilly but available for free on github.</li>
+<li><a href="https://en.bitcoin.it/wiki/Transaction">Bitcoin transaction</a> -
+details of a Bitcoin transaction, including examples of what the data literally looks like</li>
+<li><a href="https://d28rh4a8wq0iu5.cloudfront.net/bitcointech/readings/princeton_bitcoin_book.pdf">Bitcoin and Cryptocurrency Technologies</a> (2016) -
+textbook that derives Bitcoin's design from first principles, with a computer science slant</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ethereum-1"><a class="header" href="#ethereum-1">Ethereum</a></h1>
+<h2 id="blockchain"><a class="header" href="#blockchain">Blockchain</a></h2>
+<ul>
+<li><a href="https://ethereum.org/en/whitepaper/">Ethereum whitepaper</a> -
+building on bitcoin to get smartcontracts; also a good explanation of <em>Bitcoin</em></li>
+<li><a href="https://www.preethikasireddy.com/post/how-does-ethereum-work-anyway">How does ethereum work anyway</a> (2017) -
+a clear description of the Eth network as a state transition machine</li>
+<li><a href="https://eth.wiki/fundamentals/patricia-tree">Patricia tree</a> -
+an important Ethereum data structure. Intuitively, a Patricia tree is a Merkle tree + trie + compression.
+The linked page includes diagrams and a small example worth working through</li>
+<li><a href="https://insights.deribit.com/market-research/analysis-of-eip-1559/">EIP-1559 Analysis</a> (June 2020) -
+EIP-1559 was a major UX change to how Ethereum would set gas price.  At the time there was much
+debate about whether miners would accept these changes which would reduce their revenue.  Hasu and
+Georgios correctly predicted the result (see also
+<a href="https://insights.deribit.com/market-research/miners-will-accept-eip-1559-here-is-why/">this article</a>)</li>
+<li><a href="https://github.com/ethereumbook/ethereumbook">Mastering Ethereum</a> (Andreas Antonopoulos and Gavin Wood, 2018) -
+a book for devs about Ethereum, published by O'Reilly but available for free on github</li>
+</ul>
+<p><em>See also: <a href="L1/../L2.html">L2.md</a> for a description of rollups.</em></p>
+<h2 id="programming"><a class="header" href="#programming">Programming</a></h2>
+<p><em>See <a href="L1/../Dev/Solidity.html">Dev/Solidity.md</a></em></p>
+<h2 id="ecosystem"><a class="header" href="#ecosystem">Ecosystem</a></h2>
+<ul>
+<li><a href="https://pentacle.ai/ethereum">pentacle.ai/ethereum</a></li>
+<li><a href="https://vineyardholdings.net/2021/07/31/ethereum/">ETH investment thesis</a> (Jul 2021) -
+evaluating ETH as we would value a high-growth tech company, with a lot of helpful links to other articles</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="avalanche"><a class="header" href="#avalanche">Avalanche</a></h1>
+<p>Avalanche defines a consensus mechanism called Avalanche Consensus, which replaces the linear blockchain with a DAG
+and uses random subsampling for conflict resolution within conflict sets.</p>
+<p>Snowman Consensus is the linear version of Avalanche Consensus.  Validator coordination and smart contract execution in Avalanche use this because they require total ordering.</p>
+<p>There are at least 3 chains in Avalanche:</p>
+<ul>
+<li>Exchange (X) Chain: uses Avalanche Consensus; used for creating and exchanging assets.  Assets are tracked using the UTXO model in order to leverage the speedup from the DAG.</li>
+<li>Platform (P) Chain: uses Snowman Consensus; used for validator consensus and definition of other subnets</li>
+<li>Contract (C) Chain: uses Snowman Consensus; runs smart contracts (including those written for EVM).</li>
+</ul>
+<h1 id="blockchain-1"><a class="header" href="#blockchain-1">Blockchain</a></h1>
+<ul>
+<li><a href="https://docs.avax.network/learn/platform-overview/avalanche-consensus/">Avalanche consensus</a>
+<ul>
+<li><a href="https://assets.website-files.com/5d80307810123f5ffbb34d6e/6009805681b416f34dcae012_Avalanche%20Consensus%20Whitepaper.pdf">Avalanche consensus whitepaper</a> (Aug 2020)</li>
+</ul>
+</li>
+<li><a href="https://assets.website-files.com/5d80307810123f5ffbb34d6e/6008d7bbf8b10d1eb01e7e16_Avalanche%20Platform%20Whitepaper.pdf">Avalanche platform whitepaper</a> (June 2020)</li>
+</ul>
+<h1 id="ecosystem-1"><a class="header" href="#ecosystem-1">Ecosystem</a></h1>
+<ul>
+<li><a href="https://twitter.com/Darrenlautf/status/1428565212605546499">Avalanche skill tree</a> (Darren Lau)</li>
+<li><a href="https://research.thetie.io/avalanche-ecosystem/">Avalanche ecosystem overview</a> (The Tie, July 2021)</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="binance-smart-chain"><a class="header" href="#binance-smart-chain">Binance Smart Chain</a></h1>
+<h2 id="blockchain-2"><a class="header" href="#blockchain-2">Blockchain</a></h2>
+<ul>
+<li><a href="https://github.com/binance-chain/whitepaper/blob/master/WHITEPAPER.md">Whitepaper</a></li>
+<li><a href="https://docs.binance.org/smart-chain/guides/bsc-intro.html">Introduction of Binance Smart Chain</a> (Binance documentation)</li>
+<li><a href="https://finematics.com/binance-smart-chain-and-cedefi-explained/">Binance Smart Chain and CeDeFi Explained</a> (Finematics, April 2021)</li>
+<li><a href="https://finbold.com/guide/binance-smart-chain/">A Beginner's Guide</a> (Finbold, Oct 2021)</li>
+<li><a href="https://boxmining.com/guide-to-binance-smart-chain-bsc/">A Complete Guide to BSC</a> (Boxmining, May 2021)</li>
+</ul>
+<h2 id="ecosystem-2"><a class="header" href="#ecosystem-2">Ecosystem</a></h2>
+<ul>
+<li><a href="https://bscproject.org/">BSCProject</a></li>
+<li><a href="https://dappradar.com/rankings/protocol/binance-smart-chain">DappRadar</a></li>
+<li><a href="https://www.defistation.io/">Defistation</a>
+<ul>
+<li>TVL and other analytics for BSC</li>
+</ul>
+</li>
+<li><a href="https://github.com/binance-chain/awesome">Awesome Binance Chain</a>
+<ul>
+<li>curated list of resources on BSC</li>
+</ul>
+</li>
+<li><a href="https://github.com/binance-chain/bsc-ecosystem">BSC Ecosystem</a></li>
+</ul>
+<h2 id="smart-contract-programming-1"><a class="header" href="#smart-contract-programming-1">Smart contract programming</a></h2>
+<ul>
+<li><a href="https://docs.binance.org/smart-chain/developer/dev-tools.html">BSC Devtools</a></li>
+<li><a href="https://github.com/ObsidianLabs/bsc-dapp-tutorial/blob/master/README.EN.md">BSC dev quick reference</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="cosmos"><a class="header" href="#cosmos">Cosmos</a></h1>
+<ul>
+<li>Tendermint is a PoS consensus mechanism.</li>
+<li>ABCI is an interface for how application-specific state will be replicated by a consensus algo.  Tendermint complies with ABCI.</li>
+<li>IBC is a protocol for how blockchains to communicate with each other</li>
+<li>The Cosmos SDK is a library with implementations of Tendermint and IBC, for use in building a new blockchain.</li>
+<li>The Cosmos Hub is a specific blockchain intended to serve as a master connector of many blockchains that use IBC</li>
+</ul>
+<h1 id="consensus-mechanism"><a class="header" href="#consensus-mechanism">Consensus Mechanism</a></h1>
+<ul>
+<li><a href="https://arxiv.org/pdf/1807.04938.pdf">Tendermint whitepaper (&quot;The latest gossip on BFT consensus&quot;)</a> (2018)
+<ul>
+<li>describing the Tendermint consensus algo</li>
+</ul>
+</li>
+<li><a href="https://blog.cosmos.network/tendermint-vs-pbft-12e9f294c9ab">Tendermint vs BFT</a></li>
+<li><a href="https://jepsen.io/analyses/tendermint-0-10-2">Jepsen: Tendermint</a>
+<ul>
+<li>real-world test of whether Tendermint actually satisfies its theoretical safety properties.</li>
+</ul>
+</li>
+</ul>
+<h1 id="cosmos-network"><a class="header" href="#cosmos-network">Cosmos Network</a></h1>
+<ul>
+<li><a href="https://v1.cosmos.network/resources/whitepaper">Cosmos whitepaper</a> (2016)
+<ul>
+<li>Cosmos <em>network</em> whitepaper (describing Cosmos zones/IBC and validator behavior - a network built on Tendermint consensus algo).
+See &quot;Consensus systems&quot; for a good summary of Tendermint vs PBFT and other consensus algos.</li>
+</ul>
+</li>
+<li><a href="https://juliankoh.medium.com/5-differences-between-cosmos-polkadot-67f09535594b">Cosmos &amp; Polkadot comparison</a> (2019)</li>
+</ul>
+<h1 id="ecosystem-3"><a class="header" href="#ecosystem-3">Ecosystem</a></h1>
+<ul>
+<li><a href="https://members.delphidigital.io/reports/the-cosmos-ecosystem-has-arrived/">The Cosmos ecosystem has arrived</a> (Sep 2021)</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="near"><a class="header" href="#near">NEAR</a></h1>
+<h1 id="blockchain-3"><a class="header" href="#blockchain-3">Blockchain</a></h1>
+<p>NEAR uses Doomslug PoS for consensus and features dynamic resharding (&quot;Nightshade&quot;) for horizontal scalability.  It supports EVM programs via Aurora.</p>
+<ul>
+<li>Consensus algo
+<ul>
+<li><a href="https://nomicon.io/ChainSpec/Consensus.html">Doomslug consensus algo spec</a></li>
+<li><a href="https://near.org/blog/doomslug-comparison/">Comparison to PBFT, Tendermint, and HotStuff</a></li>
+</ul>
+</li>
+<li>Sharding
+<ul>
+<li><a href="https://near.org/papers/nightshade/">Nightshade whitepaper</a></li>
+<li><a href="https://near.org/blog/why-doesnt-near-just-replicate-ethereum-serenity-design/">Comparison to Eth beacon chain</a></li>
+</ul>
+</li>
+<li>Aurora (NEAR's EVM engine)
+<ul>
+<li><a href="https://doc.aurora.dev/">Aurora docs</a></li>
+<li><a href="https://github.com/aurora-is-near/aurora-examples">Aurora examples</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="ecosystem-4"><a class="header" href="#ecosystem-4">Ecosystem</a></h1>
+<ul>
+<li><a href="https://wiki.near.org/resources/analytics">NEAR analytics</a></li>
+<li><a href="https://twitter.com/analyticalali/status/1475346966615711744">Twitter thread on NEAR ecosystem metrics</a> (Dec 2021)</li>
+<li><a href="https://twitter.com/j0hnwang/status/1477448456499531776">Twitter thread summarizing state of NEAR</a> (Jan 2022)</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="polkadot"><a class="header" href="#polkadot">Polkadot</a></h1>
+<h2 id="blockchain-4"><a class="header" href="#blockchain-4">Blockchain</a></h2>
+<ul>
+<li><a href="https://arxiv.org/pdf/2005.13456.pdf">Overview of Polkadot and its design considerations</a> (June 2020)</li>
+</ul>
+<h2 id="ecosystem-5"><a class="header" href="#ecosystem-5">Ecosystem</a></h2>
+<ul>
+<li><a href="https://substrate.io/ecosystem/resources/awesome-substrate/">Awesome substrate</a></li>
+<li><a href="https://github.com/w3f/Grants-Program/blob/master/docs/polkadot_stack.md">Polkadot tech stack</a></li>
+<li><a href="https://dotpulse.defipulse.com/">Dot Pulse newsletter</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="polygon"><a class="header" href="#polygon">Polygon</a></h1>
+<p>Polygon is a sidechain that uses a modified Tendermint PoS consensus mechanism for transaction ordering/inclusion. </p>
+<p>It features two chains:</p>
+<ul>
+<li>Heimdall Chain - responsible for selecting Bor validator sets and checkpointing balances back to the main chain (Ethereum)</li>
+<li>Bor Chain - responsible for executing smart contracts and producing blocks.</li>
+</ul>
+<h1 id="blockchain-5"><a class="header" href="#blockchain-5">Blockchain</a></h1>
+<ul>
+<li><a href="https://finematics.com/polygon-commit-chain-explained/">Polygon PoS Chain</a> (Apr 2021, Finematics)</li>
+<li><a href="https://adlrocha.substack.com/p/adlrocha-polygon-l2-or-not-l2">Polygon: L2 or not L2?</a> (June 2021)
+<ul>
+<li>a brief summary of the behavior of Polygon as a sidechain, plus some discussion of the Polygon SDK for building new blockchains.</li>
+</ul>
+</li>
+<li><a href="https://docs.polygon.technology/docs/contribute/polygon-architecture/">Polygon architecture overview</a></li>
+</ul>
+<h1 id="ecosystem-6"><a class="header" href="#ecosystem-6">Ecosystem</a></h1>
+<ul>
+<li><a href="http://awesomepolygon.com">Awesome Polygon</a></li>
+<li><a href="https://research.thetie.io/polygon-matic-research/">Polygon ecosystem survey</a> (Aug 2021, The Tie)</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="solana-1"><a class="header" href="#solana-1">Solana</a></h1>
+<h2 id="blockchain-6"><a class="header" href="#blockchain-6">Blockchain</a></h2>
+<ul>
+<li><a href="https://www.notboring.co/p/solana-summer">Solana Summer</a> (Aug 2021) -
+an easy-to-read description of Solana's innovations from Packy McCormack (Not Boring newsletter)</li>
+<li><a href="https://medium.com/solana-labs/7-innovations-that-make-solana-the-first-web-scale-blockchain-ddc50b1defda">8 Core Innovations</a> (2019)</li>
+<li><a href="https://jito-labs.medium.com/solana-validator-101-transaction-processing-90bcdc271143">Solana Validator 101: transaction processing</a></li>
+<li><a href="https://2501babe.github.io/posts/solana101.html">ok so wtf is the deal with solana anyway</a> -
+helpful concise honest description of solana programming, good for formulating a mental map</li>
+<li><a href="https://jumpcrypto.com/reflections-on-the-sept-14-solana-outage/">9/14 outage discussion</a> -
+discussion of the outage on Sep 14, 2021, by Leopold Schabel (Jump Crypto), with discussion of the consensus model.
+See also <a href="https://solana.com/news/9-14-network-outage-initial-overview">Solana official postmortem</a></li>
+</ul>
+<h2 id="ecosystem-7"><a class="header" href="#ecosystem-7">Ecosystem</a></h2>
+<p><em>see also: <a href="L1/../DeFi.html#serum---full-order-book">DeFi/Serum</a> and <a href="L1/../NFT.html#solana">NFT/Solana</a></em></p>
+<ul>
+<li><a href="https://pentacle.ai/solana">pentacle.ai/solana</a></li>
+<li><a href="https://github.com/paul-schaaf/awesome-solana">awesome-solana</a></li>
+<li><a href="https://github.com/sinoglobalcap/how-to-solana">how to solana</a> - an overview of important primitives in the Solana ecosystem from Sino Global</li>
+</ul>
+<h2 id="serum"><a class="header" href="#serum">Serum</a></h2>
+<ul>
+<li><a href="https://github.com/project-serum/awesome-serum">awesome-serum</a></li>
+<li><a href="https://github.com/project-serum/serum-dex">rust codebase</a></li>
+<li><a href="https://github.com/serum-community/pyserum">pyserum</a></li>
+</ul>
+<h2 id="programming-1"><a class="header" href="#programming-1">Programming</a></h2>
+<p><em>See <a href="L1/../Dev/SolanaProgramming.html">SolanaProgramming</a></em></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="terra"><a class="header" href="#terra">Terra</a></h1>
+<h2 id="protocol"><a class="header" href="#protocol">Protocol</a></h2>
+<ul>
+<li><a href="https://docs.terra.money/Concepts/Protocol.html">Terra Docs</a> explain the relationship between Luna and the various stablecoins minted by burning Luna.</li>
+<li><a href="https://docs.terra.money/Tutorials/Smart-contracts/Overview.html">Build a simple Terra dApp</a></li>
+<li><a href="https://docs.cosmwasm.com/docs/1.0/">CosmWasm docs</a></li>
+</ul>
+<h2 id="ecosystem-8"><a class="header" href="#ecosystem-8">Ecosystem</a></h2>
+<ul>
+<li><a href="http://learnterra.io/">LearnTerra.io</a></li>
+<li><a href="https://twitter.com/TheMoonMidas/status/1465046520496103424">this thread from @TheMoonMidas</a> summing up major Terra DeFi protocols</li>
+<li><a href="https://terra.smartstake.io/projects">Terra Project Listing from Smart Stake</a></li>
+<li><a href="https://research.thetie.io/the-terra-triforce-rise-of-the-lunatics/">The Terra Triforce: Rise of the Lunatics</a>
+(Aug 2021, The Tie) - explaining the seignorage model of UST/LUNA and the Terra ecosystem</li>
+</ul>
+<h3 id="a-few-specific-dapps"><a class="header" href="#a-few-specific-dapps">A few specific dApps</a></h3>
+<ul>
+<li><a href="https://docs.anchorprotocol.com/">Anchor</a> -
+lending protocol offering high yields; see <a href="https://twitter.com/dareal_sisyphe/status/1463536308769468420?s=21">this thread</a> for an insightful explanation</li>
+<li><a href="https://docs.mirror.finance/protocol/mirrored-assets-massets">Mirror</a> -
+mirror real-world assets (e.g. $mAAPL) on Terra and Ethereum / BSC via Shuttle.
+note: currently <a href="https://www.sec.gov/litigation/litreleases/2021/lr25262.htm">under investigation by the SEC</a></li>
+<li><a href="https://docs.google.com/document/d/1gcCKdjnZTtIGmG97y5enr_erQK3fK8z97_OtbT7KDao/edit">Nebula</a> -
+a protocol for &quot;ETFs&quot;, where the target asset mix is dynamically changing via smart contracts (there are incentives to make actual asset mix = target).
+Do Kwon asserts a fascinating hypothesis: young investors want to make bets, not passively invest.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="l2"><a class="header" href="#l2">L2</a></h1>
+<h2 id="intro--survey"><a class="header" href="#intro--survey">Intro / Survey</a></h2>
+<ul>
+<li><a href="https://gourmetcrypto.substack.com/p/layer-2-for-beginners">L2 for Beginners</a> -
+describing a mental model of an L2 as a chain which writes enough state back to Ethereum that
+no one (including the L2's miners/validators) can send back a fraudulent state</li>
+<li><a href="https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/">Optimistic rollups vs ZK-rollups</a> -
+a recent assessment of the state of various rollup projects</li>
+<li><a href="https://vitalik.ca/general/2021/01/05/rollup.html">Vitalik's post on rollups</a> - a fairly technical summary of the SOTW of rollups</li>
+<li><a href="https://stonecoldpat.github.io/images/validatingbridges.pdf">Validating Bridges</a> (Sep 2021) -
+a fairly thorough assessment of L2 solutions (including Oasis?) as well as open research questions</li>
+<li><a href="https://ethereum.org/en/developers/docs/scaling/layer-2-rollups/">Eth docs on L2 Rollups</a> - see the bottom of this page for further links</li>
+</ul>
+<h2 id="optimistic-rollups"><a class="header" href="#optimistic-rollups">Optimistic rollups</a></h2>
+<ul>
+<li><a href="https://www.paradigm.xyz/2021/01/almost-everything-you-need-to-know-about-optimistic-rollup/">Almost everything you need to know about optimistic rollups</a> (Jan 2021) -
+builds up the design for optimistic rollups from first principles, addressing various perceived issues as they arise</li>
+<li><a href="https://insights.deribit.com/market-research/making-sense-of-rollups-part-2-dispute-resolution-on-arbitrum-and-optimism/">Optimistic rollups: Arbitrum vs Optimism</a></li>
+</ul>
+<h2 id="zk-rollups"><a class="header" href="#zk-rollups">zk-Rollups</a></h2>
+<p>Primary source of info for zkps should be 
+<a href="https://github.com/matter-labs/awesome-zero-knowledge-proofs">awesome-zero-knowledge-proofs</a>,
+a git-based list of learnings curated by Matter Labs.</p>
+<p>Our shortlist:</p>
+<ul>
+<li><a href="https://medium.com/starkware/validity-proofs-vs-fraud-proofs-4ef8b4d3d87a">Validity Proofs vs Fraud Proofs</a> (2019) - 
+StarkWare's summary of fraud proofs (typically employed by optimistic rollups) vs validity proofs (not feasible on optimistic rollups)</li>
+<li><a href="https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/">zk-STARKS vs zk-SNARKS</a></li>
+<li><a href="https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/zk-starks/">ethhub ZK-STARKS</a></li>
+<li><a href="https://medium.com/starkware/on-the-road-to-starknet-a-permissionless-stark-powered-l2-zk-rollup-83be53640880">StarkNet</a> (Jan 2021) -
+StarkWare's description of their STARK-powered zk-rollup</li>
+<li><a href="https://github.com/gakonst/awesome-starknet">Awesome StarkNet</a> - curated list of StarkNet resources and tools from @gakonst and others</li>
+<li><a href="https://blog.matter-labs.io/zksync-is-live-bringing-trustless-scalable-payments-to-ethereum-9c634b3e6823">zkSync</a> (June 2020) -
+Matter Labs' description of their &quot;SNORK&quot;-powered zk-rollup.  SNORKS are SNARKs with a universal and updateable trusted setup.</li>
+<li><a href="https://polynya.medium.com/volitions-best-of-all-worlds-cfd313aec9a8">Volitions: best of all worlds</a> (Aug 2021) -
+describing the <em>volition</em>, a hybrid system where users can choose between storing their data as a rollup (on-chain 
+data) or as a validium (off-chain).
+<ul>
+<li>See also StarkWare's <a href="https://medium.com/starkware/volition-and-the-emerging-data-availability-spectrum-87e8bfa09bb">proposal</a> (June 2020)
+for the volition concept, and Matter Labs' description of its volition implementation <a href="https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf">zkSync 2.0</a> (Apr 2021)</li>
+</ul>
+</li>
+</ul>
+<h3 id="zk-proofs"><a class="header" href="#zk-proofs">zk-Proofs</a></h3>
+<ul>
+<li><a href="https://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK.html">Proofs, Arguments, and Zero-Knowledge</a> - extensive survey paper on zero-knowledge argument systems from Justin Thaler</li>
+<li><a href="https://zkp.science/">zkp.science</a>, a compendium of papers and proving systems</li>
+</ul>
+<h2 id="analytics"><a class="header" href="#analytics">Analytics</a></h2>
+<ul>
+<li><a href="https://l2beat.com/">L2beat</a> - comparison of current state of various L2s</li>
+</ul>
+<h2 id="other-lists--acknowledgements"><a class="header" href="#other-lists--acknowledgements">Other Lists / Acknowledgements</a></h2>
+<ul>
+<li><a href="https://twitter.com/likebeckett/status/1452027362229436416">L2 skill tree</a> -
+this tweetstorm by @likebeckett was instrumental in assembling this page</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="trading-dynamics"><a class="header" href="#trading-dynamics">Trading Dynamics</a></h1>
+<h2 id="crypto-products"><a class="header" href="#crypto-products">Crypto Products</a></h2>
+<ul>
+<li><a href="https://www.paradigm.xyz/2021/03/the-cartoon-guide-to-perps/">Cartoon guide to perpetuals</a> (Dave White, Mar 2021) -
+a good explanation of perpetuals, the most popular crypto product in CEXes</li>
+</ul>
+<h2 id="theoretical-products"><a class="header" href="#theoretical-products">Theoretical products</a></h2>
+<p>Products that haven't been built yet which people frequently talk about:</p>
+<ul>
+<li><a href="https://www.paradigm.xyz/2021/05/everlasting-options/">Everlasting options</a> (Dave White and SBF, May 2021)</li>
+</ul>
+<h2 id="automated-trading"><a class="header" href="#automated-trading">Automated trading</a></h2>
+<ul>
+<li><a href="https://github.com/botcrypto-io/awesome-crypto-trading-bots">awesome-crypto-trading-bots</a> -
+open source libraries for market data and order entry, as well as some actual bots</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mev"><a class="header" href="#mev">MEV</a></h1>
+<p>MEV is a measure of the profit a block producer (miner, validator, etc) can make due to their ability to
+arbitrarily include, exclude, or re-order transactions within a block.</p>
+<h2 id="recommended"><a class="header" href="#recommended">Recommended</a></h2>
+<ul>
+<li><a href="https://uncommoncore.co/29-interview-with-a-searcher-with-mev-senpai-and-hasu/">Interview with a Searcher</a> - 
+the single best discussion of MEV and how searchers (arbitrageurs) uncover arbs and submit them to the
+flashbots private relay.  Includes discussion of the role flashbots plays in 'democratizing' MEV and
+providing DOS protection for miners.</li>
+<li><a href="https://github.com/0xalpharush/awesome-MEV-resources">awesome-MEV-resources</a> - curated list of MEV articles/podcasts/etc</li>
+</ul>
+<h2 id="history"><a class="header" href="#history">History</a></h2>
+<ul>
+<li><a href="https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest/">Ethereum is a dark forest</a> (Dan Robinson, Aug 2020)
+an example of a frontrunning incident to illustrate the adversarial nature of arbitrage on the blockchain</li>
+<li><a href="http://www.pdaian.com/flashboys2.pdf">Flash Boys 2.0</a> - 
+Phil Daian's seminal paper on frontrunning and backrunning prior to the introduction of flashbots</li>
+<li><a href="https://research.paradigm.xyz/MEV">MEV SOTW Feb 2021</a> - Charlie Noyes' assessment of the state of MEV</li>
+<li><a href="https://www.youtube.com/watch?v=krlAqKsdLkw">MEV Roast</a> - virtual conference on MEV</li>
+</ul>
+<h2 id="its-not-easy--examples"><a class="header" href="#its-not-easy--examples">It's not easy / examples</a></h2>
+<ul>
+<li><a href="https://github.com/Defi-Cartel/salmonella">Salmonella</a> - Wrecking sandwich traders for fun and profit</li>
+<li><a href="https://twitter.com/bertcmiller/status/1421543838569705474">CHUM twitter thread</a></li>
+<li><a href="https://twitter.com/bertcmiller/status/1459175377591541768">JIT liquidity twitter thread</a></li>
+<li><a href="https://twitter.com/bertcmiller/status/1402665992422047747">bertcmiller twitter threads</a>
+inspecting various interesting MEV examples</li>
+</ul>
+<h2 id="tools-2"><a class="header" href="#tools-2">Tools</a></h2>
+<ul>
+<li><a href="http://explore.flashbots.net">explore.flashbots.net</a> - 
+dashboard of recent transactions going thru flashbots + estimate of profit (not very accurate)</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="developing-on-the-blockchain"><a class="header" href="#developing-on-the-blockchain">Developing on the blockchain</a></h1>
+<h2 id="skill-tree"><a class="header" href="#skill-tree">Skill tree</a></h2>
+<ul>
+<li><a href="https://github.com/protofire/blockchain-learning-path">Blockchain (Ethereum) learning path</a> (June 2021)</li>
+</ul>
+<h2 id="child-pages-1"><a class="header" href="#child-pages-1">Child pages</a></h2>
+<ul>
+<li><a href="Dev/Solidity.html">Solidity programming</a></li>
+<li><a href="Dev/SolanaProgramming.html">Solana programming</a></li>
+<li><a href="Dev/Security.html">Smart contract security</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="programming-in-solidity"><a class="header" href="#programming-in-solidity">Programming in Solidity</a></h1>
+<h2 id="learning"><a class="header" href="#learning">Learning</a></h2>
+<ul>
+<li><a href="https://cryptozombies.io/">CryptoZombies</a> - learn solidity by building up a zombie game</li>
+<li><a href="https://solidity-by-example.org/">Solidity by Example</a></li>
+<li><a href="https://www.trufflesuite.com/tutorial">Pet shop Truffle tutorial</a></li>
+<li><a href="https://github.com/fravoll/solidity-patterns">Solidity patterns</a></li>
+<li><a href="https://github.com/OffcierCia/DeFi-Developer-Road-Map">DeFi developer roadmap</a></li>
+</ul>
+<h2 id="security"><a class="header" href="#security">Security</a></h2>
+<p><em>Broader page: <a href="Dev/Security.html">Security.md</a></em></p>
+<h2 id="dev-tools"><a class="header" href="#dev-tools">Dev tools</a></h2>
+<ul>
+<li>Full toolkits for Solidity development:
+<ul>
+<li><a href="https://github.com/gakonst/foundry">foundry</a> - a <a href="https://www.paradigm.xyz/2021/12/introducing-the-foundry-ethereum-development-toolbox/">reimplementation</a> of dapptools in rust with ability to write tests in Solidity, plus some additional features.  Fast.</li>
+<li><a href="https://dapp.tools/">dapptools</a> - powerful command line tools for smart contract development</li>
+<li><a href="https://hardhat.org/">hardhat</a></li>
+<li><a href="https://trufflesuite.com/">truffle</a></li>
+</ul>
+</li>
+<li>Component libraries
+<ul>
+<li><a href="https://openzeppelin.com/contracts">OpenZeppelin contracts</a></li>
+<li><a href="https://github.com/rari-capital/solmate">solmate</a></li>
+</ul>
+</li>
+<li>Administration
+<ul>
+<li><a href="https://openzeppelin.com/defender/">OpenZeppelin defender</a> - monitoring and automation</li>
+</ul>
+</li>
+<li><a href="https://github.com/eth-brownie/brownie">eth-brownie</a> - python framework for EVM smart contracts</li>
+<li><a href="https://github.com/crytic/echidna">echidna</a> - fuzz testing</li>
+<li><a href="https://tenderly.co/">tenderly</a> - debugging, simulation, gas profiling</li>
+<li><a href="https://remix-project.org/">remix IDE</a></li>
+<li><a href="https://docs.ethers.io/v5/">ethers.js</a></li>
+<li><a href="https://github.com/bkrem/awesome-solidity">awesome-solidity</a></li>
+</ul>
+<h2 id="contract-references"><a class="header" href="#contract-references">Contract references</a></h2>
+<ul>
+<li><a href="https://github.com/tintinweb/smart-contract-sanctuary">Smart contract sanctuary</a> -
+a dump of contracts verified on Etherscan (and other EVM chain scanners)</li>
+</ul>
+<h2 id="topics"><a class="header" href="#topics">Topics</a></h2>
+<ul>
+<li><a href="https://docs.aave.com/developers/guides/flash-loans">Flash Loan - Aave documentation</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="solana-programming"><a class="header" href="#solana-programming">Solana programming</a></h1>
+<h2 id="blockchain-core-concepts"><a class="header" href="#blockchain-core-concepts">Blockchain core concepts</a></h2>
+<p><em>See <a href="Dev/../L1/Solana.html">L1/Solana.md</a></em></p>
+<ul>
+<li><a href="https://docs.solana.com/introduction">Solana docs</a></li>
+</ul>
+<h2 id="soldevapp"><a class="header" href="#soldevapp">SolDev.app</a></h2>
+<ul>
+<li><a href="https://www.soldev.app/">SolDev.app</a> - excellent collection of resources, getting better by the day</li>
+</ul>
+<h2 id="tutorials"><a class="header" href="#tutorials">Tutorials</a></h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=O0uhZEfVPt8&amp;list=PLilwLeBwGuK7Z2dXft_pmLZ675fuPgkA0">Solana Bootcamp</a>
+<ul>
+<li>Solana Bootcamp held in Jan 2022, led by Jarry Xiao. Assumes no prior knowledge of Solana.</li>
+<li>Lecture notes: https://github.com/jarry-xiao/solana-bootcamp-lectures.</li>
+<li>&quot;Echo&quot; exercise with solutions: https://github.com/jarry-xiao/solana-bootcamp-lectures/tree/master/echo-reference.</li>
+</ul>
+</li>
+<li><a href="https://paulx.dev/blog/2021/01/14/programming-on-solana-an-introduction/">Solana Programming (the &quot;escrow tutorial&quot;)</a>
+<ul>
+<li>the canonical tutorial on Solana programming by building up an escrow contract.  Warning: somewhat out of date;
+does not use anchor at all</li>
+</ul>
+</li>
+<li><a href="https://dev.to/dabit3/the-complete-guide-to-full-stack-solana-development-with-react-anchor-rust-and-phantom-3291">Complete guide to full stack Solana development</a></li>
+<li><a href="https://lorisleiva.com/create-a-solana-dapp-from-scratch">Create a Solana dApp from scratch</a></li>
+<li><a href="https://brson.github.io/2021/06/08/rust-on-solana">Rust programming on Solana</a>
+<ul>
+<li>thoughtful opinions and useful tips by a Solana beginner who's very experienced in Rust (core developer)</li>
+</ul>
+</li>
+<li><a href="https://www.soldev.app/library/walkthroughs">SolDev.app library of walkthroughs</a>
+<ul>
+<li>We haven't validated all of the pages linked from here, but a large (and growing)
+collection of links to helpful tutorials.</li>
+</ul>
+</li>
+<li><a href="https://twitter.com/redacted_noah/status/1475208069969756166">thread from redacted_noah</a> on the solana dev skill tree</li>
+<li><a href="https://twitter.com/ayushmenon_/status/1476294409205526534">thread from ayushmenon_</a></li>
+</ul>
+<h2 id="learning-rust"><a class="header" href="#learning-rust">Learning Rust</a></h2>
+<h3 id="essential"><a class="header" href="#essential">Essential</a></h3>
+<ul>
+<li><a href="https://doc.rust-lang.org/book/">Rust Lang book (&quot;The Book&quot;)</a>
+<ul>
+<li>written by Rust's own documentation team. A must-read for newcomers.</li>
+<li>accompanying CLI-based <a href="https://github.com/rust-lang/rustlings">exercises</a></li>
+</ul>
+</li>
+<li><a href="https://exercism.org/tracks/rust">Exercism rust exercises</a></li>
+</ul>
+<h3 id="bonus-1"><a class="header" href="#bonus-1">Bonus</a></h3>
+<ul>
+<li><a href="https://doc.rust-lang.org/rust-by-example/index.html">Rust by Example</a></li>
+<li><a href="https://doc.rust-lang.org/nomicon">The Rustonomicon (&quot;Nomicon&quot;)</a>
+<ul>
+<li>the dark arts of unsafe Rust: educational even if you plan to never use <code>unsafe</code>.</li>
+</ul>
+</li>
+<li><a href="https://rust-unofficial.github.io/too-many-lists/">Learn Rust With Entirely Too Many Linked Lists</a>
+<ul>
+<li>these exercises involving linked lists require you to think deeply about Rust's memory model.</li>
+</ul>
+</li>
+<li><a href="https://www.youtube.com/c/JonGjengset">Jon Gjengset's youtube videos</a>
+<ul>
+<li>educational streams showing how to apply Rust to real-world problems.</li>
+<li><a href="https://nostarch.com/rust-rustaceans">Rust for Rustaceans</a> is a just-released book by Jon. Disclaimer: requires purchase (no affiliation).</li>
+</ul>
+</li>
+</ul>
+<h2 id="reference"><a class="header" href="#reference">Reference</a></h2>
+<ul>
+<li><a href="https://docs.solana.com/introduction">Solana docs</a></li>
+<li><a href="https://solanacookbook.com/">Solana cookbook</a></li>
+<li><a href="https://github.com/project-serum/anchor">Anchor</a>
+<ul>
+<li>framework for reducing boilerplate by defining a IDL connecting your rust program to your typescript code.
+See also the <a href="https://github.com/project-serum/anchor/tree/master/examples/tutorial">tutorial</a>.
+<ul>
+<li><a href="https://2501babe.github.io/posts/anchor101.html">angkor wat</a> - another post from 2501babe.github.io, this time about anchor programming</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="https://github.com/solana-labs/solana-program-library">solana-program-library</a>
+<ul>
+<li>a collection of examples and reference implementations</li>
+</ul>
+</li>
+<li><a href="https://github.com/metaplex-foundation/metaplex">Metaplex</a>
+<ul>
+<li>defines the NFT standard on Solana; also standardized the minting process (candy machine).
+See also <a href="https://docs.metaplex.com/community">community docs</a>.</li>
+</ul>
+</li>
+</ul>
+<h2 id="security-1"><a class="header" href="#security-1">Security</a></h2>
+<p><em>See also: <a href="Dev/Security.html">Security.md</a></em></p>
+<ul>
+<li><a href="https://blog.neodyme.io/posts/solana_common_pitfalls">Solana common pitfalls</a> (Neodyme, Aug 2021)</li>
+<li><a href="https://workshop.neodyme.io/">Solana Security Workshop</a> (Neodyme, Nov 2021)</li>
+<li><a href="https://medium.com/coinmonks/how-to-audit-solana-smart-contracts-part-1-a-systematic-approach-56a434f6c9ed">Auditing Solana smart contracts - Part 1 (checklist)</a> (Nov 2021)
+<ul>
+<li><a href="https://medium.com/coinmonks/how-to-audit-solana-smart-contracts-part-2-automated-scanning-ceb88830ae6d">Part 2 (autoscanning)</a></li>
+<li><a href="https://medium.com/coinmonks/how-to-audit-solana-smart-contracts-part-3-penetration-testing-a315b3bbb2d3">Part 3 (penetration testing)</a></li>
+<li><a href="https://medium.com/coinmonks/how-to-audit-solana-smart-contracts-part-4-the-anchor-framework-ef42d944f086">Part 4 (anchor)</a></li>
+</ul>
+</li>
+<li><a href="https://blog.neodyme.io/posts/lending_disclosure">spl token-lending protocol exploit</a> -
+walkthrough of an exploit in spl token-lending protocol identified by Neodyme, as an example of a flaw in a smart contract</li>
+<li><a href="https://docs.google.com/presentation/d/1jZ9kVo6hnhBsz3D2sywqpMojqLE5VTZtaXna7OHL1Uk/edit?pli=1#slide=id.ge15c343642_0_51">Solend Auditing Workshop</a></li>
+</ul>
+<h2 id="devtools"><a class="header" href="#devtools">Devtools</a></h2>
+<ul>
+<li>https://www.sollet.io/</li>
+<li>https://www.spl-token-ui.com/#/</li>
+<li>Essential CLI tools:
+<ul>
+<li><code>solana</code></li>
+<li><code>spl-token</code></li>
+<li><code>anchor</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="walkthrough"><a class="header" href="#walkthrough">Walkthrough</a></h2>
+<p><em>Please feel free to directly edit: fix inaccuracies, expand content, condense sections, etc.</em></p>
+<p>Goal of this section: condense the above resources and compile useful tidbits (tips, gotchas) to reference in the future.</p>
+<p>Let's also take a look at the <a href="https://github.com/project-serum/serum-dex">Serum</a> code itself.
+The escrow tutorial is excellent, but it would be interesting to look at a directly relevant real-world program.</p>
+<ul>
+<li><a href="Dev/SolanaProgramming.html#overview">Overview</a></li>
+<li><a href="Dev/SolanaProgramming.html#anchor">Anchor</a></li>
+<li><a href="Dev/SolanaProgramming.html#walkthrough-serum-wip">Walkthrough: Serum (WIP)</a></li>
+<li><a href="Dev/SolanaProgramming.html#apis-and-the-bigger-picture">APIs and the bigger picture</a></li>
+<li><a href="Dev/SolanaProgramming.html#api-evolution-in-serum-wip">API evolution in Serum (WIP)</a></li>
+<li><a href="Dev/SolanaProgramming.html#accounts-wip">Accounts</a></li>
+<li><a href="Dev/SolanaProgramming.html#highlights">Highlights</a></li>
+<li><a href="Dev/SolanaProgramming.html#gotchas">Gotchas</a></li>
+</ul>
+<h3 id="overview-1"><a class="header" href="#overview-1">Overview</a></h3>
+<h4 id="framing"><a class="header" href="#framing">Framing</a></h4>
+<p>Let's start by framing what Solana programming is. Doing this will help us form the mental model of what exactly we're programming.</p>
+<p>At the highest-level, you have two kinds of Solana programs:</p>
+<ul>
+<li>an on-chain <strong>program</strong>. Analogous to &quot;smart contract&quot;. Literally runs on the blockchain and executes &quot;Solana computer instructions&quot;.</li>
+<li>an off-chain <strong>app</strong>. Doesn't run on the blockchain but interacts with the programs that do.</li>
+</ul>
+<p>I find this analogous to any client-server interaction model, where the <strong>server (backend)</strong> is the on-chain program and the <strong>client (frontend)</strong> is an app that interacts with it.
+In fact, <strong>writing Solana programs is a lot like implementing RPC servers, REST endpoints, [insert distributed / IPC thing here]</strong>.
+On-chain programs can interact with other on-chain programs, just like how any server can also be a client.</p>
+<h4 id="tooling"><a class="header" href="#tooling">Tooling</a></h4>
+<p>Solana supports any programming language that can compile to <a href="https://docs.solana.com/developing/on-chain-programs/overview">BPF bytecode</a>.
+However, the vast majority of the ecosystem and tooling is in Rust. <strong>All code in this tutorial is written in Rust, unless otherwise specified.</strong></p>
+<p>Relevant Rust crates:</p>
+<ul>
+<li><code>solana-program</code> for writing on-chain programs
+<ul>
+<li>in all likelihood, you will also depend on existing programs in the <a href="https://github.com/solana-labs/solana-program-library">Solana program library</a>
+which are published as their own crates, e.g. <code>spl-token</code></li>
+</ul>
+</li>
+<li><code>solana-sdk</code>, <code>solana-client</code> for off-chain programs</li>
+</ul>
+<h4 id="on-chain-programs"><a class="header" href="#on-chain-programs">On-chain programs</a></h4>
+<p>The <code>solana-program</code> crate exposes a <code>macro</code> aptly named <code>entrypoint!</code></p>
+<ul>
+<li>
+<p>It follows the framework over library model, i.e. <a href="https://en.wiktionary.org/wiki/Hollywood_principle">they call you</a></p>
+</li>
+<li>
+<p>So it expects you to pass in a function with a very specific signature. This function is where you will define your logic that ultimately runs on the chain once deployed (more on that later).</p>
+</li>
+<li>
+<p>The inputs to this deployed function are passed in via a <a href="https://docs.solana.com/developing/programming-model/transactions">transaction</a></p>
+</li>
+<li>
+<p>Solana program flow:</p>
+<ul>
+<li>Process the input, including deserialization to determine the user's instructions</li>
+<li>Do your logic / algorithm</li>
+<li>Return the serialized outputs in a <code>ProgramResult</code>, a thin-wrapper around <code>std::result::Result</code>.</li>
+</ul>
+</li>
+<li>
+<p>See the <a href="https://github.com/solana-labs/example-helloworld/blob/master/src/program-rust/src/lib.rs">helloworld example</a></p>
+</li>
+</ul>
+<h3 id="anchor"><a class="header" href="#anchor">Anchor</a></h3>
+<h4 id="echo"><a class="header" href="#echo">Echo</a></h4>
+<ul>
+<li>If you've worked through the <a href="https://github.com/jarry-xiao/solana-bootcamp-lectures/tree/master/echo-reference">&quot;Echo program&quot;</a> from the Solana bootcamp, you might be curious how the same program might be written in Anchor.
+<ul>
+<li>See <a href="https://github.com/lidatong/anchor-echo">here</a> for a quick-and-dirty implementation of the above.</li>
+</ul>
+</li>
+</ul>
+<h4 id="testing"><a class="header" href="#testing">Testing</a></h4>
+<p>In general, it's a good practice to take a layered approach to testing. For example:</p>
+<ul>
+<li>for fast and lightweight tests, use regular Rust unit tests. Optionally, use <code>solana-program-test</code> and <code>BanksClient</code>.</li>
+<li>for something heavier but closer to the &quot;real deal&quot;, consider standing <code>SolanaTestValidator</code> inside your <code>integration.rs</code>.
+<ul>
+<li>with Anchor, consider also writing &quot;end-to-end&quot; tests using (<code>anchor test</code>), which will also test the <code>IDL</code>.</li>
+</ul>
+</li>
+<li>finally, deploy to <code>devnet</code> and <code>testnet</code> before <code>mainnet-beta</code>.</li>
+</ul>
+<p>Rust's convention is <strong>unit tests</strong> (<code>#[cfg(test)]</code>) and <strong>integration tests</strong> (separate <code>tests</code> subdirectory).
+In addition to this, Anchor supports <strong>end-to-end integration tests</strong> via <code>anchor test</code>.</p>
+<h4 id="highlights"><a class="header" href="#highlights">Highlights</a></h4>
+<p>Here are some differences to highlight about <code>Anchor</code>:</p>
+<ul>
+<li>Instead of passing a list of <code>AccountInfo</code> and processing them with <code>next_account_info</code>, all the account-passing is handled by <code>Anchor</code> via <code>struct</code> definitions.
+<ul>
+<li>Notice how they <code>#[derive(Accounts)]</code>: Anchor does the wiring of account passing and parsing for us. We instead just pass in <code>Context&lt;T&gt;</code>).</li>
+</ul>
+</li>
+<li>A lot of the checks / constraints are now pulled out of the actual &quot;processing&quot; and pushed into Anchor macros.
+<ul>
+<li>This allows us to separate business logic from administrative logic.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<h4 id="reification"><a class="header" href="#reification">Reification</a></h4>
+<ul>
+<li>The process of turning all the account parsing / processing logic into structs is known as <strong>reification</strong>. We've transformed <em>code into data</em>, thereby <em>reifying</em> it.</li>
+<li>The inverse is <strong>Church encoding</strong>. Turning <em>data into code</em>.</li>
+<li>Read more <a href="https://underscore.io/blog/posts/2017/06/02/uniting-church-and-state.html">here</a> if this excites you.</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Anchor has sample Escrow program.
+Their version implements an escrow program that is Paulx++: it supports cancellation, and makes use of more advanced and idiomatic Rust.
+<a href="https://github.com/project-serum/anchor/blob/master/tests/escrow/programs/escrow/src/lib.rs">See the code.</a></p>
+</blockquote>
+<h3 id="walkthrough-serum-wip"><a class="header" href="#walkthrough-serum-wip">Walkthrough: Serum (WIP)</a></h3>
+<p>Let's take a look at something more complicated than Escrow. How about the <a href="https://github.com/project-serum/serum-dex">Serum dex</a> itself!</p>
+<p>To begin, let's examine the project structure. It looks like a monorepo: both the on-chain <em>program</em> and the <em>app</em> live in the same codebase.</p>
+<p>Ok, now let's look for the entrypoint to the on-chain program. Remember that <code>entrypoint!</code> macro mentioned earlier? It's being called in <code>dex/src/lib.rs</code>:</p>
+<pre><pre class="playground"><code class="language-rust edition2021">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>#[cfg(all(feature = &quot;program&quot;, not(feature = &quot;no-entrypoint&quot;)))]
+use solana_program::entrypoint;
+#[cfg(feature = &quot;program&quot;)]
+use solana_program::{account_info::AccountInfo, entrypoint::ProgramResult, pubkey::Pubkey};
+
+#[cfg(feature = &quot;program&quot;)]
+#[cfg(not(feature = &quot;no-entrypoint&quot;))]
+entrypoint!(process_instruction);
+#[cfg(feature = &quot;program&quot;)]
+fn process_instruction(
+    program_id: &amp;Pubkey,
+    accounts: &amp;[AccountInfo],
+    instruction_data: &amp;[u8],
+) -&gt; ProgramResult {
+    Ok(state::State::process(
+        program_id,
+        accounts,
+        instruction_data,
+    )?)
+}
+<span class="boring">}
+</span></code></pre></pre>
+<p>Simple enough. Continuing to follow the white rabbit into the <code>process</code> method of <code>state.rs</code>:</p>
+<pre><pre class="playground"><code class="language-rust edition2021">
+<span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>#[cfg_attr(not(feature = &quot;program&quot;), allow(unused))]
+impl State {
+    #[cfg(feature = &quot;program&quot;)]
+    pub fn process(program_id: &amp;Pubkey, accounts: &amp;[AccountInfo], input: &amp;[u8]) -&gt; DexResult {
+        let instruction = MarketInstruction::unpack(input).ok_or(ProgramError::InvalidArgument)?;
+        match instruction {
+            MarketInstruction::InitializeMarket(ref inner) =&gt; Self::process_initialize_market(
+                account_parser::InitializeMarketArgs::new(program_id, inner, accounts)?,
+            )?,
+            MarketInstruction::NewOrder(_inner) =&gt; {
+                unimplemented!()
+            }
+            MarketInstruction::NewOrderV2(_inner) =&gt; {
+                unimplemented!()
+            }
+            MarketInstruction::NewOrderV3(ref inner) =&gt; {
+                account_parser::NewOrderV3Args::with_parsed_args(
+                    program_id,
+                    inner,
+                    accounts,
+                    Self::process_new_order_v3,
+                )?
+            }
+        ...
+<span class="boring">}
+</span></code></pre></pre>
+<p>Interesting! So it looks like they deserialize the instructions then pattern match to figure out what the client wants to do.</p>
+<p>As you might expect, these are standard instructions you'd run on an order book.</p>
+<h3 id="apis-and-the-bigger-picture"><a class="header" href="#apis-and-the-bigger-picture">APIs and the bigger picture</a></h3>
+<p>One thing that stands out here is the <code>NewOrder</code>, <code>NewOrderV2</code>, <code>NewOrderV3</code> definitions, with the first two <code>unimplemented</code>.
+It looks a little funky. It appears to be handling for API versioning / compatibility.</p>
+<p>Here is a key point: <em>a Solana program is ultimately an API</em>. As will all APIs, it's important to think carefully about the interface you're providing.</p>
+<ul>
+<li>What are you going to do when your program logic changes?</li>
+<li>How are you going to add features (API additions)?</li>
+<li>How are you going to deprecate functionality (breaking changes)?</li>
+</ul>
+<h4 id="ok-so-why-is-this-important"><a class="header" href="#ok-so-why-is-this-important">Ok, so why is this important?</a></h4>
+<p>When there is an entire ecosystem of other programs or client apps that depend on your on-chain program, it's <em>especially</em> critical to consider these points.</p>
+<p>Imagine a dApp developer building a UI on top of the Serum interface.
+How would they feel if Serum was constantly changing the way they implemented order submission,
+breaking their app? They'd probably stop using Serum.</p>
+<p>In the spirit of decentralization, you should consider it <em>your</em> responsibility to think carefully about your consumers everytime you make a change your program.
+Did the public API change? Is it really encapsulated from the client?
+A culture of constant breaking changes will damage morale and eventually drive developers away from the ecosystem.</p>
+<p>All this said, as with anything there is a trade-off. Solana programming is still very new.
+Development is rapid and ongoing. That comes hand-in-hand with breaking changes.</p>
+<p>In my opinion, the best thing to do is think for yourself: carefully consider the trade-offs and make an informed decision.
+Don't blindly break APIs, thinking that's ok just because Solana development is new.
+Don't chain yourself to previous iterations of your code either -- if your app has evolved, your codebase should evolve with it.
+Solana explicitly spells out some <a href="https://docs.solana.com/developing/backwards-compatibility">backwards compatibility guidelines</a>.</p>
+<h3 id="api-evolution-in-serum-wip"><a class="header" href="#api-evolution-in-serum-wip">API Evolution in Serum (WIP)</a></h3>
+<p>Take a look at this pull request releasing Dex V3, a <strong>breaking change</strong>:
+https://github.com/project-serum/serum-dex/pull/97. Here's the description:</p>
+<blockquote>
+<p>The primary change is to immediately match incoming orders against the book,
+instead of first buffering them in the request queue.
+The request queue still exists to reduce breakage, but is always empty.
+Because of this, we're forced to remove support for the old order placement and cancellation instructions,
+since they don't provide the bids and asks accounts which would be necessary in order to process them in the new model.</p>
+</blockquote>
+<p>Some more context on the purpose of the above change:</p>
+<ul>
+<li>orders used to go into a <code>request queue</code>, not the order book directly.</li>
+<li>a &quot;user&quot; (i.e. either another on-chain program or client app) would explicitly send a &quot;crank turn&quot; instruction to Serum</li>
+<li>this &quot;crank turn&quot; pulled requests off the queue and matched them in the order book</li>
+</ul>
+<p>PR Observations:</p>
+<ul>
+<li>All affected instructions implemented a corresponding new version &quot;V2&quot; or &quot;V3&quot;, e.g. <code>MarketInstruction::CancelOrderV2</code></li>
+<li>The old versions of the instruction were then removed by replacing the body with <code>unimplemented!</code></li>
+</ul>
+<h3 id="solana-programming-pros-and-cons"><a class="header" href="#solana-programming-pros-and-cons">Solana programming pros and cons</a></h3>
+<p><em>LISP programmers know the value of everything and the cost of nothing</em></p>
+<p>Solana programs are <strong>stateless</strong>. What does that mean?
+Programs cannot hold state, so it's passed in via <code>process_instruction</code>.</p>
+<p>The consequence is the same input always results in the same output.
+If you're familiar with the &quot;pure functional programming&quot; paradigm, you'll feel right at home.</p>
+<p><strong>Not every chain enforces statelessness. What are the pros / cons to Solana doing this?</strong></p>
+<p>Pros:</p>
+<ul>
+<li>Parallel processing. Sealevel (Solana runtime) knows exactly what data a program depends on and can safely parallelize</li>
+<li>Stateless-ness and determinism makes it easier to reason about programs, because of <a href="https://en.wikipedia.org/wiki/Referential_transparency">referential transparency</a></li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Debugging can be difficult because a lot of data lives outside your program that you have to fetch with RPC</li>
+<li>APIs for passing around accounts are not that friendly: they're passed as an array, so you have to remember the position-order</li>
+</ul>
+<p><a href="https://project-serum.github.io/anchor/getting-started/introduction.html">Anchor</a> aims to solve some of the cons described.
+See the above Anchor escrow tutorial as well as <a href="https://2501babe.github.io/posts/anchor101.html">angkor wat</a>.</p>
+<h3 id="accounts-wip"><a class="header" href="#accounts-wip">Accounts (WIP)</a></h3>
+<ul>
+<li>Accounts are just bytearrays <code>&amp;[u8]</code>.</li>
+<li>Accounts have a <code>data</code> field for you to store arbitrary information</li>
+<li>Executable accounts are programs</li>
+<li>Types of account &quot;types&quot; in Anchor: Account, Program, Sysvar, different macros</li>
+<li>Go into how Serum parses the account array into the literal information it needs to execute the order instruction</li>
+</ul>
+<h3 id="highlights-1"><a class="header" href="#highlights-1">Highlights</a></h3>
+<blockquote>
+<p>Solana programs are stateless</p>
+</blockquote>
+<blockquote>
+<p>If the program needs to store state between transactions, it does so using accounts</p>
+</blockquote>
+<blockquote>
+<p>Programs are constrained to run deterministically, so random numbers are not available</p>
+</blockquote>
+<blockquote>
+<p>the basic operational unit on solana is an instruction. an instruction is one call into a program.
+one or more instructions can be bundled into a message. a message plus an array of signatures constitutes a transaction</p>
+</blockquote>
+<p>It's worth reviewing the <a href="https://docs.solana.com/developing/on-chain-programs/overview">on-chain programming docs</a>
+or at least the <a href="https://docs.solana.com/developing/on-chain-programs/faq">FAQ</a>.
+It'll save you a debugging headache.</p>
+<h3 id="gotchas"><a class="header" href="#gotchas">Gotchas</a></h3>
+<ul>
+<li>Don't use std::collections::HashMap. You'll get an obscure error because of the &quot;no-randomness&quot; constraint
+<ul>
+<li>Reason: <code>HashMap&lt;K, V, S = RandomState&gt;</code>. Notice the generic type <code>S</code> defaults to <code>RandomState</code></li>
+<li>It may be possible use by substituting a different, non-random <code>S</code> - see the <code>with_hasher</code> constructor (<em>I have not tried this myself</em>)</li>
+</ul>
+</li>
+<li>Relatedly, don't use <code>rand</code> crate. If a crate you depend on transitively depends on <code>rand</code>, follow <a href="https://docs.solana.com/developing/on-chain-programs/developing-rust#depending-on-rand">this guide</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="smart-contract-security-1"><a class="header" href="#smart-contract-security-1">Smart contract security</a></h1>
+<h1 id="education--best-practices"><a class="header" href="#education--best-practices">Education / best practices</a></h1>
+<ul>
+<li><a href="https://consensys.github.io/smart-contract-best-practices/">Eth smart contract security best practices</a>
+(see especially: <a href="https://consensys.github.io/smart-contract-best-practices/known_attacks/">known attacks</a>)</li>
+<li><a href="https://medium.com/solidified/most-common-smart-contract-bugs-of-2020-c1edfe9340ac">Most common smart contract bugs</a></li>
+</ul>
+<h2 id="solana-specific"><a class="header" href="#solana-specific">Solana-specific</a></h2>
+<p><em>See <a href="Dev/SolanaProgramming.html#security">SolanaProgramming/Security</a></em></p>
+<h1 id="bughunting-challenges"><a class="header" href="#bughunting-challenges">Bughunting challenges:</a></h1>
+<ul>
+<li><a href="https://www.damnvulnerabledefi.xyz/">Damn Vulnerable DeFi</a></li>
+<li><a href="https://ethernaut.openzeppelin.com/">OpenZeppelin Ethernaut</a></li>
+<li><a href="https://capturetheether.com/">Capture the Ether</a></li>
+<li><a href="https://github.com/paradigm-operations/paradigm-ctf-2021">Paradigm CTF 2021</a></li>
+<li><a href="https://github.com/PumpkingWok/CTFGym">Smart contract CTF list</a></li>
+</ul>
+<h1 id="real-life-vulnerabilities"><a class="header" href="#real-life-vulnerabilities">Real-life vulnerabilities</a></h1>
+<h2 id="summaries"><a class="header" href="#summaries">Summaries</a></h2>
+<ul>
+<li><a href="https://rekt.news/leaderboard/">Rekt leaderboard</a></li>
+<li><a href="https://hacked.slowmist.io/en/">SlowMist stats</a> - brief summaries of each hack</li>
+<li><a href="https://web3isgoinggreat.com/">web3isgoinggreat.com</a> - a (slanted) aggregator of recent hacks, rugpulls, and scams</li>
+</ul>
+<h2 id="notable-issues-and-incidents-explained"><a class="header" href="#notable-issues-and-incidents-explained">Notable issues and incidents, explained</a></h2>
+<p>This is only a sampling!  We'd recommend that smart contract devs review all major exploits
+(the <a href="https://rekt.news/leaderboard/">rekt leaderboard</a> is a great starting point) to learn 
+from previous failures.</p>
+<h3 id="re-entrancy"><a class="header" href="#re-entrancy">Re-entrancy</a></h3>
+<p>Re-entrancy is a famous and common issue where the attacker can unexpectedly recursively call a function multiple times,
+to get the contract's state variables into an unexpected state.</p>
+<ul>
+<li>For an overview, see <a href="https://medium.com/amber-group/preventing-re-entrancy-attacks-lessons-from-history-c2d96480fac3">Preventing re-entrancy attacks: lessons from history</a></li>
+<li><a href="https://blog.openzeppelin.com/exploiting-uniswap-from-reentrancy-to-actual-profit/">Exploiting uniswap from reentrancy to actual profit</a> (July 2019)
+<ul>
+<li>Clear explanation of reentrancy vulnerability on Uniswap introduced by ERC777.</li>
+</ul>
+</li>
+<li><a href="https://valid.network/post/the-reentrancy-strikes-again-the-case-of-lendf-me">Lendf.Me re-entrancy attack</a> (May 2020)
+<ul>
+<li>ERC777 strikes again</li>
+</ul>
+</li>
+<li><a href="https://medium.com/cream-finance/c-r-e-a-m-finance-post-mortem-amp-exploit-6ceb20a630c5">Cream Finance AMP attack</a> (Aug 2021)
+<ul>
+<li>ERC777 strikes again.  Cream Finance was susceptible, and AMP token had an ERC777-style contract</li>
+</ul>
+</li>
+<li><a href="https://twitter.com/RugDocIO/status/1472293717725913089">Grim Finance exploit</a> (Dec 2021)
+<ul>
+<li>Grim Finance used a before-after pattern to determine how much was deposited (needed because
+some tokens have a transfer tax, in which case the deposited amount will differ from the transferred amount)</li>
+<li>Grim didn't guard against reentrancy between the before-after pattern.</li>
+<li><a href="https://rekt.news/grim-finance-rekt/">More details</a></li>
+</ul>
+</li>
+<li>TheDAO exploit of 2016: the original re-entrancy bug, but listed last here because it's one of the hardest to understand.
+<ul>
+<li><a href="https://vessenes.com/more-ethereum-attacks-race-to-empty-is-the-real-deal/">Race-to-Empty</a>
+(written just before the exploit, describing a generic vulnerability)</li>
+<li><a href="https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/">Analysis of TheDAO exploit</a>
+(detailed explanation of the flaw as applied to TheDAO)</li>
+<li>For more historical background (less technical) see <a href="https://coinmarketcap.com/alexandria/article/a-history-of-the-dao-hack">a history of 'The DAO' hack</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="oracle-attacks"><a class="header" href="#oracle-attacks">Oracle attacks</a></h3>
+<p>Some AMMs provide on-chain oracle functions (i.e. to compute asset prices from the current state of their pools).
+Unfortunately, this could allow an attacker to manipulate the state of a pool (especially using a flash loan),
+then do something else on a different protocol which depends on that oracle price.  Developers of
+protocols that depend on on-chain oracles for pricing should be especially cognizant of this.</p>
+<ul>
+<li><a href="https://medium.com/@AndyPavia/swissblock-post-mortem-cream-finance-hack-7c1caff4335c">Cream Finance 130M hack</a> (Oct 2021)
+<ul>
+<li>oracle attack on a lending protocol due to a flawed custom oracle for yearn assets
+(see also: <a href="https://mudit.blog/cream-hack-analysis/">cream hack analysis</a>)</li>
+</ul>
+</li>
+<li><a href="https://medium.com/amber-group/bsc-flash-loan-attack-pancakebunny-3361b6d814fd">PancakeBunny reward overmint</a> (May 2021)
+<ul>
+<li>oracle manipulation attack on PancakeBunny AMM</li>
+<li>attacker gets way too many BUNNY reward tokens for LPing by unstaking in the middle of a massive mispricing from a flashloan</li>
+</ul>
+</li>
+<li><a href="https://medium.com/immunefi/enzyme-finance-price-oracle-manipulation-bug-fix-postmortem-4e1f3d4201b5">Enzyme finance custom oracle bug</a>
+<ul>
+<li>an issue showing an interesting interaction between a governance token's custom oracle
+and its support for flashloans</li>
+</ul>
+</li>
+<li><a href="https://twitter.com/Mudit__Gupta/status/1464657484367339527">Visor finance pricing exploit</a> (Nov 2021)
+<ul>
+<li>reliance on spot prices for issuing shares</li>
+</ul>
+</li>
+<li><a href="https://twitter.com/Mudit__Gupta/status/1455627465678749696">Rari pool attack - TWAP manipulation of VUSD</a>
+<ul>
+<li>a specific pool was seemingly misconfigured to point at a pool with only concentrated liquidity</li>
+<li>thread includes discussion of how it is easier to manipulate a pool with only concentrated liquidity because trading
+loss is relatively small</li>
+<li>discussion of how TWAPs are still vulnerable because single huge input can move average a lot</li>
+</ul>
+</li>
+<li><a href="https://twitter.com/valentinmihov/status/1320667338321154048?s=20">Harvest Finance exploit</a> (Oct 2020)
+<ul>
+<li>exploiter moved USDT/USDC on Curve up before depositing USDT into Harvest Finance, then down before withdrawing</li>
+<li>pool share calc uses market price as oracle instead of 1</li>
+</ul>
+</li>
+<li><a href="https://samczsun.com/so-you-want-to-use-a-price-oracle/">Oracle vulnerabilities</a>
+<ul>
+<li>samczsun discussion of some famous oracle attacks</li>
+</ul>
+</li>
+</ul>
+<h3 id="other-interesting-economic-attacks"><a class="header" href="#other-interesting-economic-attacks">Other interesting economic attacks</a></h3>
+<ul>
+<li><a href="https://peckshield.medium.com/bzx-hack-full-disclosure-with-detailed-profit-analysis-e6b1fa9b18fc">bZx 2020 exploit</a> (Feb 2020)
+<ul>
+<li>lending protocol bZx allowed fancier functionality than a typical lending protocol, specifically
+allowing a user to put on a leveraged equity/debt position by routing to an AMM</li>
+<li>a missing check caused the protocol to be fooled into taking a negative-value position while moving an AMM price way out of line</li>
+<li>attacker made money by arbing the AMM back into line outside of the lending protocol, while abandoning the negative-value vault</li>
+<li><a href="https://www.palkeo.com/en/projets/ethereum/bzx.html">another</a> great description of this issue</li>
+<li><a href="https://lev.liv.nev.org.uk/pub/bzx_debug.txt">another</a> great description</li>
+</ul>
+</li>
+<li><a href="https://medium.com/amber-group/exploiting-spartan-protocols-lp-share-calculation-flaws-391437855e74">Spartan Protocol LP share value calc issue</a> (May 2021)
+<ul>
+<li>mechanical flaw in calculation of LP share value in a synthetic asset protocol</li>
+</ul>
+</li>
+</ul>
+<h3 id="bridge-attacks"><a class="header" href="#bridge-attacks">Bridge attacks</a></h3>
+<p>Bridges are complex because they involve multiple chains, and interaction with a third party.
+Also, from the perspective of a single chain, transfers to that chain just involve unlocking
+tokens (or minting claim tokens) from the bridge contract.</p>
+<ul>
+<li><a href="https://slowmist.medium.com/the-analysis-and-q-a-of-poly-network-being-hacked-8112a35beb39">Poly network hack</a> (Aug 2021)
+<ul>
+<li>more commentary <a href="https://mudit.blog/poly-network-largest-crypto-hack/">here</a></li>
+</ul>
+</li>
+<li><a href="https://medium.com/immunefi/polygon-double-spend-bug-fix-postmortem-2m-bounty-5a1db09db7f1">Polygon PoS bridge withdrawal bug</a> (Oct 2021)
+<ul>
+<li>bug allowing repeat withdrawals from the bridge contract</li>
+</ul>
+</li>
+</ul>
+<h3 id="missing-checks"><a class="header" href="#missing-checks">Missing checks</a></h3>
+<ul>
+<li><a href="https://medium.com/immunefi/polygon-lack-of-balance-check-bugfix-postmortem-2-2m-bounty-64ec66c24c7d">Polygon lack of balance/allowance check in MRC20 contract</a> (Dec 2021)</li>
+</ul>
+<h3 id="unauthorized-access"><a class="header" href="#unauthorized-access">Unauthorized access</a></h3>
+<ul>
+<li><a href="https://rekt.news/pickle-finance-rekt/">Pickle Finance exploit</a>
+<ul>
+<li>See especially <a href="https://twitter.com/vasa_develop/status/1330532691205361664/photo/1">this diagram</a></li>
+<li>Pickle Finance was a fork of Yearn; Yearn published this <a href="https://github.com/yearn/yearn-security/blob/master/disclosures/2020-10-10.md">vulnerability disclosure</a> a month earlier</li>
+<li>Similar problem <a href="https://rekt.news/rari-capital-rekt/">here</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="frontend-attacks"><a class="header" href="#frontend-attacks">Frontend attacks</a></h3>
+<ul>
+<li><a href="https://badger.com/technical-post-mortem">BadgerDAO Cloudflare exploit</a> (Dec 2021)
+<ul>
+<li>frontend attack arising from Cloudflare bug which allowed attackers to preregister API keys by email address
+without email verification</li>
+<li>attacker used access to inject malicious scripts that prompted users to authorize
+tokens via MetaMask.</li>
+</ul>
+</li>
+</ul>
+<h3 id="logic-bugs"><a class="header" href="#logic-bugs">Logic bugs</a></h3>
+<p>Arguably all bugs are logic bugs, but some seem like pure logic issues...</p>
+<ul>
+<li><a href="https://twitter.com/Mudit__Gupta/status/1443454935639609345?t=sznwoTmp3KMDffaI1vpINA&amp;s=19">Compound overdistribution of governance token</a> (Sep 2021)
+<ul>
+<li>(see also <a href="https://cybavo.medium.com/defi-protocol-compound-suffers-a-90m-reverse-rugpull-after-1-letter-bug-6168071497e2">this</a>)</li>
+</ul>
+</li>
+<li><a href="https://twitter.com/Mudit__Gupta/status/1422797923037814786?s=20">Popsicle Finance exploit</a>
+<ul>
+<li>bug in computing users' share of fees when LP shares are transferred</li>
+<li>notable in that bug had been repeatedly exploited in other contracts, but was missed by creators and auditors</li>
+</ul>
+</li>
+<li><a href="https://twitter.com/Mudit__Gupta/status/1465726874974187524">MonoX hack</a> (Nov 2021)
+<ul>
+<li>vAMM protocol for trading synthetics</li>
+<li>when user swaps A for B, vAMM updates price of A to be lower than before, then updates price of B to be higher than before</li>
+<li>MonoX didn't prevent corner case where A == B, so user could use this to increase price of B</li>
+<li>attacker used this repeatedly to pump internal price of MONO token, then swap MONO into a lot of real value</li>
+</ul>
+</li>
+<li><a href="https://peckshield.medium.com/opyn-hacks-root-cause-analysis-c65f3fe249db">Opyn bug</a> (Aug 2020)
+<ul>
+<li>bug stemming from special case for ETH transfers</li>
+</ul>
+</li>
+</ul>
+<h2 id="other"><a class="header" href="#other">Other</a></h2>
+<ul>
+<li><a href="https://medium.com/immunefi/the-u-up-files-with-samczsun-1a9116cf6e74">Interview with whitehat samczsun</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><p><em>Not financial or legal advice.  Use all tools at your own risk.  Please contact <a href="mailto:crypto-research@jumptrading.com">crypto-research@jumptrading.com</a>
+for suggestions or to report errors.</em></p>
+<h1 id="coin-info"><a class="header" href="#coin-info">Coin info</a></h1>
+<p>Price, official websites, stats, volume by venue, etc:</p>
+<ul>
+<li><a href="http://coinmarketcap.com">CoinMarketCap</a></li>
+<li><a href="http://coingecko.com">CoinGecko</a></li>
+<li><a href="http://nomics.com">Nomics</a></li>
+<li><a href="https://messari.io/">Messari</a></li>
+</ul>
+<h1 id="charting"><a class="header" href="#charting">Charting</a></h1>
+<h2 id="charting-for-cexes"><a class="header" href="#charting-for-cexes">Charting for CEXes</a></h2>
+<ul>
+<li><a href="http://tradingview.com">TradingView</a></li>
+</ul>
+<h2 id="charting-for-coins-only-on-dexes"><a class="header" href="#charting-for-coins-only-on-dexes">Charting for coins only on DEXes</a></h2>
+<ul>
+<li><a href="http://dex.guru">Dex.guru</a> - charting for Eth and BSC coins</li>
+<li><a href="http://poocoin.app">Poocoin</a> - charting for BSC, Matic, and KCC coins</li>
+<li><a href="http://dextools.io">Dextools</a> - for BSC, Matic, and KCC coins</li>
+</ul>
+<h2 id="cex-order-book-data"><a class="header" href="#cex-order-book-data">CEX order book data</a></h2>
+<ul>
+<li><a href="https://okotoki.com/">Okitoki</a> - side-by-side viewer of multiple order books</li>
+</ul>
+<h1 id="analytics-1"><a class="header" href="#analytics-1">Analytics</a></h1>
+<h2 id="addresstoken-info"><a class="header" href="#addresstoken-info">Address/token info</a></h2>
+<ul>
+<li><a href="http://etherscan.io">Etherscan</a>
+<ul>
+<li>display info about transactions, wallet balances, etc.  There is a clone for ~every chain, such as <a href="http://solscan.io">Solscan</a> for Solana.</li>
+</ul>
+</li>
+<li><a href="https://bloxy.info/">Bloxy</a>
+<ul>
+<li>tools for understanding callstacks in Ethereum transactions</li>
+</ul>
+</li>
+<li><a href="https://ethtx.info/">EthTx Transaction Decoder</a></li>
+<li><a href="https://github.com/denisnazarov/awesome-crypto-trackers">Awesome crypto trackers</a> - many trackers here</li>
+</ul>
+<h2 id="on-chain-analytics"><a class="header" href="#on-chain-analytics">On-chain analytics</a></h2>
+<ul>
+<li><a href="https://dune.xyz/">Dune Analytics</a>
+<ul>
+<li>analytics platform for Ethereum, featuring various datasets built from processing blockchain data</li>
+</ul>
+</li>
+<li><a href="https://glassnode.com/">Glassnode</a>
+<ul>
+<li>on-chain analytics platform, featuring various datasets built from processing blockchain data</li>
+</ul>
+</li>
+<li><a href="https://nansen.ai/">Nansen</a>
+<ul>
+<li>wallet analytics (coin movements, large holders, big transactions, etc) for Ethereum.  Also some NFT tools.</li>
+</ul>
+</li>
+<li><a href="https://ethgas.watch/">ETH Gas.watch</a>
+<ul>
+<li>stats on historical/current Eth gas prices</li>
+</ul>
+</li>
+</ul>
+<h2 id="macro-analytics"><a class="header" href="#macro-analytics">Macro analytics</a></h2>
+<ul>
+<li><a href="https://www.theblockcrypto.com/data/">The Block</a>
+<ul>
+<li>various timeseries graphs showing state of network utilization, volume, DeFi protocol utilization, marketshare by venue, etc.</li>
+</ul>
+</li>
+</ul>
+<h1 id="defi-1"><a class="header" href="#defi-1">DeFi</a></h1>
+<p><em>For DeFi-related tools see <a href="DeFi.html">DeFi.md</a></em></p>
+<h1 id="nfts"><a class="header" href="#nfts">NFTs</a></h1>
+<p><em>For NFT-related tools see <a href="NFT.html">NFT.md</a></em></p>
+<h1 id="vc-activity"><a class="header" href="#vc-activity">VC Activity</a></h1>
+<ul>
+<li><a href="https://www.dovemetrics.com/">dovemetrics.com</a>
+<ul>
+<li>an airtable-based database of recent crypto raises</li>
+</ul>
+</li>
+</ul>
+<h1 id="acknowledgement"><a class="header" href="#acknowledgement">Acknowledgement</a></h1>
+<p><a href="https://twitter.com/0xShual/status/1463575819717070863">This</a> twitter thread from @0xShual was extremely useful as a starting point for this page.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="exercises-1"><a class="header" href="#exercises-1">Exercises</a></h1>
+<p>A collection of reading questions and exercises to help check for understanding.</p>
+<h2 id="blockchain-mechanics"><a class="header" href="#blockchain-mechanics">Blockchain mechanics</a></h2>
+<h3 id="fundamentals"><a class="header" href="#fundamentals">Fundamentals</a></h3>
+<ul>
+<li>What's a cryptographic hash? What are its important properties?</li>
+<li>What's a digital signature? Properties?</li>
+<li>They both seem to take some input and scramble it to some output. Can we reuse the same function for both?</li>
+<li>How does public-key cryptography relate?</li>
+<li>Given a cryptographic hash function <code>h</code>, can you define an associative hash function <code>H</code> using another function <code>f</code>?
+<ul>
+<li>You pick <code>f</code></li>
+<li><code>H(a, b) = f(h(a), h(b))</code></li>
+<li><code>H</code> should generally satisfy <code>H(a, H(b, c)) &lt;=&gt; H(H(a, b), c)</code></li>
+</ul>
+</li>
+</ul>
+<details>
+<h4 id="can-we-reuse-the-same-function"><a class="header" href="#can-we-reuse-the-same-function">Can we reuse the same function?</a></h4>
+<p>The answer is no, we can't.
+To start, a cryptographic hash function should be irreversible, whereas a digital signature has to be reversible (otherwise how would you determine what was &quot;signed&quot;?)</p>
+<p>That's a bit literal, so a higher-level answer is that cryptographic hash functions and digital signature have different requirements,
+which in turn requires the mathematical functions they use to have different properties.</p>
+<p>Reversibility happens to be one property directly in conflict.</p>
+<h4 id="associative-hash-function-h"><a class="header" href="#associative-hash-function-h">Associative hash function <code>H</code></a></h4>
+<p>The intuition is to pick an <code>f</code> you already know is associative.</p>
+<p>Let <code>f</code> be the associative string concatenation operator (<code>||</code>):</p>
+<pre><code>H(a, H(b, c))
+&lt;=&gt; f(h(a), f(h(b), h(c)))
+&lt;=&gt; h(a) || (h(b) || h(c))
+&lt;=&gt; h((a) || h(b)) || h(c)  # by the associative property of `||`
+&lt;=&gt; f((h(a), h(b)), h(c))
+&lt;=&gt; H(H(a, b), c)
+</code></pre>
+<p>There may be other <code>f</code>: concatenation is used here because it is simple and intuitive.
+It is also directly relevant to the exercise below on Merkle Trees.
+Merkle trees hash the concatenation itself, so `h(h(a) || h(b)).</p>
+<p><strong>Follow-up:</strong> is concatenating two hashes cryptographically secure? Can <code>H</code> be a <em>cryptographic</em> hash function?</p>
+<p>One way to answer is to revisit the above question &quot;important properties of a cryptographic hash function&quot;
+and think about whether concatenation would violate any of them.</p>
+</details>
+<h3 id="data-structures"><a class="header" href="#data-structures">Data structures</a></h3>
+<p>Describe a blockchain (data structure). What's the use-case?</p>
+<details>
+<p>A blockchain is a linked list with hash pointers. Its components:</p>
+<ul>
+<li><code>.prev</code> pointer</li>
+<li><code>.prev_hash</code> pointer (cryptographic hash of the previous node aka &quot;block&quot;)</li>
+</ul>
+<p>The use-case is tamper detection. If any node in the blockchain is altered, we'll know because the hash will no longer match.
+Therefore, you can always check the blockchain is valid by iterating from the head of the list</p>
+<p>Pseudocode: for every node <code>curr</code>, hash <code>prev</code> and check that result hash equals <code>curr.prev_hash</code></p>
+</details>
+<p>What's a Merkle tree? Use-case?</p>
+<details>
+<p>Merkle tree is a clever data structure to reduce time complexity by leveraging the fact hashes are composable.
+You can combine two hashes <code>H(h1, h2)</code> to produce a third hash <code>h3</code>. If either <code>h1</code> or <code>h2</code> change, <code>h3</code> changes.</p>
+<p>The use-case is efficient verification. It takes <code>O(n)</code> time to verify a block is part of a blockchain, where <code>n</code> is the number of blocks.
+This is because you have to start from the head and check the hashes until you get to that given block.</p>
+<p>With a Merkle tree, you overlay a tree on the blockchain such that all the leaves of the tree correspond to the original blocks.
+Each parent is a composite hash, and the parent's parent is a composite of composite hashes, and so on.
+<a href="https://en.bitcoinwiki.org/wiki/Merkle_tree">Diagram</a>.</p>
+<p>Now, to verify a block is part of the chain, you only need a path through the tree. This is <code>O(h)</code>, where <code>h</code> is the height of the tree.
+Then, by keeping the tree balanced, the complexity is logarithmic.</p>
+</details>
+<h3 id="design-a-crypto-protocol"><a class="header" href="#design-a-crypto-protocol">Design a crypto protocol</a></h3>
+<h4 id="doxxcoin--anoncoin"><a class="header" href="#doxxcoin--anoncoin">Doxxcoin / Anoncoin</a></h4>
+<p>You are the designer of a currency <code>Doxxcoin</code>, and you want to implement a protocol <code>Anoncoin</code> that allows <code>Doxxcoin</code> holders to &quot;anonymize&quot; their coins.</p>
+<h4 id="rules"><a class="header" href="#rules">Rules</a></h4>
+<ul>
+<li>The definition of <strong>anonymize</strong> is to disassociate a given <code>Doxxcoin</code> from all its prior transactions and addresses.</li>
+<li><code>Doxxcoin</code> works like <code>Bitcoin</code>, so you can trace all a given coin's addresses using the transaction ledger.</li>
+<li>You have the ability to mint and burn <code>Doxxcoin</code> and <code>Anoncoin</code>.</li>
+<li>Users should still be able to transact with <code>Doxxcoin</code> after anonymization.</li>
+<li>For the sake of simplicity, disregard units or amounts.</li>
+</ul>
+<p>Assume also you have the means to construct a <strong>zero-knowledge proof</strong> that satisfies the predicate <code>Zk(f, x): ∃x, f(x) ∈ {s1, s2, ... , sn}</code></p>
+<ul>
+<li><strong>Predicate:</strong> &quot;There exists an <code>x</code> such that <code>f(x)</code> is in the set <code>S = {s1, s2, ..., sn}</code>&quot;</li>
+<li><strong>Zero-knowledge proof:</strong> &quot;I know <code>x</code> such that <code>f(x)</code> is in <code>S</code>, without giving away <code>x</code>&quot;</li>
+<li>You can pick what <code>f</code> and <code>x</code> are.</li>
+<li>The Zk-proof can be treated as a black-box and used anywhere in the scheme.</li>
+</ul>
+<p>Can you come up with a cryptographic scheme <code>Anoncoin</code> that anonymizes <code>Doxxcoin</code>?</p>
+<h4 id="hint"><a class="header" href="#hint">Hint</a></h4>
+<details>
+<p>commitment, escrow pool, burn to mint, trust-less</p>
+</details>
+<h4 id="hint-2"><a class="header" href="#hint-2">Hint 2</a></h4>
+<details>
+<ul>
+<li>What if you pooled money together?</li>
+<li>How can you leverage your treasury superpowers? You can issue (mint) or remove (burn) currency from circulation.</li>
+<li>Can this scheme be completely trust-less? How might the Zk-proof help?</li>
+</ul>
+</details>
+<h4 id="solution"><a class="header" href="#solution">Solution</a></h4>
+<details>
+<p>The key idea is to anonymize by pooling <code>Doxxcoin</code> together into a collective <code>Anoncoin</code> escrow pool then redeeming <code>Doxxcoin</code> from that pool.
+The coin you get out is not the same coin you put in.
+More importantly, the coin you get out cannot be associated in any way with the coin you put in.</p>
+<p>Imagine you put physical cash in an envelope along with some proof of ownership (identity / public key), and add it to a pool of envelopes.
+This physical cash has your fingerprints, as well as those of everyone before you (analogous to public keys and tx input / output addresses).</p>
+<p>The safest way to ensure anonymity is to put the envelopes in a vault, taking that money out of circulation (&quot;burning&quot;) and minting new money to replace it.
+You can't just shuffle the envelopes and give back someone else's cash, because that still leaks information about history.</p>
+<p>Now you have some freshly-minted money which has no transaction history.
+It's still <code>Doxxcoin</code> so you can spend it just like you otherwise would.</p>
+<p>In order for this to work, the owner / custodian of the pool needs some way to determine whether you have added money before handing out new <code>Doxxcoin</code>.</p>
+<p>The obvious solution is that the custodian opens the envelope when you ask to redeem <code>Doxxcoin</code> from the pool (recall you stored your identity in the envelope to indicate that it belongs to you).
+They do this to verify your ownership before crediting you with newly-minted <code>Doxxcoin</code>.
+The problem is this requires trust: that owner now has linked the newly-minted <code>Doxxcoin</code> with your original, and it's no longer anonymous.
+Centralization and trust is what we want to avoid!</p>
+<p>This is where ZK-proofs come in. The ZK-proof allows you to prove you own one of the envelopes without ever opening it.</p>
+<p>The other thing we need to do is model this notion of an &quot;envelope&quot; with cryptography. We can do this using a <em>commitment</em>.
+Indeed, a commitment is often explained using this envelope analogy.</p>
+<p>The <code>Anoncoin</code> scheme is as follows:</p>
+<ol>
+<li>Anonymize:
+<ol>
+<li>Create a transaction with two inputs <code>commit(identity)</code> and <code>Doxxcoin</code>.</li>
+<li>Mint an <code>Anoncoin</code> which represents the commitment <code>commit(identity)</code> and add it to a pool of <code>Anoncoin</code>.</li>
+<li>The input <code>Doxxcoin</code> is burned.</li>
+</ol>
+</li>
+<li>Redeem:
+<ol>
+<li>Construct a Zk-proof <code>Zk(f, x)</code>, where <code>f = commit</code> and <code>x = identity</code></li>
+<li>Then, the proof shows &quot;I know <code>x</code>, where <code>f(x) = commit(identity)</code> and <code>f(x)</code> is in the pool of commitments <code>{s1, s2, ...}</code>&quot; (see problem statement)</li>
+<li>Here the commitment pool is in fact a pool of <code>Anoncoin</code>. The Zk-proof proves you minted one of the <code>Anoncoin</code> without revealing your identity (<code>x</code>).</li>
+<li>The protocol (pool custodian) verifies <code>Zk(f, x)</code>.</li>
+<li>The protocol then outputs newly-minted <code>Doxxcoin</code>. Because it's zero-knowledge, the protocol does not learn what your identity (<code>x</code>) is at any point, thus anonymizing.</li>
+</ol>
+</li>
+</ol>
+<p>The beauty of Zk-proofs is everything can be done with pure cryptography. No trusted third-party needed.</p>
+<p><em>This scheme is based on the Zerocoin protocol, with details omitted for simplicity.</em></p>
+</details>
+<h4 id="follow-up"><a class="header" href="#follow-up">Follow-up</a></h4>
+<p>There is a problem with the scheme described in the solution above. Can you spot it?</p>
+<h4 id="hint-1"><a class="header" href="#hint-1">Hint</a></h4>
+<details>
+<p>UTXO</p>
+</details>
+<h4 id="solution-1"><a class="header" href="#solution-1">Solution</a></h4>
+<details>
+<p>There's a double-spend problem. I can keep constructing Zk-proofs, and getting newly-minted <code>Doxxcoin</code>.</p>
+<p>This is because the <code>Zk-proof</code> makes it such that my envelope is never opened: in fact the protocol doesn't even know which envelope is mine.
+I could have multiple envelopes, so it can't just restrict me to redeem / spend once.</p>
+<p>The solution is to include as part of the commitment a unique <code>mint_id</code>.</p>
+<ul>
+<li>Anonymize: the <code>mint_id</code> parameter is added to <code>commit</code> so <code>commit(mint_id, identity)</code></li>
+<li>Redeem: the <code>mint_id</code> is also included with the <code>Zk-proof</code>. <code>Anoncoin</code> protocol keeps track <code>mint_id</code> has never been used in a prior <code>redeem</code> operation</li>
+</ul>
+</details>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="other-reading-lists"><a class="header" href="#other-reading-lists">Other reading lists</a></h1>
+<p>Here are some other helpful compendiums of crypto knowledge:</p>
+<ul>
+<li><a href="https://thedailyape.notion.site/Skill-Tree-f5d7691421024090b66f9b07f7384314">Skill tree</a> (2021) -
+Darren Lau's minimal list of things to learn about crypto</li>
+<li><a href="https://thedailyape.notion.site/thedailyape/Directory-c96c0b6727c0433a962e897ef43efb7e">The Daily Ape - directory</a> -
+Darren Lau's excellent categorical directory</li>
+<li><a href="https://github.com/baraldor/defi">DeFi Studies</a> (2021)</li>
+<li><a href="https://www.decentralised.co/the-reading-list/">The Reading List</a> (mostly 2020)</li>
+<li><a href="https://thecontrol.co/crypto-reading-list-c54da8cab26a">Crypto Reading List from The Control</a></li>
+<li><a href="https://a16z.com/2018/02/10/crypto-readings-resources/">a16z Crypto Canon</a> (2019)</li>
+<li><a href="https://bleeping.notion.site/Crypto-God-s-Eye-a2e3d8519853409787b885cf42ec5095">Crypto God's Eye</a> (2021)</li>
+</ul>
+<h1 id="directories-of-crypto-projects"><a class="header" href="#directories-of-crypto-projects">Directories of crypto projects</a></h1>
+<ul>
+<li><a href="https://pentacle.ai/">Pentacle</a>: directory of Ethereum, Solana, and NFT projects</li>
+<li><a href="https://everest.link/">Everest.link</a> - project registry</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="researchers"><a class="header" href="#researchers">Researchers</a></h1>
+<p>Here are a few places to read interesting original research:</p>
+<ul>
+<li><a href="https://www.paradigm.xyz/writing/">Paradigm - Writing</a> - designs for new protocols, in-depth research
+into emerging technologies</li>
+<li><a href="https://gauntlet.network/research/">Gauntlet Research</a> - fundamental analysis and math</li>
+<li><a href="https://www.mechanism.capital/">Mechanism Capital</a> - fundamental analysis; thesis-driven investing</li>
+<li><a href="https://delphidigital.io/">Delphi Digital</a> (subscription-based)</li>
+<li><a href="https://research.thetie.io/category/research">The Tie</a> - surveys of ecosystems and protocols</li>
+<li><a href="https://github.com/sinoglobalcap/investment-theses">Sinoglobalcap's investment-theses</a></li>
+</ul>
+<p>News</p>
+<ul>
+<li><a href="https://newsletter.thedefiant.io/">The Defiant</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+    </body>
+</html>
