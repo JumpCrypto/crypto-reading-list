@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>L2 - Crypto Reading List</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="A curated list for getting up to speed on crypto and decentralized networks.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Introduction</a></li><li class="chapter-item expanded "><a href="Why.html"><strong aria-hidden="true">1.</strong> Why</a></li><li class="chapter-item expanded "><a href="DeFi.html"><strong aria-hidden="true">2.</strong> DeFi</a></li><li class="chapter-item expanded "><a href="NFT.html"><strong aria-hidden="true">3.</strong> NFT</a></li><li class="chapter-item expanded "><a href="DAO.html"><strong aria-hidden="true">4.</strong> DAO</a></li><li class="chapter-item expanded "><a href="L1/index.html"><strong aria-hidden="true">5.</strong> L1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="L1/Bitcoin.html"><strong aria-hidden="true">5.1.</strong> Bitcoin</a></li><li class="chapter-item expanded "><a href="L1/Ethereum.html"><strong aria-hidden="true">5.2.</strong> Ethereum</a></li><li class="chapter-item expanded "><a href="L1/Avalanche.html"><strong aria-hidden="true">5.3.</strong> Avalanche</a></li><li class="chapter-item expanded "><a href="L1/BSC.html"><strong aria-hidden="true">5.4.</strong> BSC</a></li><li class="chapter-item expanded "><a href="L1/Cosmos.html"><strong aria-hidden="true">5.5.</strong> Cosmos</a></li><li class="chapter-item expanded "><a href="L1/NEAR.html"><strong aria-hidden="true">5.6.</strong> NEAR</a></li><li class="chapter-item expanded "><a href="L1/Polkadot.html"><strong aria-hidden="true">5.7.</strong> Polkadot</a></li><li class="chapter-item expanded "><a href="L1/Polygon.html"><strong aria-hidden="true">5.8.</strong> Polygon</a></li><li class="chapter-item expanded "><a href="L1/Solana.html"><strong aria-hidden="true">5.9.</strong> Solana</a></li><li class="chapter-item expanded "><a href="L1/Terra.html"><strong aria-hidden="true">5.10.</strong> Terra</a></li></ol></li><li class="chapter-item expanded "><a href="L2.html" class="active"><strong aria-hidden="true">6.</strong> L2</a></li><li class="chapter-item expanded "><a href="TradingDynamics.html"><strong aria-hidden="true">7.</strong> TradingDynamics</a></li><li class="chapter-item expanded "><a href="MEV.html"><strong aria-hidden="true">8.</strong> MEV</a></li><li class="chapter-item expanded "><a href="Dev/index.html"><strong aria-hidden="true">9.</strong> Dev</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Dev/Solidity.html"><strong aria-hidden="true">9.1.</strong> Solidity</a></li><li class="chapter-item expanded "><a href="Dev/SolanaProgramming.html"><strong aria-hidden="true">9.2.</strong> Solana</a></li><li class="chapter-item expanded "><a href="Dev/Security.html"><strong aria-hidden="true">9.3.</strong> Security</a></li></ol></li><li class="chapter-item expanded "><a href="Tools.html"><strong aria-hidden="true">10.</strong> Tools</a></li><li class="chapter-item expanded "><a href="Exercises.html"><strong aria-hidden="true">11.</strong> Exercises</a></li><li class="chapter-item expanded "><a href="OtherLists.html"><strong aria-hidden="true">12.</strong> Other lists</a></li><li class="chapter-item expanded "><a href="Researchers.html"><strong aria-hidden="true">13.</strong> Researchers</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Crypto Reading List</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/jumpcrypto/crypto-reading-list" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="l2"><a class="header" href="#l2">L2</a></h1>
+<h2 id="intro--survey"><a class="header" href="#intro--survey">Intro / Survey</a></h2>
+<ul>
+<li><a href="https://gourmetcrypto.substack.com/p/layer-2-for-beginners">L2 for Beginners</a> -
+describing a mental model of an L2 as a chain which writes enough state back to Ethereum that
+no one (including the L2's miners/validators) can send back a fraudulent state</li>
+<li><a href="https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/">Optimistic rollups vs ZK-rollups</a> -
+a recent assessment of the state of various rollup projects</li>
+<li><a href="https://vitalik.ca/general/2021/01/05/rollup.html">Vitalik's post on rollups</a> - a fairly technical summary of the SOTW of rollups</li>
+<li><a href="https://stonecoldpat.github.io/images/validatingbridges.pdf">Validating Bridges</a> (Sep 2021) -
+a fairly thorough assessment of L2 solutions (including Oasis?) as well as open research questions</li>
+<li><a href="https://ethereum.org/en/developers/docs/scaling/layer-2-rollups/">Eth docs on L2 Rollups</a> - see the bottom of this page for further links</li>
+</ul>
+<h2 id="optimistic-rollups"><a class="header" href="#optimistic-rollups">Optimistic rollups</a></h2>
+<ul>
+<li><a href="https://www.paradigm.xyz/2021/01/almost-everything-you-need-to-know-about-optimistic-rollup/">Almost everything you need to know about optimistic rollups</a> (Jan 2021) -
+builds up the design for optimistic rollups from first principles, addressing various perceived issues as they arise</li>
+<li><a href="https://insights.deribit.com/market-research/making-sense-of-rollups-part-2-dispute-resolution-on-arbitrum-and-optimism/">Optimistic rollups: Arbitrum vs Optimism</a></li>
+</ul>
+<h2 id="zk-rollups"><a class="header" href="#zk-rollups">zk-Rollups</a></h2>
+<p>Primary source of info for zkps should be 
+<a href="https://github.com/matter-labs/awesome-zero-knowledge-proofs">awesome-zero-knowledge-proofs</a>,
+a git-based list of learnings curated by Matter Labs.</p>
+<p>Our shortlist:</p>
+<ul>
+<li><a href="https://medium.com/starkware/validity-proofs-vs-fraud-proofs-4ef8b4d3d87a">Validity Proofs vs Fraud Proofs</a> (2019) - 
+StarkWare's summary of fraud proofs (typically employed by optimistic rollups) vs validity proofs (not feasible on optimistic rollups)</li>
+<li><a href="https://consensys.net/blog/blockchain-explained/zero-knowledge-proofs-starks-vs-snarks/">zk-STARKS vs zk-SNARKS</a></li>
+<li><a href="https://docs.ethhub.io/ethereum-roadmap/layer-2-scaling/zk-starks/">ethhub ZK-STARKS</a></li>
+<li><a href="https://medium.com/starkware/on-the-road-to-starknet-a-permissionless-stark-powered-l2-zk-rollup-83be53640880">StarkNet</a> (Jan 2021) -
+StarkWare's description of their STARK-powered zk-rollup</li>
+<li><a href="https://github.com/gakonst/awesome-starknet">Awesome StarkNet</a> - curated list of StarkNet resources and tools from @gakonst and others</li>
+<li><a href="https://blog.matter-labs.io/zksync-is-live-bringing-trustless-scalable-payments-to-ethereum-9c634b3e6823">zkSync</a> (June 2020) -
+Matter Labs' description of their &quot;SNORK&quot;-powered zk-rollup.  SNORKS are SNARKs with a universal and updateable trusted setup.</li>
+<li><a href="https://polynya.medium.com/volitions-best-of-all-worlds-cfd313aec9a8">Volitions: best of all worlds</a> (Aug 2021) -
+describing the <em>volition</em>, a hybrid system where users can choose between storing their data as a rollup (on-chain 
+data) or as a validium (off-chain).
+<ul>
+<li>See also StarkWare's <a href="https://medium.com/starkware/volition-and-the-emerging-data-availability-spectrum-87e8bfa09bb">proposal</a> (June 2020)
+for the volition concept, and Matter Labs' description of its volition implementation <a href="https://blog.matter-labs.io/zkporter-a-breakthrough-in-l2-scaling-ed5e48842fbf">zkSync 2.0</a> (Apr 2021)</li>
+</ul>
+</li>
+</ul>
+<h3 id="zk-proofs"><a class="header" href="#zk-proofs">zk-Proofs</a></h3>
+<ul>
+<li><a href="https://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK.html">Proofs, Arguments, and Zero-Knowledge</a> - extensive survey paper on zero-knowledge argument systems from Justin Thaler</li>
+<li><a href="https://zkp.science/">zkp.science</a>, a compendium of papers and proving systems</li>
+</ul>
+<h2 id="analytics"><a class="header" href="#analytics">Analytics</a></h2>
+<ul>
+<li><a href="https://l2beat.com/">L2beat</a> - comparison of current state of various L2s</li>
+</ul>
+<h2 id="other-lists--acknowledgements"><a class="header" href="#other-lists--acknowledgements">Other Lists / Acknowledgements</a></h2>
+<ul>
+<li><a href="https://twitter.com/likebeckett/status/1452027362229436416">L2 skill tree</a> -
+this tweetstorm by @likebeckett was instrumental in assembling this page</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="L1/Terra.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a rel="next" href="TradingDynamics.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="L1/Terra.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                    <a rel="next" href="TradingDynamics.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Introduction - Crypto Reading List</title>
+        <!-- Custom HTML head -->
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="A curated list for getting up to speed on crypto and decentralized networks.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html" class="active">Introduction</a></li><li class="chapter-item expanded "><a href="Why.html"><strong aria-hidden="true">1.</strong> Why</a></li><li class="chapter-item expanded "><a href="DeFi.html"><strong aria-hidden="true">2.</strong> DeFi</a></li><li class="chapter-item expanded "><a href="NFT.html"><strong aria-hidden="true">3.</strong> NFT</a></li><li class="chapter-item expanded "><a href="DAO.html"><strong aria-hidden="true">4.</strong> DAO</a></li><li class="chapter-item expanded "><a href="L1/index.html"><strong aria-hidden="true">5.</strong> L1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="L1/Bitcoin.html"><strong aria-hidden="true">5.1.</strong> Bitcoin</a></li><li class="chapter-item expanded "><a href="L1/Ethereum.html"><strong aria-hidden="true">5.2.</strong> Ethereum</a></li><li class="chapter-item expanded "><a href="L1/Avalanche.html"><strong aria-hidden="true">5.3.</strong> Avalanche</a></li><li class="chapter-item expanded "><a href="L1/BSC.html"><strong aria-hidden="true">5.4.</strong> BSC</a></li><li class="chapter-item expanded "><a href="L1/Cosmos.html"><strong aria-hidden="true">5.5.</strong> Cosmos</a></li><li class="chapter-item expanded "><a href="L1/NEAR.html"><strong aria-hidden="true">5.6.</strong> NEAR</a></li><li class="chapter-item expanded "><a href="L1/Polkadot.html"><strong aria-hidden="true">5.7.</strong> Polkadot</a></li><li class="chapter-item expanded "><a href="L1/Polygon.html"><strong aria-hidden="true">5.8.</strong> Polygon</a></li><li class="chapter-item expanded "><a href="L1/Solana.html"><strong aria-hidden="true">5.9.</strong> Solana</a></li><li class="chapter-item expanded "><a href="L1/Terra.html"><strong aria-hidden="true">5.10.</strong> Terra</a></li></ol></li><li class="chapter-item expanded "><a href="L2.html"><strong aria-hidden="true">6.</strong> L2</a></li><li class="chapter-item expanded "><a href="TradingDynamics.html"><strong aria-hidden="true">7.</strong> TradingDynamics</a></li><li class="chapter-item expanded "><a href="MEV.html"><strong aria-hidden="true">8.</strong> MEV</a></li><li class="chapter-item expanded "><a href="Dev/index.html"><strong aria-hidden="true">9.</strong> Dev</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="Dev/Solidity.html"><strong aria-hidden="true">9.1.</strong> Solidity</a></li><li class="chapter-item expanded "><a href="Dev/SolanaProgramming.html"><strong aria-hidden="true">9.2.</strong> Solana</a></li><li class="chapter-item expanded "><a href="Dev/Security.html"><strong aria-hidden="true">9.3.</strong> Security</a></li></ol></li><li class="chapter-item expanded "><a href="Tools.html"><strong aria-hidden="true">10.</strong> Tools</a></li><li class="chapter-item expanded "><a href="Exercises.html"><strong aria-hidden="true">11.</strong> Exercises</a></li><li class="chapter-item expanded "><a href="OtherLists.html"><strong aria-hidden="true">12.</strong> Other lists</a></li><li class="chapter-item expanded "><a href="Researchers.html"><strong aria-hidden="true">13.</strong> Researchers</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Crypto Reading List</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/jumpcrypto/crypto-reading-list" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="crypto-reading-list"><a class="header" href="#crypto-reading-list">Crypto Reading List</a></h1>
+<p>A curated list for getting up to speed on crypto and decentralized networks.</p>
+<p>The content on the toplevel page contains what we consider essential reading.
+Child pages contain deeper, topic-specific information to review afterward.</p>
+<p>The lists here are a <strong>work in progress</strong>.  We welcome any feedback or criticism!
+Please open a PR/issue here or reach out to <a href="mailto:crypto-research@jumptrading.com">crypto-research@jumptrading.com</a>
+with any suggestions, or to report any errors.</p>
+<p><em>Nothing in this repo constitutes financial or legal advice.</em></p>
+<h1 id="contents"><a class="header" href="#contents">Contents</a></h1>
+<ul>
+<li><a href="#why-is-crypto-important">Why is crypto important?</a></li>
+<li><a href="#blockchain-mechanics--innovations">Blockchain mechanics &amp; innovations</a></li>
+<li><a href="#defi-primitives">DeFi primitives</a></li>
+<li><a href="#nfts--digital-identity">NFTs &amp; digital identity</a></li>
+<li><a href="#daos--governance">DAOs &amp; Governance</a></li>
+<li><a href="#byzantine-fault-tolerance--proof-of-stake-algos">Byzantine Fault Tolerance &amp; Proof-of-Stake algos</a></li>
+<li><a href="#l1s">L1s</a></li>
+<li><a href="#l2s">L2s</a></li>
+<li><a href="#trading-mechanics">Trading mechanics</a></li>
+<li><a href="#smart-contract-programming">Smart contract programming</a></li>
+<li><a href="#economic-design">Economic design</a></li>
+<li><a href="#tools-&amp;-analytics">Tools &amp; Analytics</a></li>
+<li><a href="#exercises">Exercises</a></li>
+<li><a href="#other-references">Other references</a></li>
+</ul>
+<h1 id="why-is-crypto-important"><a class="header" href="#why-is-crypto-important">Why is crypto important?</a></h1>
+<p>We'd recommend starting your exploration by trying to understand what problems crypto is trying to solve.</p>
+<p>In a few words, we'd say it is:</p>
+<ul>
+<li>enabling a decentralized ledger-based currency system
+<ul>
+<li>decentralized means, extremely difficult for bad actors to forge transactions taking your holdings</li>
+</ul>
+</li>
+<li>enabling a decentralized network of computation / decentralized state transition machine
+<ul>
+<li>decentralized means, extremely difficult for bad actors for enact state changes not defined in sourcecode</li>
+</ul>
+</li>
+<li>enabling an open network of APIs that can be leveraged to build increasingly advanced apps</li>
+<li>enabling an incentive model for these open networks to grow via crypto tokens</li>
+</ul>
+<p>Here's the list:</p>
+<ul>
+<li><a href="https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design">Crypto tokens: a breakthrough in open design</a> (2017)
+<ul>
+<li>tokens as an enabler for alignment between networks and their participants</li>
+</ul>
+</li>
+<li><a href="https://cdixon.org/2018/02/18/why-decentralization-matters">Why decentralization matters</a> (2018)
+<ul>
+<li>discusses the pattern of new technology progressing from innovation to extraction (from cooperation with their 
+ecosystem to eventual competition). For example consider Apple's transition from early days of encouraging 
+developers to build on iOS, to now charging 30% on all in-store purchases.
+Discusses how crypto solves this by aligning the network with its participants.</li>
+</ul>
+</li>
+<li><a href="https://medium.com/coinmonks/the-true-power-of-defi-composability-14fe8355e0d0">The true power of DeFi composability</a> (Apr 2021)</li>
+<li><a href="https://insights.deribit.com/market-research/why-i-have-changed-my-mind-on-tokens/">Why I have changed my mind on tokens</a> (Dec 2020)
+<ul>
+<li>noted researcher Hasu weighs in on the merits of protocol tokens, during a time when many cynics questioned the need for each project to have its own token</li>
+</ul>
+</li>
+<li>Optional: pieces discussing arguments for <em>Bitcoin</em>, generally as a decentralized store of value:
+<ul>
+<li><a href="https://www.matthuang.com/bitcoin_for_the_open_minded_skeptic">Bitcoin for the open-minded skeptic</a> (2020)</li>
+<li><a href="https://www.paradigm.xyz/2020/05/7-things-to-read-about-bitcoin-for-institutional-investors/">7 things to read about bitcoin</a> (2020)</li>
+</ul>
+</li>
+</ul>
+<p><em>More: see in-depth page: <a href="Why.html">Why</a></em></p>
+<h1 id="blockchain-mechanics--innovations"><a class="header" href="#blockchain-mechanics--innovations">Blockchain mechanics &amp; innovations</a></h1>
+<p>We think it's essential reading to understand how bitcoin works,
+and how smart contracts (pioneered by Ethereum) work.</p>
+<ul>
+<li>Bitcoin:
+<ul>
+<li><a href="https://michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/">How the Bitcoin protocol actually works</a> (2013)
+<ul>
+<li>describing Bitcoin's mechanics, building it up from first principles</li>
+</ul>
+</li>
+<li>OR for fundamentalists, see the <a href="https://bitcoin.org/bitcoin.pdf">Bitcoin whitepaper</a> (2009)</li>
+</ul>
+</li>
+<li>Ethereum:
+<ul>
+<li><a href="https://ethereum.org/en/whitepaper/">Ethereum whitepaper</a>
+<ul>
+<li>Vitalik Buterin's original whitepaper building on bitcoin to get smartcontracts; easier to read than the
+Bitcoin whitepaper; also happens to be good explanation of <em>Bitcoin</em></li>
+</ul>
+</li>
+<li>OR for another clear description, see <a href="https://vas3k.com/blog/ethereum/">How Ethereum and Smart Contracts work</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="defi-primitives"><a class="header" href="#defi-primitives">DeFi primitives</a></h1>
+<p><em>In-depth page: <a href="DeFi.html">DeFi</a></em></p>
+<p>Next, let's try to understand the major kinds of financial dApps on the blockchain. 
+Although there are many types, we'd say the two most common are:</p>
+<ol>
+<li><strong>Lending protocol</strong> (a decentralized bank, i.e. a smart contract where you can loan your assets for yield, or
+do borrow while paying interest).  Example: Aave</li>
+<li><strong>Decentralized exchange</strong> (most commonly an Automated Market Maker (AMM), a smart contract with two pools of 
+assets that allows swapping from one asset to the other).  Example: Uniswap</li>
+</ol>
+<p>A third, which can be thought of as a competitor to (1) of sorts, is:</p>
+<ol start="3">
+<li><strong>Decentralized stablecoin issuer</strong> (a protocol allowing you to deposit assets (e.g. Eth)
+and borrow a decentralized stablecoin (minted by the protocol) against it).  We say that it is a
+competitor of sorts to (1) where the lender is the protocol.  Example: MakerDAO</li>
+</ol>
+<p>Initial reading material on these categories:</p>
+<ul>
+<li>Lending protocols
+<ul>
+<li><a href="https://finematics.com/lending-and-borrowing-in-defi-explained/">Lending and borrowing in DeFi</a> (Nov 2020)</li>
+</ul>
+</li>
+<li>AMMs
+<ul>
+<li><a href="https://medium.com/dragonfly-research/what-explains-the-rise-of-amms-7d008af1c399">AMMs</a> (Jul 2020)
+<ul>
+<li>explaining the mechanics of the constant-product AMM popularized by Uniswap V2</li>
+</ul>
+</li>
+<li><a href="https://curve.fi/files/stableswap-paper.pdf">StableSwap AMMs</a> (2019)
+<ul>
+<li>explaining another AMM formulation for stable pairs of assets, pioneered by Curve.fi</li>
+</ul>
+</li>
+<li><a href="https://uniswap.org/whitepaper-v3.pdf">Uniswap V3 whitepaper</a>
+<ul>
+<li>explaining the 'concentrated liquidity' innovation in UniswapV3</li>
+<li>see also <a href="https://www.paradigm.xyz/2021/06/uniswap-v3-the-universal-amm/">Uniswap v3: The Universal AMM</a>
+for illustrations of UniV3 emulating specific other functions</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Decentralized stablecoin issuance
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Dai_(cryptocurrency)">Wikipedia article on Dai</a> provides a good, terse 
+description of MakerDAO and Dai, the stablecoin it issues</li>
+</ul>
+</li>
+<li>Other essential reading:
+<ul>
+<li><a href="https://blog.makerdao.com/what-are-blockchain-bridges-and-why-are-they-important-for-defi/">Bridges</a></li>
+</ul>
+</li>
+</ul>
+<p>For much more, see our in-depth page on <a href="DeFi.html">DeFi</a></p>
+<h1 id="nfts--digital-identity"><a class="header" href="#nfts--digital-identity">NFTs &amp; digital identity</a></h1>
+<p><em>In-depth page: <a href="NFT.html">NFT</a></em></p>
+<ul>
+<li><a href="https://future.a16z.com/nfts-thousand-true-fans/">NFTs and a Thousand True Fans</a> (Feb 2021) -
+an argument for NFTs as enabling a better creator economy</li>
+</ul>
+<h1 id="daos--governance"><a class="header" href="#daos--governance">DAOs &amp; Governance</a></h1>
+<p><em>In-depth page: <a href="DAO.html">DAO</a></em></p>
+<ul>
+<li><a href="https://linda.mirror.xyz/Vh8K4leCGEO06_qSGx-vS5lvgUqhqkCz9ut81WwCP2o">Beginner's guide to DAOs</a> (Mar 2021) 
+<ul>
+<li>examples of what DAOs can do (e.g. shared ownership of a valuable asset, governance)</li>
+</ul>
+</li>
+<li><a href="https://www.notboring.co/p/the-dao-of-daos-5b9">The DAO of DAOs</a> (Mar 2021)</li>
+<li><a href="https://deepdao.io/#/deepdao/dashboard">Running List of DAOs</a></li>
+</ul>
+<h1 id="byzantine-fault-tolerance--proof-of-stake-algos"><a class="header" href="#byzantine-fault-tolerance--proof-of-stake-algos">Byzantine Fault Tolerance &amp; Proof-of-Stake algos</a></h1>
+<p>At this point, we'd recommend learning about alternative smart contract blockchains.</p>
+<p>A fundamental design decision in blockchains is the mechanism by which block producers (miners
+in Bitcoin and Eth 1.0) come to consensus on the next block.  This problem of doing so in a
+distributed system with a variety of actors--some of whom may be sending intentionally confusing
+or destabilizing messages to their peers--is the key to establishing consensus and progressing the
+blockchain.</p>
+<p>Bitcoin and Eth 1.0 accomplish this by proof of work (&quot;Nakamoto consensus&quot;),
+but most other blockchains use variants of a different family of algorithms referred to as 
+<strong>Byzantine Fault Tolerant (BFT)</strong> algorithms.</p>
+<ul>
+<li><a href="https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419">Understanding Blockchain Fundamentals: Byzantine Fault Tolerance</a></li>
+<li><a href="https://medium.com/@yaoshiang/the-interplay-of-nakamoto-consensus-and-byzantine-fault-tolerance-9aeed9d102f5">Nakamoto Consensus vs BFT</a></li>
+<li><a href="https://knowen-production.s3.amazonaws.com/uploads/attachment/file/1814/Buchman_Ethan_201606_Msater%2Bthesis.pdf">Tendermint: Byzantine Fault Tolerance</a>
+<ul>
+<li>Overview of BFT algorithms and how proof of stake chains can work, in the form of a masters thesis from the co-founder of Cosmos.</li>
+</ul>
+</li>
+</ul>
+<h1 id="l1s"><a class="header" href="#l1s">L1s</a></h1>
+<p><em>In-depth page: <a href="L1">L1</a></em></p>
+<p>At this point you might want to dig into different L1 blockchains--both their protocol designs and their ecosystems.
+See in-depth pages below:</p>
+<ul>
+<li><a href="L1/README.html">Historical/academic background</a></li>
+<li><a href="L1/Bitcoin.html">Bitcoin</a></li>
+<li><a href="L1/Ethereum.html">Ethereum</a></li>
+<li><a href="L1/Avalanche.html">Avalanche</a></li>
+<li><a href="L1/BSC.html">BSC</a></li>
+<li><a href="L1/Cosmos.html">Cosmos</a></li>
+<li><a href="L1/NEAR.html">NEAR</a></li>
+<li><a href="L1/Polkadot.html">Polkadot</a></li>
+<li><a href="L1/Polygon.html">Polygon</a></li>
+<li><a href="L1/Solana.html">Solana</a></li>
+<li><a href="L1/Terra.html">Terra</a></li>
+</ul>
+<h1 id="l2s"><a class="header" href="#l2s">L2s</a></h1>
+<p><em>In-depth page: <a href="L2.html">L2</a></em></p>
+<ul>
+<li><a href="https://gourmetcrypto.substack.com/p/layer-2-for-beginners">L2 for Beginners</a> (Mar 2021)
+<ul>
+<li>describing a mental model of an L2 as a chain which writes enough state back to Ethereum that
+no one (including the L2's miners/validators) can send back a fraudulent state</li>
+</ul>
+</li>
+<li><a href="https://www.paradigm.xyz/2021/01/almost-everything-you-need-to-know-about-optimistic-rollup/">Almost everything you need to know about optimistic rollups</a> (Jan 2021)
+<ul>
+<li>builds up the design for optimistic rollups from first principles, addressing various perceived issues as they arise</li>
+</ul>
+</li>
+<li><a href="https://insights.deribit.com/market-research/making-sense-of-rollups-part-2-dispute-resolution-on-arbitrum-and-optimism/">Optimistic rollups: Arbitrum vs Optimism</a> (Jul 2021)</li>
+<li><a href="https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/">Optimistic rollups vs ZK-rollups</a> (Aug 2021)
+<ul>
+<li>a recent assessment of the state of various rollup projects</li>
+</ul>
+</li>
+</ul>
+<h1 id="trading-mechanics"><a class="header" href="#trading-mechanics">Trading mechanics</a></h1>
+<p><em>In-depth page: <a href="TradingDynamics.html">TradingDynamics</a></em></p>
+<p><em>In-depth page: <a href="MEV.html">MEV/Arbitrage</a></em></p>
+<h1 id="smart-contract-programming"><a class="header" href="#smart-contract-programming">Smart contract programming</a></h1>
+<p><em>In-depth page: <a href="Dev">Development</a></em></p>
+<h1 id="economic-design"><a class="header" href="#economic-design">Economic design</a></h1>
+<p><em>In-depth page: <a href="EconDesign.html">EconDesign</a></em></p>
+<h1 id="tools--analytics"><a class="header" href="#tools--analytics">Tools &amp; Analytics</a></h1>
+<p><em>In-depth page: <a href="Tools.html">Tools</a></em></p>
+<h1 id="exercises"><a class="header" href="#exercises">Exercises</a></h1>
+<p>Check your understanding with <em><a href="Exercises.html">these thought questions and exercises</a>.</em></p>
+<h1 id="other-references"><a class="header" href="#other-references">Other references</a></h1>
+<h3 id="other-listsdirectories"><a class="header" href="#other-listsdirectories">Other lists/directories</a></h3>
+<p><em>In-depth page: <a href="OtherLists.html">Other Lists</a></em></p>
+<h3 id="original-research"><a class="header" href="#original-research">Original research</a></h3>
+<p><em>In-depth page: <a href="Researchers.html">Researchers</a></em></p>
+<h3 id="online-courses"><a class="header" href="#online-courses">Online courses</a></h3>
+<ul>
+<li><a href="https://berkeley-defi.github.io/f21">Berkeley DeFi</a></li>
+<li><a href="https://www.youtube.com/watch?v=KNJGPI0fuFA&amp;list=PLEGCF-WLh2RLOHv_xUGLqRts_9JxrckiA">Foundations of Blockchain (Columbia)</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="next" href="Why.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="next" href="Why.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+    </body>
+</html>
