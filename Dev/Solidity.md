@@ -5,6 +5,7 @@ Programming in Solidity
 * [CryptoZombies](https://cryptozombies.io/) - learn solidity by building up a zombie game
 * [Solidity by Example](https://solidity-by-example.org/)
 * [Pet shop Truffle tutorial](https://www.trufflesuite.com/tutorial)
+* [Solidity patterns](https://github.com/fravoll/solidity-patterns)
 * [DeFi developer roadmap](https://github.com/OffcierCia/DeFi-Developer-Road-Map)
 
 ## Security
