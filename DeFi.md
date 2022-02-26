@@ -21,7 +21,7 @@ DeFi
   * a skill tree of DeFi concepts
 * [Where does yield come from, anyway?](https://juliankoh.medium.com/where-does-yield-come-from-anyway-fc818c114bd5)
 * [A theory of DeFi?](https://www.youtube.com/watch?v=esekWF3SyB8)
-  * A keynote at ACM CCS by Professor Tim Roughgarden, presenting a DeFi overview and why it's important to have "theory". Includes a deep-dive into AMMs (CFMMs).
+  * an overview of DeFi and why it's important develop "theory". Deep-dives into the AMM primitive
 
 ## Lending protocols
 * [Lending and borrowing in DeFi](https://finematics.com/lending-and-borrowing-in-defi-explained/) (Finematics, Nov 2020)
@@ -33,56 +33,59 @@ DeFi
 
 ## DEX trading
 ### AMM (swap according to a formula) DEXes
-* [Constant Function Market-Makers](https://arxiv.org/pdf/2003.10001.pdf) (June 2020) -
-  a theoretical assessment of the more general version of constant-product market-makers
-* [Perp AMMs](https://insights.deribit.com/market-research/the-quest-for-perp-amms/) -
-  explaining the vAMM method introduced by Perpetual Protocol and its current pitfalls
+* [Constant Function Market-Makers](https://arxiv.org/pdf/2003.10001.pdf) (June 2020)
+  * a theoretical assessment of the more general version of constant-product market-makers
+* [Perp AMMs](https://insights.deribit.com/market-research/the-quest-for-perp-amms/)
+  * explaining the vAMM method introduced by Perpetual Protocol and its current pitfalls
 * [Explaining balancer pools](https://medium.com/balancer-simulations/understanding-balancer-pools-c2b877dcc082)
 * [UniV3 Simulator](https://defi-lab.xyz/uniswapv3simulator)
 
-### Serum - full order book
+### Serum (full order book)
 * [Serum whitepaper](https://assets.website-files.com/61382d4555f82a75dc677b6f/61384a6d5c937269dbed185c_serum_white_paper.88d98f84.pdf)
-* [technical introduction](https://docs.google.com/document/d/1isGJES4jzQutI0GtQGuqtrBUqeHxl_xJNXdtOv4SdII/edit) -
-  describes the orderbook interactions and data structures, as well as how they're implemented. Warning: not updated for DexV3
+* [A technical introduction to the Serum DEX](https://docs.google.com/document/d/1isGJES4jzQutI0GtQGuqtrBUqeHxl_xJNXdtOv4SdII/edit)
+  * describes the orderbook interactions and data structures, as well as how they're implemented. Note the section on the request queue is outdated
+* [Serum core](https://docs.projectserum.com/appendix/serum-core)
+  * a next-gen orderbook that decouples the matching engine from SPL tokens. Also known as the agnostic orderbook (AOB)
+  * [DEX v4](https://github.com/Bonfida/dex-v4) is a new version of Serum DEX that builds on top of the AOB
 
 ### Derivatives
 * [DeFi Derivative Landscape](https://github.com/0xperp/defi-derivatives)
 
 ## Stablecoins
-* [Stablecoin Overview](https://www.youtube.com/watch?v=0XB_2O6FsIk) - 
-  a general overview of the stablecoin landscape and key differentiators for categorization
-* [MakerDao Whitepaper](https://makerdao.com/en/whitepaper/#abstract) -
-  the original crypto-collateralized stablecoin 
-* [Terra Whitepaper](https://assets.website-files.com/611153e7af981472d8da199c/618b02d13e938ae1f8ad1e45_Terra_White_paper.pdf) 
-* [Black Thursday for MakerDao, An Explainer](https://medium.com/@whiterabbit_hq/black-thursday-for-makerdao-8-32-million-was-liquidated-for-0-dai-36b83cac56b6) -
-  a general overview of MakerDao's Black Thursday event
-* [Deleverging Spirals and Stablecoins Attacks](https://arxiv.org/pdf/1906.02152.pdf) -
-  a deep dive into deleveraging spirals, mempool attacks and an empirical investigation of MakerDao's Black Thursday event 
-* [The Iron Finance Exploit Explained](https://thedefiant.io/not-just-a-bank-run-new-evidence-shows-iron-finance-crashed-due-to-code-exploit/) 
+* [Stablecoin Overview](https://www.youtube.com/watch?v=0XB_2O6FsIk)
+  * a general overview of the stablecoin landscape and key differentiators for categorization
+* [MakerDao Whitepaper](https://makerdao.com/en/whitepaper/#abstract)
+  * the original crypto-collateralized stablecoin
+* [Terra Whitepaper](https://assets.website-files.com/611153e7af981472d8da199c/618b02d13e938ae1f8ad1e45_Terra_White_paper.pdf)
+* [Black Thursday for MakerDao, An Explainer](https://medium.com/@whiterabbit_hq/black-thursday-for-makerdao-8-32-million-was-liquidated-for-0-dai-36b83cac56b6)
+  * a general overview of MakerDao's Black Thursday event
+* [Deleverging Spirals and Stablecoins Attacks](https://arxiv.org/pdf/1906.02152.pdf)
+  * a deep dive into deleveraging spirals, mempool attacks and an empirical investigation of MakerDao's Black Thursday event
+* [The Iron Finance Exploit Explained](https://thedefiant.io/not-just-a-bank-run-new-evidence-shows-iron-finance-crashed-due-to-code-exploit/)
 
 ## Bridges
 * [Bridge survey](https://medium.com/1kxnetwork/blockchain-bridges-5db6afac44f8)
 
 ## Oracles
-* [The Oralce Report of Delphi](https://members.delphidigital.io/reports/the-oracle-report-of-delphi/) (June 2021) -
-  overview of the oracle landscape
+* [The Oracle Report of Delphi](https://members.delphidigital.io/reports/the-oracle-report-of-delphi/) (June 2021)
+  * overview of the oracle landscape
 
 ## Indexing
 * [Intro to The Graph](https://thegraph.com/docs/about/introduction)
-  * The Graph is a decentralized protocol for indexing and querying blockchain data.
-    It's like a search engine framework, and each 'subgraph' is a domain-specific search engine implementation
-  * [GraphQL API](https://thegraph.com/docs/developer/graphql-api) -
-    tutorial on how to query a subgraph using GraphQL
+  * The Graph is a decentralized protocol for indexing and querying blockchain data
+    * It's like a search engine framework, and each 'subgraph' is a domain-specific search engine implementation
+  * [GraphQL API](https://thegraph.com/docs/developer/graphql-api)
+    * tutorial on how to query a subgraph using GraphQL
 
 ## Insurance
 * [Nexus Mutual (NXM) whitepaper](https://nexusmutual.io/assets/docs/nmx_white_paperv2_3.pdf)
 
 ## Governance wars and DeFi
-* [CRV/CVX part 1](https://tokenbrice.xyz/defi-flywheel/) (June 2021) - 
-  describing the innovation of Convex (CVX) as a method for controlling valuable CRV governance votes,
-  as well as the more general question of protocol design with respect to 'meta-protocols' like CVX
-* [CRV/CVX part 2](https://tokenbrice.xyz/crv-wars/) (Sep 2021) - an in-depth look at the CRV governance
-  war which TokenBrice correctly predicted in part 1.
+* [CRV/CVX part 1](https://tokenbrice.xyz/defi-flywheel/) (June 2021)
+  * describing the innovation of Convex (CVX) as a method for controlling valuable CRV governance votes,
+    as well as the more general question of protocol design with respect to 'meta-protocols' like CVX
+* [CRV/CVX part 2](https://tokenbrice.xyz/crv-wars/) (Sep 2021)
+  * an in-depth look at the CRV governance war which TokenBrice correctly predicted in part 1
 * [Mochi scam and the Curve Wars](https://www.coindesk.com/business/2021/11/11/curve-wars-heat-up-emergency-dao-invoked-after-clear-governance-attack/) (Nov 2021)
 
 ## Tools
