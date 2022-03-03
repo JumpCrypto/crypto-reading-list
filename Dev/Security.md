@@ -3,7 +3,7 @@ Smart contract security
 
 # Education / best practices
 * [Eth smart contract security best practices](https://consensys.github.io/smart-contract-best-practices/)
-  (see especially: [known attacks](https://consensys.github.io/smart-contract-best-practices/known_attacks/))
+  (see especially: [known attacks](https://consensys.github.io/smart-contract-best-practices/attacks/))
 * [Most common smart contract bugs](https://medium.com/solidified/most-common-smart-contract-bugs-of-2020-c1edfe9340ac)
 
 ## Solana-specific
