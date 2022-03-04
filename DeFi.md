@@ -87,6 +87,10 @@ DeFi
 * [CRV/CVX part 2](https://tokenbrice.xyz/crv-wars/) (Sep 2021)
   * an in-depth look at the CRV governance war which TokenBrice correctly predicted in part 1
 * [Mochi scam and the Curve Wars](https://www.coindesk.com/business/2021/11/11/curve-wars-heat-up-emergency-dao-invoked-after-clear-governance-attack/) (Nov 2021)
+* [Convex - A Curve Overlay](https://www.tinkeringsociety.xyz/post/analysis-of-convex-finance-cvx) (Feb 2022)
+  * a comprehensive analysis of Convex, its tokenomics, and its intimate relationship with Curve and Yearn
+* [Tokemak - A Deep Dive](https://www.tinkeringsociety.xyz/post/tokemak-a-deep-dive)
+  * a look at how Tokemak works and its vision of directed liquidity
 
 ## Tools
 ### High-level TVL/usage stats
