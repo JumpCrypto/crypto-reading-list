@@ -120,7 +120,6 @@ Use these to track your (or anyone else's) balances/activity across various DeFi
 
 ### Airdrops
 * [twitter.com/defi_airdrops](https://twitter.com/defi_airdrops)
-* [etherscan.io/airdrops](https://etherscan.io/airdrops)
 
 ### Fun
 * [fees.wtf](http://fees.wtf) - check how much you have spent on ETH fees
