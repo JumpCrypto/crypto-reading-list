@@ -12,6 +12,10 @@ Oasis Network is a scalable privacy-enabled blockchain with innovations in paral
 * [Parcel](https://www.oasislabs.com/blog/parcel-primer-oasis) (2021) -
   platform and ParaTime for data sharing and tokenization, useful for porting web2 data for web3 applications 
 
+## Ecosystem
+* [Yuzu Swap](https://yuzu-swap.com/index.html)
+* [MetaMirror and MBuddy](https://auth3.network/metamirror/) - Metaverse identity with data from Parcel
+
 ## Development and Technology 
 * [Research paper on confidentiality and TEEs](https://docsend.com/view/3aznduk)
 * [Remote Attestation on Intel SGX](https://www.intel.com/content/www/us/en/developer/articles/code-sample/software-guard-extensions-remote-attestation-end-to-end-example.html)
