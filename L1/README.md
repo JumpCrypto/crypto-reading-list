@@ -7,6 +7,7 @@
 * [BSC](BSC.md)
 * [Cosmos](Cosmos.md)
 * [NEAR](NEAR.md)
+* [Oasis](Oasis.md)
 * [Polkadot](Polkadot.md)
 * [Polygon](Polygon.md)
 * [Solana](Solana.md)
