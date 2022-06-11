@@ -5,6 +5,9 @@ Solana programming
 _See [L1/Solana.md](../L1/Solana.md)_
 * [Solana docs](https://docs.solana.com/introduction)
 
+## Course
+* [Solana Development Course](https://github.com/Unboxed-Software/solana-course) - open sourced course to teach students both client & program side Solana development and concepts
+
 ## SolDev.app
 * [SolDev.app](https://www.soldev.app/) - excellent collection of resources, getting better by the day
 
