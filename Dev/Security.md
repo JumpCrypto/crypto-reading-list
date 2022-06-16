@@ -82,6 +82,9 @@ protocols that depend on on-chain oracles for pricing should be especially cogni
   * pool share calc uses market price as oracle instead of 1
 * [Oracle vulnerabilities](https://samczsun.com/so-you-want-to-use-a-price-oracle/)
   * samczsun discussion of some famous oracle attacks
+* [Inverse Finance oracle attack](https://rekt.news/inverse-finance-rekt/) (Apr 2022) (required price manipulation across multiple blocks)
+* [Inverse Finance oracle attack 2](https://twitter.com/peckshield/status/1537382891230883841) (June 2022)
+* Related: [discussion of UniV3 TWAP oracle manipulation](https://twitter.com/euler_mab/status/1459314402059034634)
 
 ### Other interesting economic attacks
 * [bZx 2020 exploit](https://peckshield.medium.com/bzx-hack-full-disclosure-with-detailed-profit-analysis-e6b1fa9b18fc) (Feb 2020)
@@ -107,11 +110,18 @@ tokens (or minting claim tokens) from the bridge contract.
 ### Missing checks
 * [Polygon lack of balance/allowance check in MRC20 contract](https://medium.com/immunefi/polygon-lack-of-balance-check-bugfix-postmortem-2-2m-bounty-64ec66c24c7d) (Dec 2021)
 
+### Uninitialized proxy
+The [proxy upgrade pattern](https://docs.openzeppelin.com/upgrades-plugins/1.x/proxies) is a very popular mechanism for making code upgradeable by moving business logic to an implementation contract while maintaining state on a proxy contract.  The proxy contract maintains a (switchable) pointer to the implementation and delegatecalls to the implementation contract for business logic.
+* Unfortunately, there at one point there was a vulnerability in the standard OpenZeppelin pattern where the proxy contract could be bricked (funds in the proxy could be stuck permanently) which was fixed [here](https://forum.openzeppelin.com/t/security-advisory-initialize-uups-implementation-contracts/15301).
+* [Uninitialized proxy in Harvest finance (bounty)](https://medium.com/immunefi/harvest-finance-uninitialized-proxies-bug-fix-postmortem-ea5c0f7af96b) (Nov 2021)
+* [Uninitialized proxy in Wormhole bridge contract (bounty)](https://medium.com/immunefi/wormhole-uninitialized-proxy-bugfix-review-90250c41a43a) (Feb 2022)
+
 ### Unauthorized access
 * [Pickle Finance exploit](https://rekt.news/pickle-finance-rekt/)
   * See especially [this diagram](https://twitter.com/vasa_develop/status/1330532691205361664/photo/1)
   * Pickle Finance was a fork of Yearn; Yearn published this [vulnerability disclosure](https://github.com/yearn/yearn-security/blob/master/disclosures/2020-10-10.md) a month earlier
   * Similar problem [here](https://rekt.news/rari-capital-rekt/)
+* [Parity wallet bug](https://hackingdistributed.com/2017/07/22/deep-dive-parity-bug/) (2017)
 
 ### Frontend attacks
 * [BadgerDAO Cloudflare exploit](https://badger.com/technical-post-mortem) (Dec 2021)
