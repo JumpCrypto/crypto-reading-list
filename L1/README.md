@@ -13,6 +13,7 @@
 * [Polygon](Polygon.md)
 * [Solana](Solana.md)
 * [Terra](Terra.md)
+* [Sui](Sui.md)
 
 ## Overviews
 * [Blockchain onboarding matrix](https://twitter.com/ahboyash/status/1485939275065868289) - some notable bridges, wallets, apps, etc for each blockchain
