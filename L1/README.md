@@ -4,6 +4,7 @@
 * [Bitcoin](Bitcoin.md)
 * [Ethereum](Ethereum.md)
 * [Avalanche](Avalanche.md)
+* [Aptos](Aptos.md)
 * [BSC](BSC.md)
 * [Cosmos](Cosmos.md)
 * [NEAR](NEAR.md)
