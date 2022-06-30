@@ -172,6 +172,7 @@ See in-depth pages below:
 * [Polygon](L1/Polygon.md)
 * [Solana](L1/Solana.md)
 * [Terra](L1/Terra.md)
+* [Sui](L1/Sui.md)
 
 
 L2s
