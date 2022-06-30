@@ -164,6 +164,7 @@ See in-depth pages below:
 * [Bitcoin](L1/Bitcoin.md)
 * [Ethereum](L1/Ethereum.md)
 * [Avalanche](L1/Avalanche.md)
+* [Aptos](L1/Aptos.md)
 * [BSC](L1/BSC.md)
 * [Cosmos](L1/Cosmos.md)
 * [NEAR](L1/NEAR.md)
