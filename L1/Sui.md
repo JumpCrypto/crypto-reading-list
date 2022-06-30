@@ -7,6 +7,7 @@ In summary, Sui’s performance gains can be attributed to Amdahl’s law — Su
 
 ## Blockchain
 * [Sui Whitepaper](https://github.com/MystenLabs/sui/blob/main/doc/paper/sui.pdf)
+* [Sui Framework](https://github.com/MystenLabs/sui/tree/main/crates/sui-framework)
 
 ## Ecosystem
 * [Sui Developer Hub](https://docs.sui.io/?utm_source=medium&utm_medium=blog&utm_campaign=suilaunch_medium&utm_id=suilaunch)
