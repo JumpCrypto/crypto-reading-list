@@ -6,12 +6,15 @@ Move represents digital assets as programmable resources: data that can be moved
 
 
 ## Blockchain
-Aptos uses a version of Hotstuff BFT consensus, has an advertised TPS of >100k, and allows for parallel account transactions.
-* [Aptos Medium Blog](https://medium.com/aptoslabs/the-aptos-vision-1028ac56676e)
-* [Move Language Whitepaper](https://diem-developers-components.netlify.app/papers/diem-move-a-language-with-programmable-resources/2020-05-26.pdf)
-* [The Move Book](https://move-book.com/index.html)
+Aptos uses a version of Hotstuff BFT consensus, has an advertised TPS of >100k, and allows for parallel account transactions. The Aptos Framework defines a standard library of Move modules accessible on-chain, which defines data structures, coins, ACLs, non-fungible tokens, and more.
+
+* [Aptos Framework](https://github.com/aptos-labs/aptos-core/tree/main/aptos-move/framework)
 * [Aptos Core](https://github.com/aptos-labs/aptos-core)
+* [Move Whitepaper](https://diem-developers-components.netlify.app/papers/diem-move-a-language-with-programmable-resources/2020-05-26.pdf)
+* [The Move Book](https://move-book.com/index.html)
+
 
 ## Ecosystem
 * [Aptos Developer Network](https://aptos.dev/)
 * [Pontem Developer Network](https://pontem.network/)
+* [Aptos Medium Blog](https://medium.com/aptoslabs/the-aptos-vision-1028ac56676e)
