@@ -164,6 +164,7 @@ See in-depth pages below:
 * [Bitcoin](L1/Bitcoin.md)
 * [Ethereum](L1/Ethereum.md)
 * [Avalanche](L1/Avalanche.md)
+* [Aptos](L1/Aptos.md)
 * [BSC](L1/BSC.md)
 * [Cosmos](L1/Cosmos.md)
 * [NEAR](L1/NEAR.md)
@@ -171,6 +172,7 @@ See in-depth pages below:
 * [Polygon](L1/Polygon.md)
 * [Solana](L1/Solana.md)
 * [Terra](L1/Terra.md)
+* [Sui](L1/Sui.md)
 
 
 L2s
