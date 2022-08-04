@@ -2,6 +2,7 @@ Smart contract security
 ========================
 
 # Education / best practices
+* [Solcurity](https://github.com/transmissions11/solcurity) - opinions from [t11s](https://twitter.com/transmissions11) on security best practices
 * [Eth smart contract security best practices](https://consensys.github.io/smart-contract-best-practices/)
   (see especially: [known attacks](https://consensys.github.io/smart-contract-best-practices/attacks/))
 * [Smart Contract Weakness Registry](https://swcregistry.io/) - an enumeration of common weaknesses in smart contracts, with code samples

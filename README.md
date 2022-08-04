@@ -199,6 +199,10 @@ Smart contract programming
 ============================
 _In-depth page: [Development](Dev)_
 
+* [Programming for EVM](Dev/EVM.md)
+  * [Smart contract security](Dev/Security.md)
+* [Programming for Solana](Dev/SolanaProgramming.md)
+
 
 Economic design
 ============================

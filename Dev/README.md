@@ -5,6 +5,6 @@ Developing on the blockchain
 * [Blockchain (Ethereum) learning path](https://github.com/protofire/blockchain-learning-path) (June 2021)
 
 ## Child pages
-* [Solidity programming](Solidity.md)
+* [EVM programming](EVM.md)
 * [Solana programming](SolanaProgramming.md)
 * [Smart contract security](Security.md)
