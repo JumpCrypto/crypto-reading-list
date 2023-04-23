@@ -10,6 +10,7 @@ arbitrarily include, exclude, or re-order transactions within a block.
   flashbots private relay.  Includes discussion of the role flashbots plays in 'democratizing' MEV and
   providing DOS protection for miners.
 * [awesome-MEV-resources](https://github.com/0xalpharush/awesome-MEV-resources) - curated list of MEV articles/podcasts/etc
+* [MEV Resource Vault](https://github.com/flashbots/mev-research/blob/main/resources.md) - curated list of MEV resources from Flashbots
   
 ## History
 * [Ethereum is a dark forest](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest/) (Dan Robinson, Aug 2020)
