@@ -28,6 +28,8 @@ Price, official websites, stats, volume by venue, etc:
 * [Bloxy](https://bloxy.info/)
   * tools for understanding callstacks in Ethereum transactions
 * [EthTx Transaction Decoder](https://ethtx.info/)
+* [Sentio Explorer](https://app.sentio.xyz/explorer)
+  * tools for understanding transactions and reading contracts 
 * [Awesome crypto trackers](https://github.com/denisnazarov/awesome-crypto-trackers) - many trackers here
 
 ## On-chain analytics
