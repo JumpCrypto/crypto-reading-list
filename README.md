@@ -39,10 +39,6 @@ Why is crypto important?
 ===========================
 We've identified four central themes behind crypto's value proposition:
 
-Why is crypto important?
-===========================
-We've identified four central themes behind crypto's value proposition:
-
 1. A decentralized ledger-based **currency** system.
    * anyone can participate in administering the currency, and cryptography makes it impossible for bad actors to forge transactions taking your holdings.
 2. A decentralized **state machine** and network of computation.
