@@ -39,13 +39,20 @@ Why is crypto important?
 ===========================
 We've identified four central themes behind crypto's value proposition:
 
-1. A decentralized ledger-based currency system.
-  * decentralized means distributed and unpermissioned. Anyone can participate in administering the currency.
-  * ledger-based: impossible for bad actors to forge transactions taking your holdings. Cryptography secures your money and forms a public, verifiable chain of trust.
-2. A decentralized state machine and network of computation
-  * decentralized means extremely difficult for bad actors for enact state changes not defined in sourcecode
-3. An open network of APIs for decentralized apps
-4. An incentive model for these open networks to grow via crypto tokens
+Why is crypto important?
+===========================
+We've identified four central themes behind crypto's value proposition:
+
+1. A decentralized ledger-based **currency** system.
+   * anyone can participate in administering the currency, and cryptography makes it impossible for bad actors to forge transactions taking your holdings.
+2. A decentralized **state machine** and network of computation.
+   * it is extremely difficult for bad actors for enact state changes not defined in sourcecode.
+3. An open network of **APIs** for decentralized apps.
+4. An incentive model for these open networks to grow via crypto **tokens**.
+
+Broadly speaking, **decentralization** means **distributed and unpermissioned**. In the ideal case, anyone can participate in the network, and the participants are both physically and socioeconomically spread apart.
+
+Decentralization is often paired with **cryptoeconomics** to design an incentive model that perpetuates a healthy network. For example, network participants may be rewarded with a "native token" when they exhibit good behavior. This does require a certain level of scale, and the network is usually provably robust against bad actors under a certain threshold (see the section on Byzantine Fault Tolerance). As the network grows in size, it becomes increasingly difficult for a bad actor (or coalition of bad actors) to attack the network, because there are enough honest participants that are economically (and perhaps even philosophically) incentivized to perpetuate the network. Roughly speaking, the bad actor must have more to gain than lose from performing the bad action (ie. paying the network penalty eg. slashing + opportunity cost of rewards for honesty * probability attack is even successful). In other words, the expected value of the bad action must be positive.
 
 Here's the list of relevant reading:
 * The currency proposition:
