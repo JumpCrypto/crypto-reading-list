@@ -1,4 +1,4 @@
-crypto reading list
+Crypto Reading List
 ====================
 
 _For a more friendly reading experience, we recommend navigating [here](https://jumpcrypto.github.io/crypto-reading-list)._
@@ -9,56 +9,64 @@ The content on the toplevel page contains what we consider essential reading.
 Child pages contain deeper, topic-specific information to review afterward.
 
 The lists here are a **work in progress**.  We welcome any feedback or criticism!
-Please open a PR/issue here or reach out to [crypto-research@jumptrading.com](mailto:crypto-research@jumptrading.com)
-with any suggestions, or to report any errors.
+Please open a PR/issue with any suggestions or corrections.
 
 _Nothing in this repo constitutes financial or legal advice._
 
 
 Contents
 =========
-* [Why is crypto important?](#why-is-crypto-important)
-* [Blockchain mechanics & innovations](#blockchain-mechanics--innovations)
-* [DeFi primitives](#defi-primitives)
-* [NFTs & digital identity](#nfts--digital-identity)
-* [DAOs & Governance](#daos--governance)
-* [Byzantine Fault Tolerance & Proof-of-Stake algos](#byzantine-fault-tolerance--proof-of-stake-algos)
-* [L1s](#l1s)
-* [L2s](#l2s)
-* [Trading mechanics](#trading-mechanics)
-* [Smart contract programming](#smart-contract-programming)
-* [Economic design](#economic-design)
-* [Tools & Analytics](#tools-&-analytics)
-* [Exercises](#exercises)
-* [Other references](#other-references)
+- [Why is crypto important?](#why-is-crypto-important)
+- [Blockchain mechanics \& innovations](#blockchain-mechanics--innovations)
+- [DeFi primitives](#defi-primitives)
+- [NFTs \& digital identity](#nfts--digital-identity)
+- [DAOs \& Governance](#daos--governance)
+- [Byzantine Fault Tolerance \& Proof-of-Stake algos](#byzantine-fault-tolerance--proof-of-stake-algos)
+- [L1s](#l1s)
+- [L2s](#l2s)
+- [Trading mechanics](#trading-mechanics)
+- [Smart contract programming](#smart-contract-programming)
+- [Economic design](#economic-design)
+- [Tools \& Analytics](#tools--analytics)
+- [Exercises](#exercises)
+- [Other references](#other-references)
+    - [Other lists/directories](#other-listsdirectories)
+    - [Original research](#original-research)
+    - [Online courses](#online-courses)
 
 
 Why is crypto important?
 ===========================
-We'd recommend starting your exploration by trying to understand what problems crypto is trying to solve.
+We've identified four central themes behind crypto's value proposition:
 
-In a few words, we'd say it is:
-* enabling a decentralized ledger-based currency system
-  * decentralized means, extremely difficult for bad actors to forge transactions taking your holdings
-* enabling a decentralized network of computation / decentralized state transition machine
-  * decentralized means, extremely difficult for bad actors for enact state changes not defined in sourcecode
-* enabling an open network of APIs that can be leveraged to build increasingly advanced apps
-* enabling an incentive model for these open networks to grow via crypto tokens
+1. A decentralized ledger-based currency system.
+  * decentralized means distributed and unpermissioned. Anyone can participate in administering the currency.
+  * ledger-based: impossible for bad actors to forge transactions taking your holdings. Cryptography secures your money and forms a public, verifiable chain of trust.
+2. A decentralized state machine and network of computation
+  * decentralized means extremely difficult for bad actors for enact state changes not defined in sourcecode
+3. An open network of APIs for decentralized apps
+4. An incentive model for these open networks to grow via crypto tokens
 
-Here's the list:
-* [Crypto tokens: a breakthrough in open design](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) (2017)
-  * tokens as an enabler for alignment between networks and their participants
-* [Why decentralization matters](https://cdixon.org/2018/02/18/why-decentralization-matters) (2018)
-  * discusses the pattern of new technology progressing from innovation to extraction (from cooperation with their 
-    ecosystem to eventual competition). For example consider Apple's transition from early days of encouraging 
-    developers to build on iOS, to now charging 30% on all in-store purchases.
-    Discusses how crypto solves this by aligning the network with its participants.
-* [The true power of DeFi composability](https://medium.com/coinmonks/the-true-power-of-defi-composability-14fe8355e0d0) (Apr 2021)
-* [Why I have changed my mind on tokens](https://insights.deribit.com/market-research/why-i-have-changed-my-mind-on-tokens/) (Dec 2020)
-  * noted researcher Hasu weighs in on the merits of protocol tokens, during a time when many cynics questioned the need for each project to have its own token
-* Optional: pieces discussing arguments for _Bitcoin_, generally as a decentralized store of value:
+Here's the list of relevant reading:
+* The currency proposition:
   * [Bitcoin for the open-minded skeptic](https://www.matthuang.com/bitcoin_for_the_open_minded_skeptic) (2020)
   * [7 things to read about bitcoin](https://www.paradigm.xyz/2020/05/7-things-to-read-about-bitcoin-for-institutional-investors/) (2020)
+
+* The state machine proposition:
+  * https://ethereum.org/en/developers/docs/evm/
+
+* The open API proposition:
+  * [Why decentralization matters](https://cdixon.org/2018/02/18/why-decentralization-matters) (2018)
+    * discusses the pattern of new technology progressing from innovation to extraction (from cooperation with their ecosystem to eventual competition).
+      * For example consider Apple's transition from early days of encouraging developers to build on iOS, to now charging 30% on all in-store purchases.
+      * Discusses how crypto solves this by aligning the network with its participants.
+
+* The token proposition:
+  * [Crypto tokens: a breakthrough in open design](https://cdixon.org/2017/05/27/crypto-tokens-a-breakthrough-in-open-network-design) (2017)
+    * tokens as an enabler for alignment between networks and their participants
+  * [The true power of DeFi composability](https://medium.com/coinmonks/the-true-power-of-defi-composability-14fe8355e0d0) (Apr 2021)
+  * [Why I have changed my mind on tokens](https://insights.deribit.com/market-research/why-i-have-changed-my-mind-on-tokens/) (Dec 2020)
+    * noted researcher Hasu weighs in on the merits of protocol tokens, during a time when many cynics questioned the need for each project to have its own token
 
 _More: see in-depth page: [Why](Why.md)_
 
