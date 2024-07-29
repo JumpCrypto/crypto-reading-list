@@ -15,7 +15,7 @@ arbitrarily include, exclude, or re-order transactions within a block.
 ## History
 * [Ethereum is a dark forest](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest/) (Dan Robinson, Aug 2020)
   an example of a frontrunning incident to illustrate the adversarial nature of arbitrage on the blockchain
-* [Flash Boys 2.0](http://www.pdaian.com/flashboys2.pdf) - 
+* [Flash Boys 2.0](https://arxiv.org/abs/1904.05234) - 
   Phil Daian's seminal paper on frontrunning and backrunning prior to the introduction of flashbots
 * [MEV SOTW Feb 2021](https://research.paradigm.xyz/MEV) - Charlie Noyes' assessment of the state of MEV
 * [MEV Roast](https://www.youtube.com/watch?v=krlAqKsdLkw) - virtual conference on MEV
