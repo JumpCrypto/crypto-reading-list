@@ -15,7 +15,7 @@ Cosmos
   * real-world test of whether Tendermint actually satisfies its theoretical safety properties.
 
 # Cosmos Network
-* [Cosmos whitepaper](https://v1.cosmos.network/resources/whitepaper) (2016)
+* [Cosmos whitepaper](https://cosmos.network/whitepaper) (2016)
   * Cosmos _network_ whitepaper (describing Cosmos zones/IBC and validator behavior - a network built on Tendermint consensus algo).
     See "Consensus systems" for a good summary of Tendermint vs PBFT and other consensus algos.
 * [Cosmos & Polkadot comparison](https://juliankoh.medium.com/5-differences-between-cosmos-polkadot-67f09535594b) (2019)

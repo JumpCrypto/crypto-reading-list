@@ -13,7 +13,7 @@ There are at least 3 chains in Avalanche:
 
 
 # Blockchain
-* [Avalanche consensus](https://docs.avax.network/learn/platform-overview/avalanche-consensus/)
+* [Avalanche consensus](https://build.avax.network/docs/quick-start/avalanche-consensus)
   * [Avalanche consensus whitepaper](https://assets.website-files.com/5d80307810123f5ffbb34d6e/6009805681b416f34dcae012_Avalanche%20Consensus%20Whitepaper.pdf) (Aug 2020)
 * [Avalanche platform whitepaper](https://assets.website-files.com/5d80307810123f5ffbb34d6e/6008d7bbf8b10d1eb01e7e16_Avalanche%20Platform%20Whitepaper.pdf) (June 2020)
 

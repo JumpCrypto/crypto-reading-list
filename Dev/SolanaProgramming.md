@@ -3,19 +3,19 @@ Solana programming
 
 ## Blockchain core concepts
 _See [L1/Solana.md](../L1/Solana.md)_
-* [Solana docs](https://docs.solana.com/introduction)
+* [Solana docs](https://solana.com/docs)
 
 ## Course
 * [Solana Development Course](https://github.com/Unboxed-Software/solana-course) - open sourced course to teach students both client & program side Solana development and concepts
 
-## SolDev.app
-* [SolDev.app](https://www.soldev.app/) - excellent collection of resources, getting better by the day
+## Solana Developer Content
+* [Solana Development Course](https://github.com/solana-foundation/developer-content/tree/main/content/courses) - the former SolDev.app course content, now maintained by the Solana Foundation; see also [solana.com/developers](https://solana.com/developers)
 
 ## Tutorials
 * [Solana Bootcamp](https://www.youtube.com/watch?v=O0uhZEfVPt8&list=PLilwLeBwGuK7Z2dXft_pmLZ675fuPgkA0)
   * Solana Bootcamp held in Jan 2022, led by Jarry Xiao. Assumes no prior knowledge of Solana.
-  * Lecture notes: https://github.com/jarry-xiao/solana-bootcamp-lectures.
-  * "Echo" exercise with solutions: https://github.com/jarry-xiao/solana-bootcamp-lectures/tree/master/echo-reference.
+  * Lecture notes: https://github.com/solana-developers/solana-bootcamp-lectures.
+  * "Echo" exercise (spec and skeleton): https://github.com/solana-developers/solana-bootcamp-lectures/tree/master/project_specs.
 * [Solana Programming (the "escrow tutorial")](https://paulx.dev/blog/2021/01/14/programming-on-solana-an-introduction/)
   * the canonical tutorial on Solana programming by building up an escrow contract.  Warning: somewhat out of date;
     does not use anchor at all
@@ -23,9 +23,9 @@ _See [L1/Solana.md](../L1/Solana.md)_
 * [Create a Solana dApp from scratch](https://lorisleiva.com/create-a-solana-dapp-from-scratch)
 * [Rust programming on Solana](https://brson.github.io/2021/06/08/rust-on-solana)
   * thoughtful opinions and useful tips by a Solana beginner who's very experienced in Rust (core developer)
-* [SolDev.app library of walkthroughs](https://www.soldev.app/library/walkthroughs)
-  * We haven't validated all of the pages linked from here, but a large (and growing)
-    collection of links to helpful tutorials.
+* [Solana developer guides](https://solana.com/developers/guides)
+  * successor to the SolDev.app library; we haven't validated all of the pages linked
+    from here, but a large collection of helpful guides and tutorials.
 * [thread from redacted_noah](https://twitter.com/redacted_noah/status/1475208069969756166) on the solana dev skill tree
 * [thread from ayushmenon_](https://twitter.com/ayushmenon_/status/1476294409205526534)
 
@@ -48,7 +48,7 @@ _See [L1/Solana.md](../L1/Solana.md)_
   * [Rust for Rustaceans](https://nostarch.com/rust-rustaceans) is a just-released book by Jon. Disclaimer: requires purchase (no affiliation).
 
 ## Reference
-* [Solana docs](https://docs.solana.com/introduction)
+* [Solana docs](https://solana.com/docs)
 * [Solana cookbook](https://solanacookbook.com/)
 * [Anchor](https://github.com/project-serum/anchor)
   * framework for reducing boilerplate by defining a IDL connecting your rust program to your typescript code.
@@ -58,7 +58,7 @@ _See [L1/Solana.md](../L1/Solana.md)_
   * a collection of examples and reference implementations
 * [Metaplex](https://github.com/metaplex-foundation/metaplex)
   * defines the NFT standard on Solana; also standardized the minting process (candy machine).
-  See also [community docs](https://docs.metaplex.com/community).
+  See also [developer docs](https://developers.metaplex.com/).
 
 ## Security
 _See also: [Security.md](Security.md)_
@@ -73,7 +73,6 @@ _See also: [Security.md](Security.md)_
 * [Solend Auditing Workshop](https://docs.google.com/presentation/d/1jZ9kVo6hnhBsz3D2sywqpMojqLE5VTZtaXna7OHL1Uk/edit?pli=1#slide=id.ge15c343642_0_51)
 
 ## Devtools
-* https://www.sollet.io/
 * https://www.spl-token-ui.com/#/
 * Essential CLI tools:
   * `solana`
@@ -137,7 +136,7 @@ The `solana-program` crate exposes a `macro` aptly named `entrypoint!`
 ### Anchor
 
 #### Echo
-- If you've worked through the ["Echo program"](https://github.com/jarry-xiao/solana-bootcamp-lectures/tree/master/echo-reference) from the Solana bootcamp, you might be curious how the same program might be written in Anchor.
+- If you've worked through the ["Echo program"](https://github.com/solana-developers/solana-bootcamp-lectures/tree/master/project_specs) from the Solana bootcamp, you might be curious how the same program might be written in Anchor.
   - See [here](https://github.com/lidatong/anchor-echo) for a quick-and-dirty implementation of the above.
 
 #### Testing
@@ -302,7 +301,7 @@ Cons:
 - Debugging can be difficult because a lot of data lives outside your program that you have to fetch with RPC
 - APIs for passing around accounts are not that friendly: they're passed as an array, so you have to remember the position-order
 
-[Anchor](https://project-serum.github.io/anchor/getting-started/introduction.html) aims to solve some of the cons described.
+[Anchor](https://www.anchor-lang.com/docs) aims to solve some of the cons described.
 See the above Anchor escrow tutorial as well as [angkor wat](https://2501babe.github.io/posts/anchor101.html).
 
 
@@ -336,4 +335,4 @@ It'll save you a debugging headache.
 - Don't use std::collections::HashMap. You'll get an obscure error because of the "no-randomness" constraint
     - Reason: `HashMap<K, V, S = RandomState>`. Notice the generic type `S` defaults to `RandomState`
     - It may be possible use by substituting a different, non-random `S` - see the `with_hasher` constructor (*I have not tried this myself*)
-- Relatedly, don't use `rand` crate. If a crate you depend on transitively depends on `rand`, follow [this guide](https://docs.solana.com/developing/on-chain-programs/developing-rust#depending-on-rand)
+- Relatedly, don't use `rand` crate. If a crate you depend on transitively depends on `rand`, follow [this guide](https://solana.com/docs/programs/rust)

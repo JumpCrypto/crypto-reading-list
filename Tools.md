@@ -5,7 +5,6 @@ for suggestions or to report errors._
 Price, official websites, stats, volume by venue, etc:
 * [CoinMarketCap](http://coinmarketcap.com)
 * [CoinGecko](http://coingecko.com)
-* [Nomics](http://nomics.com)
 * [Messari](https://messari.io/)
 
 # Charting
@@ -27,13 +26,13 @@ Price, official websites, stats, volume by venue, etc:
   * display info about transactions, wallet balances, etc.  There is a clone for ~every chain, such as [Solscan](http://solscan.io) for Solana.
 * [Bloxy](https://bloxy.info/)
   * tools for understanding callstacks in Ethereum transactions
-* [EthTx Transaction Decoder](https://ethtx.info/)
+* [Phalcon Explorer](https://app.blocksec.com/explorer) - transaction decoder with call traces and balance changes
 * [Sentio Explorer](https://app.sentio.xyz/explorer)
   * tools for understanding transactions and reading contracts 
 * [Awesome crypto trackers](https://github.com/denisnazarov/awesome-crypto-trackers) - many trackers here
 
 ## On-chain analytics
-* [Dune Analytics](https://dune.xyz/)
+* [Dune Analytics](https://dune.com/)
   * analytics platform for Ethereum, featuring various datasets built from processing blockchain data
 * [Glassnode](https://glassnode.com/)
   * on-chain analytics platform, featuring various datasets built from processing blockchain data
@@ -43,7 +42,7 @@ Price, official websites, stats, volume by venue, etc:
   * stats on historical/current Eth gas prices
 
 ## Macro analytics
-* [The Block](https://www.theblockcrypto.com/data/)
+* [The Block](https://www.theblock.co/data/)
   * various timeseries graphs showing state of network utilization, volume, DeFi protocol utilization, marketshare by venue, etc.
 
 # DeFi
@@ -53,8 +52,8 @@ _For DeFi-related tools see [DeFi.md](DeFi.md)_
 _For NFT-related tools see [NFT.md](NFT.md)_
 
 # VC Activity
-* [dovemetrics.com](https://www.dovemetrics.com/)
-  * an airtable-based database of recent crypto raises
+* [Messari Fundraising Data](https://messari.io/fundraising-data)
+  * a database of recent crypto raises (formerly Dove Metrics)
 
 # Acknowledgement
 [This](https://twitter.com/0xShual/status/1463575819717070863) twitter thread from @0xShual was extremely useful as a starting point for this page.
