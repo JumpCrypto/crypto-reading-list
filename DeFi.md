@@ -25,7 +25,7 @@ DeFi
 
 ## Lending protocols
 * [Lending and borrowing in DeFi](https://finematics.com/lending-and-borrowing-in-defi-explained/) (Finematics, Nov 2020)
-* [Flash loans](https://hackingdistributed.com/2020/03/11/flash-loans/)
+* [Flash loans](https://web.archive.org/web/20241212225745/https://hackingdistributed.com/2020/03/11/flash-loans/)
   * explaining the flash loan concept pioneered by Aave, as well as how it's used in various arbitrage scenarios
 * Optional source material:
   * [Aave whitepaper](https://github.com/aave/aave-protocol/blob/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf) (Dec 2020)
@@ -38,12 +38,9 @@ DeFi
 * [Perp AMMs](https://insights.deribit.com/market-research/the-quest-for-perp-amms/)
   * explaining the vAMM method introduced by Perpetual Protocol and its current pitfalls
 * [Explaining balancer pools](https://medium.com/balancer-simulations/understanding-balancer-pools-c2b877dcc082)
-* [UniV3 Simulator](https://defi-lab.xyz/uniswapv3simulator)
 
 ### Serum (full order book)
 * [Serum whitepaper](https://assets.website-files.com/61382d4555f82a75dc677b6f/61384a6d5c937269dbed185c_serum_white_paper.88d98f84.pdf)
-* [A technical introduction to the Serum DEX](https://docs.google.com/document/d/1isGJES4jzQutI0GtQGuqtrBUqeHxl_xJNXdtOv4SdII/edit)
-  * describes the orderbook interactions and data structures, as well as how they're implemented. Note the section on the request queue is outdated
 * [Serum core](https://docs.projectserum.com/appendix/serum-core)
   * a next-gen orderbook that decouples the matching engine from SPL tokens. Also known as the agnostic orderbook (AOB)
   * [DEX v4](https://github.com/Bonfida/dex-v4) is a new version of Serum DEX that builds on top of the AOB
@@ -78,7 +75,7 @@ DeFi
     * tutorial on how to query a subgraph using GraphQL
 
 ## Insurance
-* [Nexus Mutual (NXM) whitepaper](https://nexusmutual.io/assets/docs/nmx_white_paperv2_3.pdf)
+* [Nexus Mutual (NXM) whitepaper](https://docs.nexusmutual.io/bookshelf/nexus-mutual-whitepaper-2018.pdf) (see also the [RAMM whitepaper](https://docs.nexusmutual.io/bookshelf/nexus-mutual-ramm-whitepaper-v1-2023.pdf), 2023)
 
 ## Governance wars and DeFi
 * [CRV/CVX part 1](https://tokenbrice.xyz/defi-flywheel/) (June 2021)
@@ -95,32 +92,26 @@ DeFi
 ## Tools
 ### High-level TVL/usage stats
 * [Defi Llama](https://defillama.com/) - TVL metrics for various DeFi protocols
-* [Defi pulse](https://defipulse.com/) - similar, TVL metrics
-* [DappRadar](https://dappradar.com/)
 * [Crypto fees](https://cryptofees.info/) - fees earned by protocol
 
 ### Portfolio
 Use these to track your (or anyone else's) balances/activity across various DeFi protocols.
-* [Zapper.fi](http://zapper.fi) - Eth
+* [Zapper](https://zapper.xyz/) - Eth
 * [DeBank](https://debank.com/) - Eth
 * [Sonar.watch](http://sonar.watch) - Solana
 * [Step.finance](http://step.finance) - Solana
-* [APY.vision](https://apy.vision/) - portfolio tracking / IL analysis / pool analytics
 
 ### Yield Farming Analytics
-* [Multifarm.fi](https://alpha.multifarm.fi/farms) - overview of farms on various chains
 * [LiquidityFolio](https://www.liquidityfolio.com/) - farm finder
 * [DeFi Rate](https://defirate.com/) - comparison of lending/borrowing rates across lending protocols
 
 ### Smart Contract Security
-* [apesafe.io](http://apesafe.io) - contract comparison
 * [app.unrekt.net](http://app.unrekt.net) - allowance checker
 * [RugDoc](http://rugdoc.io) - AMM emergency withdrawal tool, honeypot checker, LP breaker, etc
-* [defiyield.info](https://defiyield.info/) - tools for reviewing where you approved ERC20 tokens, timelocks, etc
+* [revoke.cash](https://revoke.cash/) - tools for reviewing/revoking your ERC20 token approvals
 
 ### Airdrops
 * [twitter.com/defi_airdrops](https://twitter.com/defi_airdrops)
 
 ### Fun
 * [fees.wtf](http://fees.wtf) - check how much you have spent on ETH fees
-* [il.wtf](https://il.wtf) - check your cumulative IL

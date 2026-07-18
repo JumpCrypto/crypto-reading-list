@@ -8,7 +8,7 @@ Solana
 * [Solana Validator 101: transaction processing](https://jito-labs.medium.com/solana-validator-101-transaction-processing-90bcdc271143)
 * [ok so wtf is the deal with solana anyway](https://2501babe.github.io/posts/solana101.html) -
   helpful concise honest description of solana programming, good for formulating a mental map
-* [9/14 outage discussion](https://jumpcrypto.com/reflections-on-the-sept-14-solana-outage/) -
+* [9/14 outage discussion](https://web.archive.org/web/20251006192922/https://jumpcrypto.com/reflections-on-the-sept-14-solana-outage/) -
   discussion of the outage on Sep 14, 2021, by Leopold Schabel (Jump Crypto), with discussion of the consensus model.
   See also [Solana official postmortem](https://solana.com/news/9-14-network-outage-initial-overview)
 

@@ -15,7 +15,7 @@ Flow utilizes Cadence, the first ergonomic, resource-oriented smart contract pro
 ## Blockchain
 * [Flow Protocol](https://github.com/onflow/flow-go)
 * [Flow Technical Docs](https://developers.flow.com/)
-* [Cadence Docs](https://developers.flow.com/cadence/intro)
+* [Cadence Docs](https://cadence-lang.org/docs)
 * [Flow Client Library](https://developers.flow.com/tooling/fcl-js)
 
 

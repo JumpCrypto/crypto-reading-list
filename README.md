@@ -52,8 +52,8 @@ Decentralization is often paired with **cryptoeconomics** to design an incentive
 
 Here's the list of relevant reading:
 * The currency proposition:
-  * [Bitcoin for the open-minded skeptic](https://www.matthuang.com/bitcoin_for_the_open_minded_skeptic) (2020)
-  * [7 things to read about bitcoin](https://www.paradigm.xyz/2020/05/7-things-to-read-about-bitcoin-for-institutional-investors/) (2020)
+  * [Bitcoin for the open-minded skeptic](https://www.paradigm.xyz/writing/bitcoin-for-the-open-minded-skeptic) (2020)
+  * [7 things to read about bitcoin](https://www.paradigm.xyz/2020/05/7-things-to-read-about-bitcoin-for-institutional-investors) (2020)
 
 * The state machine proposition:
   * https://ethereum.org/en/developers/docs/evm/
@@ -117,7 +117,7 @@ Initial reading material on these categories:
     * explaining another AMM formulation for stable pairs of assets, pioneered by Curve.fi
   * [Uniswap V3 whitepaper](https://uniswap.org/whitepaper-v3.pdf)
     * explaining the 'concentrated liquidity' innovation in UniswapV3
-    * see also [Uniswap v3: The Universal AMM](https://www.paradigm.xyz/2021/06/uniswap-v3-the-universal-amm/)
+    * see also [Uniswap v3: The Universal AMM](https://www.paradigm.xyz/writing/uniswap-v3-the-universal-amm)
       for illustrations of UniV3 emulating specific other functions
 * Decentralized stablecoin issuance
   * [Wikipedia article on Dai](https://en.wikipedia.org/wiki/Dai_(cryptocurrency)) provides a good, terse 
@@ -131,7 +131,7 @@ For much more, see our in-depth page on [DeFi](DeFi.md)
 NFTs & digital identity
 ===========================
 _In-depth page: [NFT](NFT.md)_
-* [NFTs and a Thousand True Fans](https://future.a16z.com/nfts-thousand-true-fans/) (Feb 2021) -
+* [NFTs and a Thousand True Fans](https://a16zcrypto.com/posts/article/nfts-thousand-true-fans/) (Feb 2021) -
   an argument for NFTs as enabling a better creator economy
 
 
@@ -193,7 +193,7 @@ _In-depth page: [L2](L2.md)_
 * [L2 for Beginners](https://gourmetcrypto.substack.com/p/layer-2-for-beginners) (Mar 2021)
   * describing a mental model of an L2 as a chain which writes enough state back to Ethereum that
     no one (including the L2's miners/validators) can send back a fraudulent state
-* [Almost everything you need to know about optimistic rollups](https://www.paradigm.xyz/2021/01/almost-everything-you-need-to-know-about-optimistic-rollup/) (Jan 2021)
+* [Almost everything you need to know about optimistic rollups](https://www.paradigm.xyz/writing/almost-everything-you-need-to-know-about-optimistic-rollup) (Jan 2021)
   * builds up the design for optimistic rollups from first principles, addressing various perceived issues as they arise
 * [Optimistic rollups: Arbitrum vs Optimism](https://insights.deribit.com/market-research/making-sense-of-rollups-part-2-dispute-resolution-on-arbitrum-and-optimism/) (Jul 2021)
 * [Optimistic rollups vs ZK-rollups](https://limechain.tech/blog/optimistic-rollups-vs-zk-rollups/) (Aug 2021)

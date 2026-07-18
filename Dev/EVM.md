@@ -29,7 +29,7 @@ _Broader page: [Security.md](Security.md)_
 
 ## Dev tools
 * Full toolkits for Solidity development:
-  * [foundry](https://github.com/gakonst/foundry) - a fast [reimplementation](https://www.paradigm.xyz/2021/12/introducing-the-foundry-ethereum-development-toolbox/) of dapptools in rust with ability to write tests in Solidity, plus some additional features
+  * [foundry](https://github.com/gakonst/foundry) - a fast [reimplementation](https://www.paradigm.xyz/writing/introducing-the-foundry-ethereum-development-toolbox) of dapptools in rust with ability to write tests in Solidity, plus some additional features
   * [dapptools](https://dapp.tools/) - powerful command line tools for smart contract development
   * [ape](https://github.com/ApeWorX/ape) - python
   * [hardhat](https://hardhat.org/)
@@ -39,7 +39,7 @@ _Broader page: [Security.md](Security.md)_
   * [OpenZeppelin contracts](https://openzeppelin.com/contracts)
   * [solmate](https://github.com/rari-capital/solmate)
 * Administration
-  * [OpenZeppelin defender](https://openzeppelin.com/defender/) - monitoring and automation
+  * [OpenZeppelin defender](https://defender.openzeppelin.com/) - monitoring and automation
 * Libraries for interfacing with RPC
   * [ethers.js](https://docs.ethers.io/v5/)
   * [web3.js](https://web3js.readthedocs.io/)
@@ -50,9 +50,8 @@ _Broader page: [Security.md](Security.md)_
   * [remix IDE](https://remix-project.org/)
 
 ## Debugging
-* [EthTx](https://ethtx.info/) - transaction decoder; stack/state inspector
+* [Phalcon Explorer](https://app.blocksec.com/explorer) - transaction decoder; stack/state inspector
 * [Tenderly](https://tenderly.co/) - debugging, simulation, gas profiling
-* [Oko contract explorer](https://oko.palkeo.com/) - explorer with panoramix decompiler
 * [tx2uml](https://github.com/naddison36/tx2uml) - convert eth txs to UML sequence diagrams
 
 

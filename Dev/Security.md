@@ -3,8 +3,8 @@ Smart contract security
 
 # Education / best practices
 * [Solcurity](https://github.com/transmissions11/solcurity) - opinions from [t11s](https://twitter.com/transmissions11) on security best practices
-* [Eth smart contract security best practices](https://consensys.github.io/smart-contract-best-practices/)
-  (see especially: [known attacks](https://consensys.github.io/smart-contract-best-practices/attacks/))
+* [Eth smart contract security best practices](https://consensysdiligence.github.io/smart-contract-best-practices/)
+  (see especially: [known attacks](https://consensysdiligence.github.io/smart-contract-best-practices/attacks/))
 * [Smart Contract Weakness Registry](https://swcregistry.io/) - an enumeration of common weaknesses in smart contracts, with code samples
 * [Most common smart contract bugs](https://medium.com/solidified/most-common-smart-contract-bugs-of-2020-c1edfe9340ac)
 
@@ -41,7 +41,7 @@ to get the contract's state variables into an unexpected state.
 * For an overview, see [Preventing re-entrancy attacks: lessons from history](https://medium.com/amber-group/preventing-re-entrancy-attacks-lessons-from-history-c2d96480fac3)
 * [Exploiting uniswap from reentrancy to actual profit](https://blog.openzeppelin.com/exploiting-uniswap-from-reentrancy-to-actual-profit/) (July 2019)
   * Clear explanation of reentrancy vulnerability on Uniswap introduced by ERC777.
-* [Lendf.Me re-entrancy attack](https://valid.network/post/the-reentrancy-strikes-again-the-case-of-lendf-me) (May 2020)
+* [Lendf.Me re-entrancy attack](https://web.archive.org/web/20241007103106/https://valid.network/post/the-reentrancy-strikes-again-the-case-of-lendf-me) (May 2020)
   * ERC777 strikes again
 * [Cream Finance AMP attack](https://medium.com/cream-finance/c-r-e-a-m-finance-post-mortem-amp-exploit-6ceb20a630c5) (Aug 2021)
   * ERC777 strikes again.  Cream Finance was susceptible, and AMP token had an ERC777-style contract
@@ -51,11 +51,11 @@ to get the contract's state variables into an unexpected state.
   * Grim didn't guard against reentrancy between the before-after pattern.
   * [More details](https://rekt.news/grim-finance-rekt/)
 * TheDAO exploit of 2016: the original re-entrancy bug, but listed last here because it's one of the hardest to understand.
-  * [Race-to-Empty](https://vessenes.com/more-ethereum-attacks-race-to-empty-is-the-real-deal/)
+  * [Race-to-Empty](https://web.archive.org/web/20220604083000/https://vessenes.com/more-ethereum-attacks-race-to-empty-is-the-real-deal/)
     (written just before the exploit, describing a generic vulnerability)
-  * [Analysis of TheDAO exploit](https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)
+  * [Analysis of TheDAO exploit](https://web.archive.org/web/20241201011331/https://hackingdistributed.com/2016/06/18/analysis-of-the-dao-exploit/)
     (detailed explanation of the flaw as applied to TheDAO)
-  * For more historical background (less technical) see [a history of 'The DAO' hack](https://coinmarketcap.com/alexandria/article/a-history-of-the-dao-hack)
+  * For more historical background (less technical) see [the DAO hack explained](https://www.gemini.com/cryptopedia/the-dao-hack-makerdao)
 
 ### Oracle attacks
 Some AMMs provide on-chain oracle functions (i.e. to compute asset prices from the current state of their pools).
@@ -123,10 +123,10 @@ The [proxy upgrade pattern](https://docs.openzeppelin.com/upgrades-plugins/1.x/p
   * See especially [this diagram](https://twitter.com/vasa_develop/status/1330532691205361664/photo/1)
   * Pickle Finance was a fork of Yearn; Yearn published this [vulnerability disclosure](https://github.com/yearn/yearn-security/blob/master/disclosures/2020-10-10.md) a month earlier
   * Similar problem [here](https://rekt.news/rari-capital-rekt/)
-* [Parity wallet bug](https://hackingdistributed.com/2017/07/22/deep-dive-parity-bug/) (2017)
+* [Parity wallet bug](https://web.archive.org/web/20241120170156/https://hackingdistributed.com/2017/07/22/deep-dive-parity-bug/) (2017)
 
 ### Frontend attacks
-* [BadgerDAO Cloudflare exploit](https://badger.com/technical-post-mortem) (Dec 2021)
+* [BadgerDAO Cloudflare exploit](https://web.archive.org/web/20221214005715/https://badger.com/technical-post-mortem) (Dec 2021)
   * frontend attack arising from Cloudflare bug which allowed attackers to preregister API keys by email address
     without email verification
   * attacker used access to inject malicious scripts that prompted users to authorize

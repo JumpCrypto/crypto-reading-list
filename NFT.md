@@ -11,11 +11,11 @@
 * [Beginner's guide to social tokens](https://linda.mirror.xyz/4PDBWBMpFFPVEsP5EGgg5to2AyEpEHEXasq_K0b-yYk) (Nov 2021)
 
 ## Minting
-* [Guide to designing effective NFT launches](https://www.paradigm.xyz/2021/10/a-guide-to-designing-effective-nft-launches/) (Oct 2021) -
+* [Guide to designing effective NFT launches](https://www.paradigm.xyz/writing/a-guide-to-designing-effective-nft-launches) (Oct 2021) -
   discussing botting and mint-sniping and ways to combat them
 
 # Other Lists
-* [NFT Canon](https://future.a16z.com/nft-canon/) - a16z's list of NFT resources
+* [NFT Canon](https://a16zcrypto.com/posts/article/nft-canon/) - a16z's list of NFT resources
 * [Argent - The NFT Reading List](https://www.argent.xyz/learn/the-nft-reading-list/)
 
 
@@ -32,7 +32,7 @@ Analytics:
 
 Rarity:
 * [rarity.tools](http://rarity.tools) - NFT rarity analysis
-* [nftbank.ai](https://nftbank.ai/landing) - NFT portfolio tracking
+* [nftbank.ai](https://nftbank.ai/) - NFT portfolio tracking
 
 ### Solana
 See [Awesome Solana NFTs](https://github.com/ilmoi/awesome-solana-nfts) (curated list of resources on Solana NFTs)
@@ -43,12 +43,10 @@ Marketplaces:
 * [Solanart](http://solanart.io)
   
 Analytics:
-* [solanalysis.com](http://solanalysis.com)
 * [solanafloor.com](http://solanafloor.com)
 
 Rarity:
 * [howrare.is](http://howrare.is) - rarity for select Solana collections
-* [moonrank.app](http://moonrank.app) - rarity for select Solana collections
 
 ### Tezos
 * [tezos.art](http://tezos.art)

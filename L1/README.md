@@ -32,7 +32,7 @@
   * important data structure optimizing the storage of hashes in a blockchain
 
 ### Distributed consensus
-* [Practical Byzantine Fault Tolerance](https://pmg.csail.mit.edu/papers/osdi99.pdf) (Castro and Liskov, 1999)
+* [Practical Byzantine Fault Tolerance](https://css.csail.mit.edu/6.824/2014/papers/castro-practicalbft.pdf) (Castro and Liskov, 1999)
   * a seminal algorithm for state machine replication / transaction ordering in a distributed system with up to 1/3 malicious nodes
 * [Distributed Systems](https://www.cl.cam.ac.uk/teaching/2021/ConcDisSys/dist-sys-notes.pdf)
   * excellent 101-level lecture notes. presumes some comfort with math notation, particularly predicate logic.
@@ -41,7 +41,7 @@
   * fundamental trade-off between staying consistent vs. staying available when there's a network partition, i.e. nodes can't communicate
 * [FLP Result](https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf)
   * why distributed consensus is not guaranteed when a node goes down. in practice, this is solved by relaxing the constraints of their model
-* [Proof of useful work](https://primecoin.io/about.php)
+* [Proof of useful work](https://primecoin.io/)
   * using collective computing power to search for prime number chains. an academic application but interesting concept
 * [HotStuff BFT](https://arxiv.org/pdf/1803.05069.pdf)
   * an iteration on PBFT attempting to optimize for variable network delays
