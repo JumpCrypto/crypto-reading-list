@@ -41,6 +41,8 @@ Price, official websites, stats, volume by venue, etc:
   * wallet analytics (coin movements, large holders, big transactions, etc) for Ethereum.  Also some NFT tools.
 * [ETH Gas.watch](https://ethgas.watch/)
   * stats on historical/current Eth gas prices
+* [OpenChainBench](https://openchainbench.com/)
+  * live RPC latency (p50/p90/p99), gas oracle accuracy and finality benchmarks across 22+ chains (Ethereum, Solana, Arbitrum, Base, and more), probed every minute from 3 regions; open-source harnesses, CC BY 4.0
 
 ## Macro analytics
 * [The Block](https://www.theblockcrypto.com/data/)
